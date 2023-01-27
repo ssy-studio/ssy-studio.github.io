@@ -1,0 +1,2349 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/logo.png">
+  <link rel="icon" href="/img/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ssy">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Dart 排行榜资料   # Repository Description Stars Updated    1 AweiLoveAndroid&#x2F;Flutter-learning :octocat::fire: :+1: :star2: :star: :star::star: Flutter all you want.Flutter install,flutter samples,Flu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dart 排行榜">
+<meta property="og:url" content="https://ssy-studio.github.io/post/Dart%E6%8E%92%E8%A1%8C%E6%A6%9C.html">
+<meta property="og:site_name" content="SSY Studio">
+<meta property="og:description" content="Dart 排行榜资料   # Repository Description Stars Updated    1 AweiLoveAndroid&#x2F;Flutter-learning :octocat::fire: :+1: :star2: :star: :star::star: Flutter all you want.Flutter install,flutter samples,Flu">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-01-27T04:55:14.000Z">
+<meta property="article:modified_time" content="2023-01-27T10:30:50.899Z">
+<meta property="article:author" content="ssy">
+<meta property="article:tag" content="Dart">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>Dart 排行榜 - SSY Studio</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"ssy-studio.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"#"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>SSY Studio</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/post_banner.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Dart 排行榜"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        ssy
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-01-27 12:55" pubdate>
+          2023年1月27日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          23k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          193 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Dart 排行榜</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Dart-排行榜"><a href="#Dart-排行榜" class="headerlink" title="Dart 排行榜"></a>Dart 排行榜</h1><h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><table>
+<thead>
+<tr>
+<th align="left">#</th>
+<th align="left">Repository</th>
+<th align="left">Description</th>
+<th align="left">Stars</th>
+<th align="left">Updated</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/AweiLoveAndroid/Flutter-learning">AweiLoveAndroid&#x2F;Flutter-learning</a></td>
+<td align="left">:octocat::fire: :+1: :star2: :star: :star::star: Flutter all you want.Flutter install,flutter samples,Flutter projects,Flutter plugin,Flutter problems,Dart codes,etc.Flutter 安装和配置，Flutter 开发遇到的难题，Flut …</td>
+<td align="left">5084</td>
+<td align="left">2022-02-12</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/huanxsd/flutter_shuqi">huanxsd&#x2F;flutter_shuqi</a></td>
+<td align="left">高仿书旗小说 Flutter 版，支持 iOS、Android</td>
+<td align="left">2407</td>
+<td align="left">2022-05-23</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Sky24n/flustars">Sky24n&#x2F;flustars</a></td>
+<td align="left">🔥🔥🔥 Flutter common utils library. SpUtil, ScreenUtil,WidgetUtil. 也许是目前最好用的 SharedPreferences 工具类。WidgetUtil 获取图片尺寸宽高, View 尺寸&amp;在屏幕上的坐标。</td>
+<td align="left">1736</td>
+<td align="left">2022-06-01</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/yechaoa/wanandroid_flutter">yechaoa&#x2F;wanandroid_flutter</a></td>
+<td align="left">:collision::collision::collision:【Flutter 版】玩安卓，非常适合学习，代码不多、注释多。</td>
+<td align="left">620</td>
+<td align="left">2022-03-29</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/RxReader/wechat_kit">RxReader&#x2F;wechat_kit</a></td>
+<td align="left">flutter 版微信登录&#x2F;分享&#x2F;支付 SDK</td>
+<td align="left">554</td>
+<td align="left">2022-07-29</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lrorpilla/jidoujisho">lrorpilla&#x2F;jidoujisho</a></td>
+<td align="left">A highly versatile and modular framework enabling language-agnostic immersion learning on mobile.</td>
+<td align="left">301</td>
+<td align="left">2022-05-24</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/nightmare-space/speed_share">nightmare-space&#x2F;speed_share</a></td>
+<td align="left">Speed Share is a highly available file sharing terminal on LAN(local area network) developed by flutter framework.</td>
+<td align="left">236</td>
+<td align="left">2022-07-26</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/longer96/flutter_pickers">longer96&#x2F;flutter_pickers</a></td>
+<td align="left">flutter 选择器库，包括日期及时间选择器（可设置范围）、单项选择器（可用于性别、民族、学历、星座、年龄、身高、体重、温度等）、城市地址选择器（分省级、地级及县级）、多项选择器等…… 欢迎 Fork &amp; pr 贡献您的代码，大家共同学习</td>
+<td align="left">211</td>
+<td align="left">2022-06-05</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/RxReader/tencent_kit">RxReader&#x2F;tencent_kit</a></td>
+<td align="left">flutter 版 QQ 登录&#x2F;分享</td>
+<td align="left">188</td>
+<td align="left">2022-07-29</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/pheromone/Flutter_learn_demo">pheromone&#x2F;Flutter_learn_demo</a></td>
+<td align="left">Flutter_learn_demo Flutter 学习历程</td>
+<td align="left">114</td>
+<td align="left">2022-08-01</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/RxReader/weibo_kit">RxReader&#x2F;weibo_kit</a></td>
+<td align="left">flutter 版新浪微博登录&#x2F;分享</td>
+<td align="left">92</td>
+<td align="left">2022-07-29</td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/NewPracticer/Python-Flutter-Dart-DataStructure">NewPracticer&#x2F;Python-Flutter-Dart-DataStructure</a></td>
+<td align="left">使用 python、flutter 的 dart 语言重写数据结构与算法。包括线性搜索、选择排序、插入排序、栈，队列，链表、递归、归并排序、快速排序、二分搜索、二分搜索树、集合 和 映射、堆、优先队列、冒泡排序、希尔排序、线段树、Trie 字典树、并查集、AVL 树、红黑树、哈希表、计数排序、LSD 基数排序、MSD 排序，桶排序、字符串匹配、图的邻接矩阵、邻接表，深度优先遍历及应用</td>
+<td align="left">73</td>
+<td align="left">2022-03-30</td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/idootop/watermelon">idootop&#x2F;watermelon</a></td>
+<td align="left">Watermelon is a game developed using Flutter+Flame+Forge2D. For learning purposes only. 一个开源的 Flame 小游戏（Flutter 版合成大西瓜）</td>
+<td align="left">73</td>
+<td align="left">2022-04-04</td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/asjqkkkk/flutter-blog">asjqkkkk&#x2F;flutter-blog</a></td>
+<td align="left">💻 使用 flutter 完成的个人 web 博客.</td>
+<td align="left">49</td>
+<td align="left">2022-02-04</td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Daniel-Ioannou/flutter_country_picker">Daniel-Ioannou&#x2F;flutter_country_picker</a></td>
+<td align="left">A flutter package to select a country from a list of countries.</td>
+<td align="left">46</td>
+<td align="left">2022-05-14</td>
+</tr>
+<tr>
+<td align="left">16</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xiaojia21190/ZY_Player_flutter">xiaojia21190&#x2F;ZY_Player_flutter</a></td>
+<td align="left">影视 漫画 小说 听书</td>
+<td align="left">25</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/HuRuWo/HowToReserveFlutter">HuRuWo&#x2F;HowToReserveFlutter</a></td>
+<td align="left">HowToReserveFlutter is some reverse flutter note 。flutter 逆向笔记，如何一步一步分析 flutter apk。</td>
+<td align="left">22</td>
+<td align="left">2022-04-02</td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/kangshaojun/study-notes">kangshaojun&#x2F;study-notes</a></td>
+<td align="left">Flutter React Golang WebRTC 等技术学习笔记</td>
+<td align="left">12</td>
+<td align="left">2022-05-01</td>
+</tr>
+<tr>
+<td align="left">19</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jianguo888/Flutter-Web-template">jianguo888&#x2F;Flutter-Web-template</a></td>
+<td align="left">Flutter Web - 仪表板网站模板教你如何构建响应式仪表板网站。</td>
+<td align="left">9</td>
+<td align="left">2022-02-09</td>
+</tr>
+<tr>
+<td align="left">20</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/idootop/fallDown">idootop&#x2F;fallDown</a></td>
+<td align="left">FallDown is a game developed using Flutter+Flame+Box2D. For learning purposes only. 一个开源的 Flame 小游戏。</td>
+<td align="left">9</td>
+<td align="left">2022-04-04</td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/JerryAlexLiang/flutter_wan_android_getx">JerryAlexLiang&#x2F;flutter_wan_android_getx</a></td>
+<td align="left">WanAndroid Flutter 版 基于 GetX ，欢迎互相交流学习， Gitee：<a target="_blank" rel="noopener" href="https://gitee.com/JerryAlexLiang/flutter_wan_android_getx.git">https://gitee.com/JerryAlexLiang/flutter_wan_android_getx.git</a></td>
+<td align="left">7</td>
+<td align="left">2022-02-23</td>
+</tr>
+<tr>
+<td align="left">22</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/idootop/scroll_master">idootop&#x2F;scroll_master</a></td>
+<td align="left">An example showing how to handle common scrolling gesture conflicts in Flutter. 一个展示如何处理 Flutter 中的常见滑动手势冲突的示例。</td>
+<td align="left">7</td>
+<td align="left">2022-03-27</td>
+</tr>
+<tr>
+<td align="left">23</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/idootop/Design-Patterns-Dart">idootop&#x2F;Design-Patterns-Dart</a></td>
+<td align="left">23 Design Patterns in dart and 6 Design Principles. Dart 中的 23 种设计模式和 6 大设计原则</td>
+<td align="left">7</td>
+<td align="left">2022-03-27</td>
+</tr>
+<tr>
+<td align="left">24</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ifredom/flutter_plugins_example">ifredom&#x2F;flutter_plugins_example</a></td>
+<td align="left">flutter 第三方插件：地图，图表，蓝牙，等使用示例集合</td>
+<td align="left">7</td>
+<td align="left">2022-06-03</td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/feiyvflutter/Flutter">feiyvflutter&#x2F;Flutter</a></td>
+<td align="left">搜集工作和学习中用到的 Flutter 相关的技术，包含代码，遇到报错信息，以及解决办法。</td>
+<td align="left">7</td>
+<td align="left">2022-07-28</td>
+</tr>
+<tr>
+<td align="left">26</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Petterpx/FlutterQuickExample">Petterpx&#x2F;FlutterQuickExample</a></td>
+<td align="left">Flutter 入门示例，对照着 Flutter 实战书籍写的一个 demo。</td>
+<td align="left">3</td>
+<td align="left">2022-06-27</td>
+</tr>
+</tbody></table>
+<h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><table>
+<thead>
+<tr>
+<th align="left">#</th>
+<th align="left">Repository</th>
+<th align="left">Description</th>
+<th align="left">Stars</th>
+<th align="left">Updated</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/CarGuo/gsy_github_app_flutter">CarGuo&#x2F;gsy_github_app_flutter</a></td>
+<td align="left">Flutter 超完整的开源项目，功能丰富，适合学习和日常使用。GSYGithubApp 系列的优势：我们目前已经拥有 Flutter、Weex、ReactNative、kotlin 四个版本。 功能齐全，项目框架内技术涉及面广，完成度高，持续维护，配套文章，适合全面学习，对比参考。跨平台的开源 Github 客户端 App，更好的体验，更丰富的功能，旨在更好的日常管理和维护个人 Github，提供更好更方便 …</td>
+<td align="left">13380</td>
+<td align="left">2022-07-13</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/flutterchina/dio">flutterchina&#x2F;dio</a></td>
+<td align="left">A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.</td>
+<td align="left">10876</td>
+<td align="left">2022-07-27</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/fish-redux">alibaba&#x2F;fish-redux</a></td>
+<td align="left">An assembled flutter application framework.</td>
+<td align="left">7284</td>
+<td align="left">2022-02-17</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/kaina404/FlutterDouBan">kaina404&#x2F;FlutterDouBan</a></td>
+<td align="left">🔥🔥🔥Flutter 豆瓣客户端,Awesome Flutter Project,全网最 100%还原豆瓣客户端。首页、书影音、小组、市集及个人中心，一个不拉。（ <a target="_blank" rel="noopener" href="https://img.xuvip.top/douyademo.mp4%EF%BC%89">https://img.xuvip.top/douyademo.mp4）</a></td>
+<td align="left">7276</td>
+<td align="left">2022-02-11</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/simplezhli/flutter_deer">simplezhli&#x2F;flutter_deer</a></td>
+<td align="left">🦌 Flutter 练习项目(包括集成测试、可访问性测试)。内含完整 UI 设计图，更贴近真实项目的练习。Flutter practice project. Includes a complete UI design and exercises that are closer to real projects.</td>
+<td align="left">6374</td>
+<td align="left">2022-07-22</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/flutter_boost">alibaba&#x2F;flutter_boost</a></td>
+<td align="left">FlutterBoost is a Flutter plugin which enables hybrid integration of Flutter for your existing native apps with minimum efforts</td>
+<td align="left">6072</td>
+<td align="left">2022-08-01</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/toly1994328/FlutterUnit">toly1994328&#x2F;FlutterUnit</a></td>
+<td align="left">【Flutter 集录指南 App】The unity of flutter, The unity of coder.</td>
+<td align="left">5180</td>
+<td align="left">2022-07-24</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/rrousselGit/provider">rrousselGit&#x2F;provider</a></td>
+<td align="left">InheritedWidgets, but simple</td>
+<td align="left">4385</td>
+<td align="left">2022-08-01</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/flutterchina/flukit">flutterchina&#x2F;flukit</a></td>
+<td align="left">A Flutter UI Kit（一个 Flutter UI 组件库），包含 ScaleView, Swiper, PullRefresh, WaterMark, GradientCircularProgressIndicator…</td>
+<td align="left">4343</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Notsfsssf/pixez-flutter">Notsfsssf&#x2F;pixez-flutter</a></td>
+<td align="left">一个支持免代理直连及查看动图的第三方 Pixiv flutter 客户端</td>
+<td align="left">3837</td>
+<td align="left">2022-07-24</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xuelongqy/flutter_easy_refresh">xuelongqy&#x2F;flutter_easy_refresh</a></td>
+<td align="left">A flutter widget that provides pull-down refresh and pull-up load.</td>
+<td align="left">3203</td>
+<td align="left">2022-08-01</td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/OpenFlutter/flutter_screenutil">OpenFlutter&#x2F;flutter_screenutil</a></td>
+<td align="left">Flutter screen adaptation, font adaptation, get screen information</td>
+<td align="left">3178</td>
+<td align="left">2022-07-11</td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/boyan01/flutter-netease-music">boyan01&#x2F;flutter-netease-music</a></td>
+<td align="left">flutter music player application. (仿网易云音乐)</td>
+<td align="left">2938</td>
+<td align="left">2022-07-31</td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/OpenFlutter/fluwx">OpenFlutter&#x2F;fluwx</a></td>
+<td align="left">Flutter 版微信 SDK.WeChat SDK for flutter.</td>
+<td align="left">2634</td>
+<td align="left">2022-07-30</td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/phoenixsky/fun_android_flutter">phoenixsky&#x2F;fun_android_flutter</a></td>
+<td align="left">👿👿👿👿👿 玩 Android 客户端 Flutter 版本。Provider 的最佳实践.DarkMode、多色彩主题、国际化、切换字体、优美动画</td>
+<td align="left">2579</td>
+<td align="left">2022-02-22</td>
+</tr>
+<tr>
+<td align="left">16</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/peng8350/flutter_pulltorefresh">peng8350&#x2F;flutter_pulltorefresh</a></td>
+<td align="left">a widget provided to the flutter scroll component drop-down refresh and pull up load.</td>
+<td align="left">2441</td>
+<td align="left">2022-07-30</td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/CarGuo/gsy_flutter_demo">CarGuo&#x2F;gsy_flutter_demo</a></td>
+<td align="left">Flutter 不同于 GSYGithubAppFlutter 完整项目，本项目将逐步完善各种 Flutter 独立例子，方便新手学习上手和小问题方案解决。 目前开始逐步补全完善，主要提供一些有用或者有趣的例子，如果你也有好例子，欢迎提交 PR 。</td>
+<td align="left">2380</td>
+<td align="left">2022-08-01</td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/shichunlei/flutter_app">shichunlei&#x2F;flutter_app</a></td>
+<td align="left">🔥🔥🔥 本项目包括各种基本控件使用（Text、TextField、Icon、Image、Listview、Gridview、Picker、Stepper、Dialog、Slider、Row、Appbar、Sizebox、BottomSheet、Chip、Dismissible、FlutterLogo、Check、Switch、TabBar、BottomNavigationBar、Sliver 等）、豆 …</td>
+<td align="left">2317</td>
+<td align="left">2022-06-28</td>
+</tr>
+<tr>
+<td align="left">19</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/niuhuan/pikapika">niuhuan&#x2F;pikapika</a></td>
+<td align="left">美观易用且无广告的漫画和游戏客户端，同时支持 MacOS，Windows，Android，iOS。</td>
+<td align="left">2254</td>
+<td align="left">2022-07-25</td>
+</tr>
+<tr>
+<td align="left">20</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/mobxjs/mobx.dart">mobxjs&#x2F;mobx.dart</a></td>
+<td align="left">MobX for the Dart language. Hassle-free, reactive state-management for your Dart and Flutter apps.</td>
+<td align="left">2170</td>
+<td align="left">2022-07-22</td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fluttercandies/wechat_flutter">fluttercandies&#x2F;wechat_flutter</a></td>
+<td align="left">wechat_flutter Flutter 版本微信，一个优秀的 Flutter 即时通讯 IM 开源库！</td>
+<td align="left">2101</td>
+<td align="left">2022-07-03</td>
+</tr>
+<tr>
+<td align="left">22</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/LianjiaTech/bruno">LianjiaTech&#x2F;bruno</a></td>
+<td align="left">An enterprise-class package of Flutter components for mobile applications. ( Bruno 是基于一整套设计体系的 Flutter 组件库。)</td>
+<td align="left">1791</td>
+<td align="left">2022-07-29</td>
+</tr>
+<tr>
+<td align="left">23</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/bytedance/flutter_ume">bytedance&#x2F;flutter_ume</a></td>
+<td align="left">UME is an in-app debug kits platform for Flutter. Produced by Flutter Infra team of ByteDance</td>
+<td align="left">1639</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">24</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/bdlukaa/fluent_ui">bdlukaa&#x2F;fluent_ui</a></td>
+<td align="left">Implements Microsoft’s Fluent Design System in Flutter.</td>
+<td align="left">1529</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xuyisheng/flutter_dojo">xuyisheng&#x2F;flutter_dojo</a></td>
+<td align="left">A beautiful design and useful project for Building a flutter knowledge architecture</td>
+<td align="left">1380</td>
+<td align="left">2022-03-27</td>
+</tr>
+<tr>
+<td align="left">26</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/wuba/fair">wuba&#x2F;fair</a></td>
+<td align="left">A Flutter package used to update widget tree dynamically. Flutter Fair 是为 Flutter 设计的，UI&amp;模板动态化框架</td>
+<td align="left">1378</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">27</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/boyan01/flutter-tetris">boyan01&#x2F;flutter-tetris</a></td>
+<td align="left">a tetris game powered by flutter. 使用 flutter 开发俄罗斯方块。</td>
+<td align="left">1364</td>
+<td align="left">2022-04-03</td>
+</tr>
+<tr>
+<td align="left">28</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Rannie/flui">Rannie&#x2F;flui</a></td>
+<td align="left">A powerful UI framework for Google Flutter.</td>
+<td align="left">1355</td>
+<td align="left">2022-07-29</td>
+</tr>
+<tr>
+<td align="left">29</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/befovy/fijkplayer">befovy&#x2F;fijkplayer</a></td>
+<td align="left">ijkplayer for flutter. ijkplayer 的 flutter 封装。 Flutter video&#x2F;audio player. Flutter media player plugin for android&#x2F;iOS based on ijkplayer. fijkplayer 是基于 ijkplayer 封装的 flutter 媒体播放器，开箱即用，无需编译 ijkplay …</td>
+<td align="left">1333</td>
+<td align="left">2022-07-22</td>
+</tr>
+<tr>
+<td align="left">30</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Sky24n/common_utils">Sky24n&#x2F;common_utils</a></td>
+<td align="left">Dart common utils library. DateUtil, EncryptUtil, JsonUtil, LogUtil, MoneyUtil, NumUtil, ObjectUtil, RegexUtil, TextUtil, TimelineUtil, TimerUtil. 包含日期，正则，倒计时，时间轴等工具类。</td>
+<td align="left">1200</td>
+<td align="left">2022-02-12</td>
+</tr>
+<tr>
+<td align="left">31</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/git-touch/git-touch">git-touch&#x2F;git-touch</a></td>
+<td align="left">An open-source app for GitHub, GitLab, Bitbucket, Gitea, and Gitee(码云), built with Flutter</td>
+<td align="left">1177</td>
+<td align="left">2022-06-26</td>
+</tr>
+<tr>
+<td align="left">32</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/mjl0602/flutter_tiktok">mjl0602&#x2F;flutter_tiktok</a></td>
+<td align="left">Flutter tiktok short video app.</td>
+<td align="left">1069</td>
+<td align="left">2022-06-22</td>
+</tr>
+<tr>
+<td align="left">33</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/niuhuan/jasmine">niuhuan&#x2F;jasmine</a></td>
+<td align="left">一个美观易用的漫画客户端, 同时支持支持 Android &#x2F; iOS &#x2F; MacOS &#x2F; Windows &#x2F; Linux。</td>
+<td align="left">1044</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">34</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/nslogx/flutter_easyloading">nslogx&#x2F;flutter_easyloading</a></td>
+<td align="left">✨A clean and lightweight loading&#x2F;toast widget for Flutter, easy to use without context, support iOS、Android and Web</td>
+<td align="left">913</td>
+<td align="left">2022-05-23</td>
+</tr>
+<tr>
+<td align="left">35</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/flutterchina/azlistview">flutterchina&#x2F;azlistview</a></td>
+<td align="left">A Flutter sticky headers &amp; index ListView. Flutter 城市列表、联系人列表，索引&amp;悬停。</td>
+<td align="left">912</td>
+<td align="left">2022-06-20</td>
+</tr>
+<tr>
+<td align="left">36</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/mpflutter/mpflutter">mpflutter&#x2F;mpflutter</a></td>
+<td align="left">MPFlutter 是一个跨平台 Flutter 开发框架，可用于微信小程序以及 Web 应用开发。如果您觉得该项目还不错，可以考虑点个 Star 或者赞助我们哦。<a target="_blank" rel="noopener" href="https://mpflutter.com/zh/docs/support-us">https://mpflutter.com/zh/docs/support-us</a></td>
+<td align="left">835</td>
+<td align="left">2022-07-22</td>
+</tr>
+<tr>
+<td align="left">37</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/biyidev/biyi">biyidev&#x2F;biyi</a></td>
+<td align="left">Biyi (比译) is a convenient translation and dictionary app written in Flutter.</td>
+<td align="left">829</td>
+<td align="left">2022-06-05</td>
+</tr>
+<tr>
+<td align="left">38</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/honjow/FEhViewer">honjow&#x2F;FEhViewer</a></td>
+<td align="left">An e-hentai&#x2F;exhentai app make on flutter</td>
+<td align="left">777</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">39</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/CaiJingLong/flutter_ijkplayer">CaiJingLong&#x2F;flutter_ijkplayer</a></td>
+<td align="left">ijkplayer for flutter</td>
+<td align="left">760</td>
+<td align="left">2022-06-22</td>
+</tr>
+<tr>
+<td align="left">40</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xuexiangjys/flutter_template">xuexiangjys&#x2F;flutter_template</a></td>
+<td align="left">The project of the empty template with Flutter has built the basic framework to realize the functions of internationalization, theme peeling, login and registration, etc.(Flutter 空壳模板工程，已搭建基础框架，实现国际化、主 …</td>
+<td align="left">724</td>
+<td align="left">2022-04-26</td>
+</tr>
+<tr>
+<td align="left">41</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/LianjiaTech/keframe">LianjiaTech&#x2F;keframe</a></td>
+<td align="left">Components that optimize Flutter fluency.（Flutter 流畅度优化的通用方案，轻松解决卡顿问题）</td>
+<td align="left">709</td>
+<td align="left">2022-07-05</td>
+</tr>
+<tr>
+<td align="left">42</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/marchellodev/sharik">marchellodev&#x2F;sharik</a></td>
+<td align="left">Sharik is an open-source, cross-platform solution for sharing files via Wi-Fi or Mobile Hotspot</td>
+<td align="left">709</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">43</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/MMMzq/bot_toast">MMMzq&#x2F;bot_toast</a></td>
+<td align="left">A really easy to use flutter toast library</td>
+<td align="left">699</td>
+<td align="left">2022-07-14</td>
+</tr>
+<tr>
+<td align="left">44</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jhomlala/catcher">jhomlala&#x2F;catcher</a></td>
+<td align="left">Flutter error catching &amp; handling plugin. Handles and reports exceptions in your app!</td>
+<td align="left">664</td>
+<td align="left">2022-07-01</td>
+</tr>
+<tr>
+<td align="left">45</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/AgoraIO/Agora-Flutter-SDK">AgoraIO&#x2F;Agora-Flutter-SDK</a></td>
+<td align="left">Flutter wrapper around the Agora RTC SDKs for Android and iOS</td>
+<td align="left">616</td>
+<td align="left">2022-07-28</td>
+</tr>
+<tr>
+<td align="left">46</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/hamaluik/timecop">hamaluik&#x2F;timecop</a></td>
+<td align="left">A time tracking app that respects your privacy and the gets the job done without being fancy.</td>
+<td align="left">598</td>
+<td align="left">2022-07-01</td>
+</tr>
+<tr>
+<td align="left">47</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/mabDc/eso">mabDc&#x2F;eso</a></td>
+<td align="left">亦搜，亦看，亦闻 manga&amp;novel reader, audio&amp;video player in one app developed by flutter</td>
+<td align="left">585</td>
+<td align="left">2022-04-11</td>
+</tr>
+<tr>
+<td align="left">48</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xiaoyaocz/dmzj_flutter">xiaoyaocz&#x2F;dmzj_flutter</a></td>
+<td align="left">动漫之家 Flutter 客户端</td>
+<td align="left">564</td>
+<td align="left">2022-07-12</td>
+</tr>
+<tr>
+<td align="left">49</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fluttercandies/flutter_smart_dialog">fluttercandies&#x2F;flutter_smart_dialog</a></td>
+<td align="left">An elegant Flutter Dialog solution 一种更优雅的 Flutter Dialog 解决方案</td>
+<td align="left">563</td>
+<td align="left">2022-08-01</td>
+</tr>
+<tr>
+<td align="left">50</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/crazecoder/flutter_bugly">crazecoder&#x2F;flutter_bugly</a></td>
+<td align="left">腾讯 Bugly flutter 应用更新统计及异常上报插件,支持 Android、iOS</td>
+<td align="left">551</td>
+<td align="left">2022-03-12</td>
+</tr>
+<tr>
+<td align="left">51</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/telsav/douyin">telsav&#x2F;douyin</a></td>
+<td align="left">使用 Flutter 撸一个抖音国外版，看看有多炫</td>
+<td align="left">547</td>
+<td align="left">2022-03-10</td>
+</tr>
+<tr>
+<td align="left">52</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Realank/flutter_datetime_picker">Realank&#x2F;flutter_datetime_picker</a></td>
+<td align="left">a date time picker in flutter</td>
+<td align="left">532</td>
+<td align="left">2022-07-28</td>
+</tr>
+<tr>
+<td align="left">53</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lwlizhe/flutter_novel">lwlizhe&#x2F;flutter_novel</a></td>
+<td align="left">仿追书神器，具有仿真、滑动和滚动翻页、字体大小、行高、背景、目录等功能的 Flutter 阅读 APP</td>
+<td align="left">486</td>
+<td align="left">2022-03-18</td>
+</tr>
+<tr>
+<td align="left">54</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fluttercandies/flutter_photo_manager">fluttercandies&#x2F;flutter_photo_manager</a></td>
+<td align="left">A Flutter plugin that provides assets abstraction management APIs without UI integration, you can get assets (image&#x2F;video&#x2F;audio) on Android, iOS, and macOS.</td>
+<td align="left">482</td>
+<td align="left">2022-07-20</td>
+</tr>
+<tr>
+<td align="left">55</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fluttercandies/flutter_custom_calendar">fluttercandies&#x2F;flutter_custom_calendar</a></td>
+<td align="left">Flutter 的一个日历控件</td>
+<td align="left">479</td>
+<td align="left">2022-02-23</td>
+</tr>
+<tr>
+<td align="left">56</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/designDo/flutter-checkio">designDo&#x2F;flutter-checkio</a></td>
+<td align="left">How time flies.一款开源习惯打卡 APP，流畅的动画体验，Bloc 实现状态管理，主题(颜色)切换，字体切换，数据库管理等。</td>
+<td align="left">458</td>
+<td align="left">2022-03-13</td>
+</tr>
+<tr>
+<td align="left">57</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xdd666t/flutter_use">xdd666t&#x2F;flutter_use</a></td>
+<td align="left">some trick used by flutter Flutter 使用的一些骚操作</td>
+<td align="left">445</td>
+<td align="left">2022-07-02</td>
+</tr>
+<tr>
+<td align="left">58</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/cairuoyu/flutter_admin">cairuoyu&#x2F;flutter_admin</a></td>
+<td align="left">Flutter Admin: 一个基于 Flutter 的后台管理系统、开发模板。A backend management system and development template based on Flutter</td>
+<td align="left">443</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">59</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Im-Kevin/cool_ui">Im-Kevin&#x2F;cool_ui</a></td>
+<td align="left">用 flutter 实现一些我认为好看的 UI 控件,有 Popover,仿 Weui 的 Toast,自定义键盘</td>
+<td align="left">429</td>
+<td align="left">2022-05-25</td>
+</tr>
+<tr>
+<td align="left">60</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/OpenFlutter/flutter_oktoast">OpenFlutter&#x2F;flutter_oktoast</a></td>
+<td align="left">a pure flutter toast library</td>
+<td align="left">419</td>
+<td align="left">2022-05-13</td>
+</tr>
+<tr>
+<td align="left">61</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/qq326646683/flutter_tencentplayer">qq326646683&#x2F;flutter_tencentplayer</a></td>
+<td align="left">支持视频、直播源播放；边下边播放；清晰度、播放速度设置;离线下载；支持下载断点续传</td>
+<td align="left">383</td>
+<td align="left">2022-04-02</td>
+</tr>
+<tr>
+<td align="left">62</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ducafecat/flutter_ducafecat_news_getx">ducafecat&#x2F;flutter_ducafecat_news_getx</a></td>
+<td align="left">flutter2 + dio4 + getx4</td>
+<td align="left">375</td>
+<td align="left">2022-06-15</td>
+</tr>
+<tr>
+<td align="left">63</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/DingMouRen/flutter_tiktok">DingMouRen&#x2F;flutter_tiktok</a></td>
+<td align="left">Flutter Tiktok 抖音实战 🍰🍓🍖🍟🍕🍔</td>
+<td align="left">344</td>
+<td align="left">2022-03-17</td>
+</tr>
+<tr>
+<td align="left">64</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/bladeofgod/Bedrock">bladeofgod&#x2F;Bedrock</a></td>
+<td align="left">一款基于 MVVM+Provider 的快速开发框架。</td>
+<td align="left">343</td>
+<td align="left">2022-02-21</td>
+</tr>
+<tr>
+<td align="left">65</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/hanxu317317/city_pickers">hanxu317317&#x2F;city_pickers</a></td>
+<td align="left">flutter ios city_pickers</td>
+<td align="left">343</td>
+<td align="left">2022-07-15</td>
+</tr>
+<tr>
+<td align="left">66</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/leanflutter/flutter_distributor">leanflutter&#x2F;flutter_distributor</a></td>
+<td align="left">A complete tool for packaging and publishing your Flutter apps.</td>
+<td align="left">339</td>
+<td align="left">2022-07-12</td>
+</tr>
+<tr>
+<td align="left">67</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/togettoyou/flutter-one-app">togettoyou&#x2F;flutter-one-app</a></td>
+<td align="left">🎊 Flutter 仿「ONE·一个」APP</td>
+<td align="left">337</td>
+<td align="left">2022-03-28</td>
+</tr>
+<tr>
+<td align="left">68</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dylanwuzh/flutter-cupertino-date-picker">dylanwuzh&#x2F;flutter-cupertino-date-picker</a></td>
+<td align="left">Flutter cupertino style date picker.</td>
+<td align="left">329</td>
+<td align="left">2022-07-25</td>
+</tr>
+<tr>
+<td align="left">69</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fluttercandies/JsonToDart">fluttercandies&#x2F;JsonToDart</a></td>
+<td align="left">The tool to convert json to dart code, support Windows，Mac，Web.</td>
+<td align="left">315</td>
+<td align="left">2022-07-01</td>
+</tr>
+<tr>
+<td align="left">70</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/user1121114685/Wallpaper_Engine">user1121114685&#x2F;Wallpaper_Engine</a></td>
+<td align="left">一个便捷的创意工坊下载器</td>
+<td align="left">313</td>
+<td align="left">2022-06-15</td>
+</tr>
+<tr>
+<td align="left">71</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/TinoGuo/pin_input_text_field">TinoGuo&#x2F;pin_input_text_field</a></td>
+<td align="left">A textField widget to help display different style pin</td>
+<td align="left">310</td>
+<td align="left">2022-07-23</td>
+</tr>
+<tr>
+<td align="left">72</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/githubliruiyuan/HybridFlutter">githubliruiyuan&#x2F;HybridFlutter</a></td>
+<td align="left">Flutter + V8&#x2F;JsCore 动态化</td>
+<td align="left">296</td>
+<td align="left">2022-07-20</td>
+</tr>
+<tr>
+<td align="left">73</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/gedoor/LegadoFlutter">gedoor&#x2F;LegadoFlutter</a></td>
+<td align="left">阅读 Flutter 版</td>
+<td align="left">292</td>
+<td align="left">2022-02-10</td>
+</tr>
+<tr>
+<td align="left">74</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/385841539/flutter_BaseWidget">385841539&#x2F;flutter_BaseWidget</a></td>
+<td align="left">一个规范 flutter 生命周期的 Widget 基类，并且封装了基本属性，加快开发速度，常见的自定义控件~完善的网络请求封装，功能非常全。</td>
+<td align="left">286</td>
+<td align="left">2022-03-15</td>
+</tr>
+<tr>
+<td align="left">75</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/yxwandroid/flutter_plugin_record">yxwandroid&#x2F;flutter_plugin_record</a></td>
+<td align="left">flutter 仿微信录制语音功能 支持 android 和 ios</td>
+<td align="left">276</td>
+<td align="left">2022-05-25</td>
+</tr>
+<tr>
+<td align="left">76</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jhflovehqy/flutter_bolg_manage">jhflovehqy&#x2F;flutter_bolg_manage</a></td>
+<td align="left">Flutter 实战项目，采用 Getx 框架管理，遵循 Material design 设计风格，适合您实战参考或练手</td>
+<td align="left">270</td>
+<td align="left">2022-05-05</td>
+</tr>
+<tr>
+<td align="left">77</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/iota9star/mikan_flutter">iota9star&#x2F;mikan_flutter</a></td>
+<td align="left">Flutter 驱动的三方 蜜柑计划（<a target="_blank" rel="noopener" href="https://mikanani.me)/">https://mikanani.me）</a> APP，:construction: 开发中…</td>
+<td align="left">270</td>
+<td align="left">2022-07-28</td>
+</tr>
+<tr>
+<td align="left">78</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/JonasWanke/timetable">JonasWanke&#x2F;timetable</a></td>
+<td align="left">📅 Customizable flutter calendar widget including day and week views</td>
+<td align="left">268</td>
+<td align="left">2022-06-08</td>
+</tr>
+<tr>
+<td align="left">79</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/leetomlee123/book">leetomlee123&#x2F;book</a></td>
+<td align="left">笔趣阁源基于 flutter 的小说阅读 app</td>
+<td align="left">267</td>
+<td align="left">2022-06-20</td>
+</tr>
+<tr>
+<td align="left">80</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/flutterchina/nine_grid_view">flutterchina&#x2F;nine_grid_view</a></td>
+<td align="left">Flutter NineGridView &amp; DragSortView. Similar to Weibo &#x2F; WeChat nine grid view controls to display pictures. Flutter 仿微信&#x2F;微博九宫格、拖拽排序，微信群组，钉钉群组，QQ 讨论组头像。</td>
+<td align="left">266</td>
+<td align="left">2022-06-10</td>
+</tr>
+<tr>
+<td align="left">81</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/flutter-thrio/flutter_thrio">flutter-thrio&#x2F;flutter_thrio</a></td>
+<td align="left">flutter_thrio makes it easy and fast to add flutter to existing mobile applications, and provide a simple and consistent navigator APIs.</td>
+<td align="left">262</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">82</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/OpenIMSDK/Open-IM-SDK-Flutter">OpenIMSDK&#x2F;Open-IM-SDK-Flutter</a></td>
+<td align="left">OpenIM 开源即时通讯(IM)系统 flutter sdk</td>
+<td align="left">256</td>
+<td align="left">2022-07-22</td>
+</tr>
+<tr>
+<td align="left">83</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/black-currant/novel-fpg">black-currant&#x2F;novel-fpg</a></td>
+<td align="left">小说开源项目，前端基于 Flutter，后端是 Python + Go 双端，各自基于 Flask、Gin 实现了一遍，包含了用户注册、登录、jwt 鉴权、签到、任务、书架、阅读器、购买章节、搜索书籍、绑定第三方账号、设置等功能。</td>
+<td align="left">253</td>
+<td align="left">2022-06-03</td>
+</tr>
+<tr>
+<td align="left">84</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/luckysmg/flutter_swipe_action_cell">luckysmg&#x2F;flutter_swipe_action_cell</a></td>
+<td align="left">A flutter UI package provides a cell widget that has leading and trailing swipe action menu.</td>
+<td align="left">246</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">85</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/niuhuan/nhentai-cross">niuhuan&#x2F;nhentai-cross</a></td>
+<td align="left">A nhentai client</td>
+<td align="left">242</td>
+<td align="left">2022-07-04</td>
+</tr>
+<tr>
+<td align="left">86</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/hurshi/dio-http-cache">hurshi&#x2F;dio-http-cache</a></td>
+<td align="left">http cache lib for Flutter dio like RxCache</td>
+<td align="left">237</td>
+<td align="left">2022-07-06</td>
+</tr>
+<tr>
+<td align="left">87</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/RxReader/alipay_kit">RxReader&#x2F;alipay_kit</a></td>
+<td align="left">flutter 版支付宝登录&#x2F;支付</td>
+<td align="left">233</td>
+<td align="left">2022-07-29</td>
+</tr>
+<tr>
+<td align="left">88</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/project-violet/violet">project-violet&#x2F;violet</a></td>
+<td align="left">Flutter based Viewer App</td>
+<td align="left">229</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">89</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/easemob/im_flutter_sdk">easemob&#x2F;im_flutter_sdk</a></td>
+<td align="left">环信 im flutter sdk, example 中包含 ui 代码.</td>
+<td align="left">227</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">90</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/softfatgay/flutter-netease">softfatgay&#x2F;flutter-netease</a></td>
+<td align="left">深度还原网易严选 webApp，Flutter 项目，接口为真实数据。项目已完善</td>
+<td align="left">224</td>
+<td align="left">2022-07-05</td>
+</tr>
+<tr>
+<td align="left">91</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zhaolongs/flutter-ho">zhaolongs&#x2F;flutter-ho</a></td>
+<td align="left">flutter 快速开发模版、脚手架</td>
+<td align="left">222</td>
+<td align="left">2022-04-25</td>
+</tr>
+<tr>
+<td align="left">92</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xuexiangjys/flutter_xupdate">xuexiangjys&#x2F;flutter_xupdate</a></td>
+<td align="left">A Flutter plugin for XUpdate(Android Version Update Library)</td>
+<td align="left">218</td>
+<td align="left">2022-07-07</td>
+</tr>
+<tr>
+<td align="left">93</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/OpenFlutter/flutter_listview_loadmore">OpenFlutter&#x2F;flutter_listview_loadmore</a></td>
+<td align="left">flutter loadmore demos</td>
+<td align="left">214</td>
+<td align="left">2022-02-20</td>
+</tr>
+<tr>
+<td align="left">94</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/JiangJuHong/FlutterTencentImPlugin">JiangJuHong&#x2F;FlutterTencentImPlugin</a></td>
+<td align="left">腾讯即时通讯(IM)，Flutter 插件</td>
+<td align="left">213</td>
+<td align="left">2022-06-18</td>
+</tr>
+<tr>
+<td align="left">95</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/rongcloud/rongcloud-im-flutter-sdk">rongcloud&#x2F;rongcloud-im-flutter-sdk</a></td>
+<td align="left">IM Flutter SDK of RongCloud</td>
+<td align="left">202</td>
+<td align="left">2022-07-22</td>
+</tr>
+<tr>
+<td align="left">96</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/KevinZhang19870314/flutter_getx_boilerplate">KevinZhang19870314&#x2F;flutter_getx_boilerplate</a></td>
+<td align="left">A flutter boilerplate project with GetX state management.</td>
+<td align="left">191</td>
+<td align="left">2022-07-28</td>
+</tr>
+<tr>
+<td align="left">97</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ducafecat/getx_quick_start">ducafecat&#x2F;getx_quick_start</a></td>
+<td align="left">getx 功能整理: 路由、中间件、组件、状态、多语言、样式</td>
+<td align="left">191</td>
+<td align="left">2022-07-19</td>
+</tr>
+<tr>
+<td align="left">98</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/gstory0404/flutter_unionad">gstory0404&#x2F;flutter_unionad</a></td>
+<td align="left">字节跳动 穿山甲广告 SDK Bytedance-UnionAD flutter 版本插件</td>
+<td align="left">178</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">99</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/2697a/bujuan">2697a&#x2F;bujuan</a></td>
+<td align="left">Flutter 三方网易云</td>
+<td align="left">176</td>
+<td align="left">2022-03-15</td>
+</tr>
+<tr>
+<td align="left">100</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/meetqy/flutter_luckin_coffee">meetqy&#x2F;flutter_luckin_coffee</a></td>
+<td align="left">flutter luckin coffee application（仿瑞幸咖啡）</td>
+<td align="left">168</td>
+<td align="left">2022-07-01</td>
+</tr>
+<tr>
+<td align="left">101</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/nightmare-space/adb_tool">nightmare-space&#x2F;adb_tool</a></td>
+<td align="left">使用 Flutter 开发的 ADB GUI 客户端</td>
+<td align="left">164</td>
+<td align="left">2022-07-30</td>
+</tr>
+<tr>
+<td align="left">102</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/git-xiaocao/pixiv_func_mobile">git-xiaocao&#x2F;pixiv_func_mobile</a></td>
+<td align="left">功能齐全的 Pixiv 第三方客户端 免代理 支持查看动图查看直播</td>
+<td align="left">162</td>
+<td align="left">2022-07-30</td>
+</tr>
+<tr>
+<td align="left">103</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/TinoGuo/loading_indicator">TinoGuo&#x2F;loading_indicator</a></td>
+<td align="left">🚅Flutter out-of-the-box collection animations written in pure dart.</td>
+<td align="left">161</td>
+<td align="left">2022-07-22</td>
+</tr>
+<tr>
+<td align="left">104</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/chenxianqi/kefu_server">chenxianqi&#x2F;kefu_server</a></td>
+<td align="left">基于 MIMC 小米消息云实现的客服系统</td>
+<td align="left">160</td>
+<td align="left">2022-07-21</td>
+</tr>
+<tr>
+<td align="left">105</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/niuhuan/daisy">niuhuan&#x2F;daisy</a></td>
+<td align="left">美观易用且无广告的漫画和轻小说客户端, 同时支持 MacOS，Windows，Android，iOS。类似动漫之家。</td>
+<td align="left">152</td>
+<td align="left">2022-07-04</td>
+</tr>
+<tr>
+<td align="left">106</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/simplezhli/flutter_2d_amap">simplezhli&#x2F;flutter_2d_amap</a></td>
+<td align="left">Flutter 高德 2D 地图插件（支持 Android、iOS、Web）</td>
+<td align="left">145</td>
+<td align="left">2022-07-03</td>
+</tr>
+<tr>
+<td align="left">107</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/feiyu-rs/lime">feiyu-rs&#x2F;lime</a></td>
+<td align="left">青柠记账是一个基于 Flutter 3.0 的开源项目，致力于做一款清爽、干净、简洁、无广告的应用程序。</td>
+<td align="left">140</td>
+<td align="left">2022-07-14</td>
+</tr>
+<tr>
+<td align="left">108</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Wolfteam/Shiori">Wolfteam&#x2F;Shiori</a></td>
+<td align="left">The app you need for Genshin Impact</td>
+<td align="left">135</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">109</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/nightmare-space/vscode_for_android">nightmare-space&#x2F;vscode_for_android</a></td>
+<td align="left">安卓本地使用 vs code 编辑器实现方案</td>
+<td align="left">133</td>
+<td align="left">2022-07-19</td>
+</tr>
+<tr>
+<td align="left">110</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/asjqkkkk/markdown_widget">asjqkkkk&#x2F;markdown_widget</a></td>
+<td align="left">📖Rendering markdown by flutter！Welcome for pr and issue.</td>
+<td align="left">132</td>
+<td align="left">2022-05-28</td>
+</tr>
+<tr>
+<td align="left">111</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/abcd498936590/flutter_eyepetizer">abcd498936590&#x2F;flutter_eyepetizer</a></td>
+<td align="left">使用 Flutter + GetX 仿开眼视频 app</td>
+<td align="left">126</td>
+<td align="left">2022-02-08</td>
+</tr>
+<tr>
+<td align="left">112</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/gfaraday/g_faraday">gfaraday&#x2F;g_faraday</a></td>
+<td align="left">A plugin for building hybrid stack apps with flutter</td>
+<td align="left">125</td>
+<td align="left">2022-07-01</td>
+</tr>
+<tr>
+<td align="left">113</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/nullptrX/pangle_flutter">nullptrX&#x2F;pangle_flutter</a></td>
+<td align="left">Flutter 版穿山甲 SDK，支持 Android、iOS。A Flutter plugin that supports Pangle SDK on Android and iOS.</td>
+<td align="left">120</td>
+<td align="left">2022-07-19</td>
+</tr>
+<tr>
+<td align="left">114</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/GetuiLaboratory/getui-flutter-plugin">GetuiLaboratory&#x2F;getui-flutter-plugin</a></td>
+<td align="left">个推官方提供的推送 SDK Flutter 插件（支持 Android &amp; iOS）</td>
+<td align="left">120</td>
+<td align="left">2022-05-31</td>
+</tr>
+<tr>
+<td align="left">115</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/manuelvargastapia/libgen_mobile_app">manuelvargastapia&#x2F;libgen_mobile_app</a></td>
+<td align="left">-</td>
+<td align="left">119</td>
+<td align="left">2022-04-27</td>
+</tr>
+<tr>
+<td align="left">116</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/arcticfox1919/flutter_new_retail">arcticfox1919&#x2F;flutter_new_retail</a></td>
+<td align="left">a new retail project</td>
+<td align="left">119</td>
+<td align="left">2022-04-16</td>
+</tr>
+<tr>
+<td align="left">117</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/YangChengxxyy/cloudreve_flutter">YangChengxxyy&#x2F;cloudreve_flutter</a></td>
+<td align="left">使用 Flutter 编写的移动端</td>
+<td align="left">118</td>
+<td align="left">2022-04-11</td>
+</tr>
+<tr>
+<td align="left">118</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/chaldea-center/chaldea">chaldea-center&#x2F;chaldea</a></td>
+<td align="left">Chaldea - Yet Another Material Planner for Fate&#x2F;Grand Order</td>
+<td align="left">114</td>
+<td align="left">2022-07-31</td>
+</tr>
+<tr>
+<td align="left">119</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/tp7309/flutter_sticky_and_expandable_list">tp7309&#x2F;flutter_sticky_and_expandable_list</a></td>
+<td align="left">粘性头部与分组列表 Sliver 实现 Build a grouped list, which support expand&#x2F;collapse section and sticky headers, support use it with sliver widget.</td>
+<td align="left">113</td>
+<td align="left">2022-07-27</td>
+</tr>
+<tr>
+<td align="left">120</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Mayandev/django_morec">Mayandev&#x2F;django_morec</a></td>
+<td align="left">🎬 一个非常精美的电影推荐应用，使用 Flutter 与 Django 进行构建，可根据用户收藏的电影、演员、标签，定时生成推荐列表以及相应的推荐解释。</td>
+<td align="left">113</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">121</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/mapleafgo/clash-for-flutter">mapleafgo&#x2F;clash-for-flutter</a></td>
+<td align="left">Clash 的桌面客户端，支持 windows、linux、macos</td>
+<td align="left">111</td>
+<td align="left">2022-04-18</td>
+</tr>
+<tr>
+<td align="left">122</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/losgif/sail">losgif&#x2F;sail</a></td>
+<td align="left">A flutter demo client application for v2board.</td>
+<td align="left">106</td>
+<td align="left">2022-07-05</td>
+</tr>
+<tr>
+<td align="left">123</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ekibun/flutter_qjs">ekibun&#x2F;flutter_qjs</a></td>
+<td align="left">A quickjs engine for flutter.</td>
+<td align="left">106</td>
+<td align="left">2022-05-19</td>
+</tr>
+<tr>
+<td align="left">124</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/appdev/FlutterToast">appdev&#x2F;FlutterToast</a></td>
+<td align="left">Flutter Toast 使用 Flutter 原生 API 实现的 Toast 功能</td>
+<td align="left">104</td>
+<td align="left">2022-06-26</td>
+</tr>
+<tr>
+<td align="left">125</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/niezhiyang/flutter_autosize_screen">niezhiyang&#x2F;flutter_autosize_screen</a></td>
+<td align="left">A low-cost Flutter screen adaptation solution（一个极低成本的 Flutter 屏幕适配方案）</td>
+<td align="left">103</td>
+<td align="left">2022-05-22</td>
+</tr>
+<tr>
+<td align="left">126</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/SpicyChair/pluvia_weather_flutter">SpicyChair&#x2F;pluvia_weather_flutter</a></td>
+<td align="left">A weather app with beautiful animations, built with Flutter. Uses the OpenWeatherMap API and MapBox API.</td>
+<td align="left">103</td>
+<td align="left">2022-07-27</td>
+</tr>
+<tr>
+<td align="left">127</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/huage2580/yuedu_hd">huage2580&#x2F;yuedu_hd</a></td>
+<td align="left">阅读 hd_flutter</td>
+<td align="left">99</td>
+<td align="left">2022-03-30</td>
+</tr>
+<tr>
+<td align="left">128</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/RandyWei/flt_video_player">RandyWei&#x2F;flt_video_player</a></td>
+<td align="left">基于腾讯云点播播放器的 Flutter 插件</td>
+<td align="left">98</td>
+<td align="left">2022-05-17</td>
+</tr>
+<tr>
+<td align="left">129</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/DanXi-Dev/DanXi">DanXi-Dev&#x2F;DanXi</a></td>
+<td align="left">[Windows &#x2F; Mac &#x2F; Android &#x2F; iOS] Maybe the best all-rounded service app for Fudan University students. 可能是复旦学生最好的第三方校园服务 APP。</td>
+<td align="left">94</td>
+<td align="left">2022-07-23</td>
+</tr>
+<tr>
+<td align="left">130</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/arcticfox1919/LuaDardo">arcticfox1919&#x2F;LuaDardo</a></td>
+<td align="left">A Lua virtual machine written in Dart</td>
+<td align="left">94</td>
+<td align="left">2022-04-09</td>
+</tr>
+<tr>
+<td align="left">131</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/VenusCao/x5_webview_flutter">VenusCao&#x2F;x5_webview_flutter</a></td>
+<td align="left">一个基于腾讯 x5 引擎的 webview flutter 插件，简化集成，一行代码打开视频播放，暂时只支持 android 使用</td>
+<td align="left">94</td>
+<td align="left">2022-03-22</td>
+</tr>
+<tr>
+<td align="left">132</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/doaspx/flutter_stock">doaspx&#x2F;flutter_stock</a></td>
+<td align="left">股票软件 一个 flutter 实现 股票软件 炒股软件 包含的功能有 分时线，K 线，筹码分布等， 5 档行情，成交量，KDJ，MACD ，普通坐标，对数坐标， 叠加功能；添加二级指标功能</td>
+<td align="left">93</td>
+<td align="left">2022-02-10</td>
+</tr>
+<tr>
+<td align="left">133</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/masterxing/flutter_cloud_music">masterxing&#x2F;flutter_cloud_music</a></td>
+<td align="left">🔥🔥🔥Flutter 网易云音乐 App，高度还原网易云音乐 App</td>
+<td align="left">92</td>
+<td align="left">2022-05-27</td>
+</tr>
+<tr>
+<td align="left">134</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jiusanzhou/flutter_floatwing">jiusanzhou&#x2F;flutter_floatwing</a></td>
+<td align="left">A Flutter plugin that makes it easier to make floating&#x2F;overlay window for Android with pure Flutter. 一个可以用纯粹的 Flutter 来开发 Android 浮动窗口的插件。</td>
+<td align="left">89</td>
+<td align="left">2022-07-11</td>
+</tr>
+<tr>
+<td align="left">135</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/hanerx/dcomic">hanerx&#x2F;dcomic</a></td>
+<td align="left">a simple comic viewer</td>
+<td align="left">85</td>
+<td align="left">2022-02-01</td>
+</tr>
+<tr>
+<td align="left">136</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/AmosHuKe/Mood-Example">AmosHuKe&#x2F;Mood-Example</a></td>
+<td align="left">🐦 Flutter 3.0 心情记录 样例工程 - 国际化 i18n、uni 小程序、深色模式、多主题、本地数据管理、路由管理、状态管理（MVVM）、无障碍（Semantics）、集成测试、图表统计、Excel 导入导出、游戏……</td>
+<td align="left">83</td>
+<td align="left">2022-07-22</td>
+</tr>
+<tr>
+<td align="left">137</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/iconfont-cli/flutter-iconfont-cli">iconfont-cli&#x2F;flutter-iconfont-cli</a></td>
+<td align="left">在 flutter 中使用 iconfont 图标，不依赖字体，支持多色彩</td>
+<td align="left">83</td>
+<td align="left">2022-03-24</td>
+</tr>
+<tr>
+<td align="left">138</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/wuweijian1997/FlutterCountdownTimer">wuweijian1997&#x2F;FlutterCountdownTimer</a></td>
+<td align="left">A flutter countdown timer. [10 days 5:30:46] ⬇⬇⬇⬇ flutter 倒计时</td>
+<td align="left">82</td>
+<td align="left">2022-04-09</td>
+</tr>
+<tr>
+<td align="left">139</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/sunyongsheng/Allpass">sunyongsheng&#x2F;Allpass</a></td>
+<td align="left">Allpass 是一款简洁的私密信息管理工具，包括密码管理与卡片信息管理，支持指纹解锁软件、csv 导入导出、从 Chrome 中导入、从剪贴板中导入、文件夹与标签功能、收藏与备注功能、密码生成器、WebDAV 同步等功能，采用 Flutter 构建</td>
+<td align="left">82</td>
+<td align="left">2022-05-12</td>
+</tr>
+<tr>
+<td align="left">140</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zhaolongs/Flutter_Fai_Webview">zhaolongs&#x2F;Flutter_Fai_Webview</a></td>
+<td align="left">Flutter 加载 Html 插件，Flutter 与 JS 的双向互调</td>
+<td align="left">80</td>
+<td align="left">2022-03-16</td>
+</tr>
+<tr>
+<td align="left">141</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/meetqy/flutter_dating_template">meetqy&#x2F;flutter_dating_template</a></td>
+<td align="left">flutter 版本的交友 app 模板，总计页面 35 个，测试数据基于 mockjs 创建（A dating app template for The Flutter version, with a total of 35 pages, was created based on MockJS.）</td>
+<td align="left">79</td>
+<td align="left">2022-07-01</td>
+</tr>
+<tr>
+<td align="left">142</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ZzzM/Flutter-Movies">ZzzM&#x2F;Flutter-Movies</a></td>
+<td align="left">A movies news App developed by Flutter</td>
+<td align="left">77</td>
+<td align="left">2022-04-07</td>
+</tr>
+<tr>
+<td align="left">143</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/niuhuan/wax">niuhuan&#x2F;wax</a></td>
+<td align="left">“绅士漫画”的客户端</td>
+<td align="left">75</td>
+<td align="left">2022-07-25</td>
+</tr>
+<tr>
+<td align="left">144</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fluttercandies/left-scroll-actions">fluttercandies&#x2F;left-scroll-actions</a></td>
+<td align="left">Flutter 的左滑删除组件</td>
+<td align="left">75</td>
+<td align="left">2022-08-01</td>
+</tr>
+<tr>
+<td align="left">145</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Yingzi-Technology/flutter_dynamic">Yingzi-Technology&#x2F;flutter_dynamic</a></td>
+<td align="left">The flutter_dynamic is a library that create flutter application dynamic.</td>
+<td align="left">73</td>
+<td align="left">2022-03-22</td>
+</tr>
+<tr>
+<td align="left">146</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ChimeraFlutter/Chimera-Flutter-Code-Push">ChimeraFlutter&#x2F;Chimera-Flutter-Code-Push</a></td>
+<td align="left">This SDK helps Flutter implement Code Push(热更新). Official Blog: <a target="_blank" rel="noopener" href="https://medium.com/@chimerapush">https://medium.com/@chimerapush</a></td>
+<td align="left">71</td>
+<td align="left">2022-04-02</td>
+</tr>
+<tr>
+<td align="left">147</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/LuckyLi706/flutter_mobile_command_tools">LuckyLi706&#x2F;flutter_mobile_command_tools</a></td>
+<td align="left">flutter 写的桌面可视化操作 android 和 ios 的简单命令</td>
+<td align="left">71</td>
+<td align="left">2022-07-11</td>
+</tr>
+<tr>
+<td align="left">148</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Enough-Software/enough_mail">Enough-Software&#x2F;enough_mail</a></td>
+<td align="left">IMAP, POP3 and SMTP clients for Dart developers. Contains both low level as well as a high level API.</td>
+<td align="left">70</td>
+<td align="left">2022-06-30</td>
+</tr>
+<tr>
+<td align="left">149</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/RPMTW/RPMLauncher">RPMTW&#x2F;RPMLauncher</a></td>
+<td align="left">A better Minecraft Launcher that supports cross-platform and many functionalities for you to explore!</td>
+<td align="left">69</td>
+<td align="left">2022-07-16</td>
+</tr>
+<tr>
+<td align="left">150</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/finogeeks/finclip-flutter-demo">finogeeks&#x2F;finclip-flutter-demo</a></td>
+<td align="left">FinClip Flutter 运行环境，让小程序在 Flutter 应用中无缝运行 &#x2F; Flutter DEMO for FinClip</td>
+<td align="left">69</td>
+<td align="left">2022-06-29</td>
+</tr>
+<tr>
+<td align="left">151</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/liujiakuoyx/leak_detector">liujiakuoyx&#x2F;leak_detector</a></td>
+<td align="left">flutter memory leak detector.</td>
+<td align="left">67</td>
+<td align="left">2022-05-05</td>
+</tr>
+<tr>
+<td align="left">152</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/flutting/ff_stars">flutting&#x2F;ff_stars</a></td>
+<td align="left">Flutter 的星星评价组件.</td>
+<td align="left">67</td>
+<td align="left">2022-07-13</td>
+</tr>
+<tr>
+<td align="left">153</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/liuchuancong/parse_video">liuchuancong&#x2F;parse_video</a></td>
+<td align="left">抖音&#x2F;皮皮虾&#x2F;火山&#x2F;微视&#x2F;微博&#x2F;绿洲&#x2F;最右&#x2F;轻视频&#x2F;instagram&#x2F;哔哩哔哩&#x2F;快手&#x2F;全民小视频&#x2F;皮皮搞笑&#x2F;全民 k 歌&#x2F;巴塞电影&#x2F;陌陌&#x2F;Before 避风&#x2F;开眼&#x2F;Vue Vlog&#x2F;小咖秀&#x2F;西瓜视频&#x2F;逗拍&#x2F;虎牙&#x2F;6 间房&#x2F;新片场&#x2F;Acfun&#x2F;美拍</td>
+<td align="left">67</td>
+<td align="left">2022-03-28</td>
+</tr>
+<tr>
+<td align="left">154</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/HQAnime/AnimeOne">HQAnime&#x2F;AnimeOne</a></td>
+<td align="left">anime1 的非官方 APP</td>
+<td align="left">67</td>
+<td align="left">2022-07-02</td>
+</tr>
+<tr>
+<td align="left">155</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/yungzhu/flutter_link_preview">yungzhu&#x2F;flutter_link_preview</a></td>
+<td align="left">This is a Flutter URL preview plugin for Flutter that previews the content of a URL</td>
+<td align="left">66</td>
+<td align="left">2022-03-21</td>
+</tr>
+<tr>
+<td align="left">156</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/LuckyLi706/short_video_spider_client">LuckyLi706&#x2F;short_video_spider_client</a></td>
+<td align="left">短视频下载器客户端</td>
+<td align="left">65</td>
+<td align="left">2022-07-25</td>
+</tr>
+<tr>
+<td align="left">157</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fluttercandies/flutter_resource_generator">fluttercandies&#x2F;flutter_resource_generator</a></td>
+<td align="left">Generate an R file for mapping all assets. Supports preview of image.</td>
+<td align="left">63</td>
+<td align="left">2022-03-30</td>
+</tr>
+<tr>
+<td align="left">158</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/LunaGao/flag_flutter">LunaGao&#x2F;flag_flutter</a></td>
+<td align="left">flag icons</td>
+<td align="left">61</td>
+<td align="left">2022-07-17</td>
+</tr>
+<tr>
+<td align="left">159</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/niuhuan/pansy">niuhuan&#x2F;pansy</a></td>
+<td align="left">A illustration client.</td>
+<td align="left">58</td>
+<td align="left">2022-07-01</td>
+</tr>
+<tr>
+<td align="left">160</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/yungzhu/rich_input">yungzhu&#x2F;rich_input</a></td>
+<td align="left">Rich input box, implement @someone and subject with color highlighting</td>
+<td align="left">58</td>
+<td align="left">2022-03-21</td>
+</tr>
+<tr>
+<td align="left">161</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/tec8297729/flutter_flexible">tec8297729&#x2F;flutter_flexible</a></td>
+<td align="left">flutter 脚手架，让你更专注 UI 层</td>
+<td align="left">58</td>
+<td align="left">2022-07-24</td>
+</tr>
+<tr>
+<td align="left">162</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/qinglong-app/qinglong_app">qinglong-app&#x2F;qinglong_app</a></td>
+<td align="left">采用 Flutter 编写,基于 qinglongAPI 实现的三方客户端</td>
+<td align="left">55</td>
+<td align="left">2022-04-25</td>
+</tr>
+<tr>
+<td align="left">163</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/LiteAVSDK/TRTC_Flutter">LiteAVSDK&#x2F;TRTC_Flutter</a></td>
+<td align="left">High-quality Interactive Audio&#x2F;Video Flutter SDK</td>
+<td align="left">55</td>
+<td align="left">2022-07-28</td>
+</tr>
+<tr>
+<td align="left">164</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/handoing/flutter_page_transition">handoing&#x2F;flutter_page_transition</a></td>
+<td align="left">A rich, convenient, easy-to-use flutter page transition package</td>
+<td align="left">55</td>
+<td align="left">2022-02-07</td>
+</tr>
+<tr>
+<td align="left">165</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xxxDeveloper/flutter-adapter">xxxDeveloper&#x2F;flutter-adapter</a></td>
+<td align="left">📱 基于 flutter 的屏幕适配方案 &#x2F; screen adaptation scheme based on flutter</td>
+<td align="left">54</td>
+<td align="left">2022-04-09</td>
+</tr>
+<tr>
+<td align="left">166</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/JRY1009/lighthouse_flutter">JRY1009&#x2F;lighthouse_flutter</a></td>
+<td align="left">flutter 练手项目，组件化，mvvm，热更新，dio，websocket，多语言，多渠道打包，K 线图，分时图，Componentization，kline，timeline</td>
+<td align="left">52</td>
+<td align="left">2022-05-14</td>
+</tr>
+<tr>
+<td align="left">167</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/good-good-study/flutter_chart">good-good-study&#x2F;flutter_chart</a></td>
+<td align="left">flutter canvas 绘制</td>
+<td align="left">52</td>
+<td align="left">2022-07-05</td>
+</tr>
+<tr>
+<td align="left">168</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Soneso/stellar_flutter_sdk">Soneso&#x2F;stellar_flutter_sdk</a></td>
+<td align="left">Stellar SDK for flutter - dart, Stellar, Horizon, Soneso</td>
+<td align="left">51</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">169</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/finogeeks/mop-flutter-sdk">finogeeks&#x2F;mop-flutter-sdk</a></td>
+<td align="left">FinClip 小程序 Flutter SDK 插件，用于在 Flutter 应用中运行小程序 &#x2F; Flutter SDK for FinClip</td>
+<td align="left">50</td>
+<td align="left">2022-07-16</td>
+</tr>
+<tr>
+<td align="left">170</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fuusy/flutter_read">fuusy&#x2F;flutter_read</a></td>
+<td align="left">A flutter project， 一款 Flutter 实战项目，已空安全适配，封装各种 UI 组件，网络组件以及使用 peovider 进行状态管理。</td>
+<td align="left">49</td>
+<td align="left">2022-03-13</td>
+</tr>
+<tr>
+<td align="left">171</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/TencentCloud/TPNS-Flutter-Plugin">TencentCloud&#x2F;TPNS-Flutter-Plugin</a></td>
+<td align="left">-</td>
+<td align="left">49</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">172</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/kangjianqun/fast_mvvm">kangjianqun&#x2F;fast_mvvm</a></td>
+<td align="left">MVVM</td>
+<td align="left">49</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">173</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/yungzhu/let_log">yungzhu&#x2F;let_log</a></td>
+<td align="left">LetLog is a Flutter log system that supports both IDE and in-app display, and supports log and network</td>
+<td align="left">47</td>
+<td align="left">2022-06-09</td>
+</tr>
+<tr>
+<td align="left">174</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/bmob/bmob-flutter-sdk">bmob&#x2F;bmob-flutter-sdk</a></td>
+<td align="left">Bmob Flutter SDK</td>
+<td align="left">47</td>
+<td align="left">2022-06-02</td>
+</tr>
+<tr>
+<td align="left">175</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Termare/termare_app">Termare&#x2F;termare_app</a></td>
+<td align="left">使用 Flutter 开发的多平台终端模拟器，Termare 类似于 Termux ，在安卓端有独立的源，但支持多个平台，还在大量的开发与测试中~</td>
+<td align="left">46</td>
+<td align="left">2022-05-13</td>
+</tr>
+<tr>
+<td align="left">176</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/6tail/lunar-flutter">6tail&#x2F;lunar-flutter</a></td>
+<td align="left">日历、公历(阳历)、农历(阴历、老黄历)、道历、佛历，支持节假日、星座、儒略日、干支、生肖、节气、节日、彭祖百忌、每日宜忌、吉神宜趋凶煞宜忌、吉神(喜神&#x2F;福神&#x2F;财神&#x2F;阳贵神&#x2F;阴贵神)方位、胎神方位、冲煞、纳音、星宿、八字、五行、十神、建除十二值星、青龙名堂等十二神、黄道黑道日及吉凶等。lunar is a calendar library for Solar and Chinese Lunar.</td>
+<td align="left">45</td>
+<td align="left">2022-07-04</td>
+</tr>
+<tr>
+<td align="left">177</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zegoim/zego-express-flutter-sdk">zegoim&#x2F;zego-express-flutter-sdk</a></td>
+<td align="left">ZEGO RTC SDK for Flutter</td>
+<td align="left">44</td>
+<td align="left">2022-07-28</td>
+</tr>
+<tr>
+<td align="left">178</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/kfiross/flutter_holo_date_picker">kfiross&#x2F;flutter_holo_date_picker</a></td>
+<td align="left">A Flutter package of datepicker like Holo Theme in Android</td>
+<td align="left">44</td>
+<td align="left">2022-07-23</td>
+</tr>
+<tr>
+<td align="left">179</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Coder-ZhaoLu/Getx-PinkApp">Coder-ZhaoLu&#x2F;Getx-PinkApp</a></td>
+<td align="left">仿哔哩哔哩 App，二次元，动漫，app，网站，ACG，flutter，使用 getx_cli 进行重构</td>
+<td align="left">43</td>
+<td align="left">2022-04-19</td>
+</tr>
+<tr>
+<td align="left">180</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/WheretoSleepinNJU/NJU-Class-Shedule-Flutter">WheretoSleepinNJU&#x2F;NJU-Class-Shedule-Flutter</a></td>
+<td align="left">🍻 南哪课表 APP Written in Flutter</td>
+<td align="left">43</td>
+<td align="left">2022-07-17</td>
+</tr>
+<tr>
+<td align="left">181</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/waifu-project/movie">waifu-project&#x2F;movie</a></td>
+<td align="left">一个支持扩展播放源的播放器</td>
+<td align="left">42</td>
+<td align="left">2022-06-05</td>
+</tr>
+<tr>
+<td align="left">182</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/wuyuanwuhui99/flutter-movie-app-ui">wuyuanwuhui99&#x2F;flutter-movie-app-ui</a></td>
+<td align="left">基于 flutter 开发的混合电影 app，后端采用 springboot+mybatis+mysql 开发，有 react-native 版本，参见个人主页 springboot 和 react-native 项目包括底部 tab 导航,，首页，电影，电视剧，我的，搜索页，分类页，电影详情页，播放页，登录，注册，浏览记录，播放记录，收藏，缓存，电影排行榜等页面和模块，功能齐全完善，所有数据来自 python 爬虫程序，抓取 …</td>
+<td align="left">41</td>
+<td align="left">2022-05-30</td>
+</tr>
+<tr>
+<td align="left">183</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/mdddj/flutter_simple_shop">mdddj&#x2F;flutter_simple_shop</a></td>
+<td align="left">flutter 商城，淘宝客 app</td>
+<td align="left">40</td>
+<td align="left">2022-07-29</td>
+</tr>
+<tr>
+<td align="left">184</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/deskbtm/Aqua">deskbtm&#x2F;Aqua</a></td>
+<td align="left">使用 Flutter 开发的一款优雅至极的文件管理器</td>
+<td align="left">40</td>
+<td align="left">2022-03-07</td>
+</tr>
+<tr>
+<td align="left">185</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/CustedNG/CustedNG">CustedNG&#x2F;CustedNG</a></td>
+<td align="left">Custed NG，致力于你的校园生活</td>
+<td align="left">40</td>
+<td align="left">2022-07-20</td>
+</tr>
+<tr>
+<td align="left">186</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/CaiJingLong/dart_image_size_getter">CaiJingLong&#x2F;dart_image_size_getter</a></td>
+<td align="left">Use dart file api to get image size, needn’t use decode. just read the metadata.</td>
+<td align="left">40</td>
+<td align="left">2022-07-11</td>
+</tr>
+<tr>
+<td align="left">187</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zegoim/zego-flutter-sdk">zegoim&#x2F;zego-flutter-sdk</a></td>
+<td align="left">[Deprecated] LiveRoom Flutter SDK</td>
+<td align="left">39</td>
+<td align="left">2022-06-27</td>
+</tr>
+<tr>
+<td align="left">188</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Shimingli/FlutterApp">Shimingli&#x2F;FlutterApp</a></td>
+<td align="left">:lollipop: FlutterApp（第一个使用 Flutter 开发的移动项目）</td>
+<td align="left">39</td>
+<td align="left">2022-02-24</td>
+</tr>
+<tr>
+<td align="left">189</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/idootop/feiyu_flutter">idootop&#x2F;feiyu_flutter</a></td>
+<td align="left">A flutter video player that’s too pretty to be a powerhouse. 一个漂亮得不像实力派的 flutter 视频播放器。</td>
+<td align="left">38</td>
+<td align="left">2022-03-27</td>
+</tr>
+<tr>
+<td align="left">190</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Tecode/flutter_widget">Tecode&#x2F;flutter_widget</a></td>
+<td align="left">Flutter 视频播放，自适应高度轮播图，视频作为背景的登录页面</td>
+<td align="left">38</td>
+<td align="left">2022-06-13</td>
+</tr>
+<tr>
+<td align="left">191</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/gooking/apifm-flutter">gooking&#x2F;apifm-flutter</a></td>
+<td align="left">Flutter 的云开发支持，无需服务器，无需开发接口和后台，开箱即用，轻松开发 Flutter</td>
+<td align="left">37</td>
+<td align="left">2022-03-11</td>
+</tr>
+<tr>
+<td align="left">192</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/iHTCboy/iPomodoro-Flutter">iHTCboy&#x2F;iPomodoro-Flutter</a></td>
+<td align="left">iPomodoro(爱番茄)。🍅 番茄工作法是一种时间管理法方法，在上世纪八十年代由 Francesco Cirillo 创立。 该方法使用一个定时器来分割出一个一般为 25 分钟的工作时间和 5 分钟的休息时间，而那些时间段被称为 pomodori，为意大利语单词 pomodoro 之复数。</td>
+<td align="left">37</td>
+<td align="left">2022-05-15</td>
+</tr>
+<tr>
+<td align="left">193</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/litlifesoftware/HistoryOfMe">litlifesoftware&#x2F;HistoryOfMe</a></td>
+<td align="left">Your own personal diary.</td>
+<td align="left">36</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">194</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/swiftdo/web-demo">swiftdo&#x2F;web-demo</a></td>
+<td align="left">Responsive web app powered by Flutter and Dart, also support macOS</td>
+<td align="left">35</td>
+<td align="left">2022-07-26</td>
+</tr>
+<tr>
+<td align="left">195</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/thruthesky/fireflutter">thruthesky&#x2F;fireflutter</a></td>
+<td align="left">fireflutter</td>
+<td align="left">35</td>
+<td align="left">2022-05-14</td>
+</tr>
+<tr>
+<td align="left">196</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/www-chao-fun/chaofun-app">www-chao-fun&#x2F;chaofun-app</a></td>
+<td align="left">炒饭（ <a target="_blank" rel="noopener" href="https://chao.fun/app">https://chao.fun/app</a> ）App 工程</td>
+<td align="left">34</td>
+<td align="left">2022-07-13</td>
+</tr>
+<tr>
+<td align="left">197</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/elementlo/spark_list">elementlo&#x2F;spark_list</a></td>
+<td align="left">这是一款开源笔记应用, 支持 Android&#x2F;iOS 双平台, 使用 Flutter 2 开发, 体验 Flutter 的同时也希望做一个能成为个人知识中转站的应用, 任重道远 :)</td>
+<td align="left">34</td>
+<td align="left">2022-06-24</td>
+</tr>
+<tr>
+<td align="left">198</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Binbiubiubiu/flant">Binbiubiubiu&#x2F;flant</a></td>
+<td align="left">vant 风格的 flutter 组件库</td>
+<td align="left">34</td>
+<td align="left">2022-07-12</td>
+</tr>
+<tr>
+<td align="left">199</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/NKUST-ITC/NKUST-AP-Flutter">NKUST-ITC&#x2F;NKUST-AP-Flutter</a></td>
+<td align="left">高科校務通 made by Flutter</td>
+<td align="left">34</td>
+<td align="left">2022-06-08</td>
+</tr>
+<tr>
+<td align="left">200</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jarontai/html2md">jarontai&#x2F;html2md</a></td>
+<td align="left">A library for converting HTML to Markdown in Dart. It supports CommonMark, simple table and custom converting rules. 将 html 转换为 markdown 的 Dart 库，支持 CommonMark、简单表格以及自定义转换规则。</td>
+<td align="left">33</td>
+<td align="left">2022-04-27</td>
+</tr>
+</tbody></table>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8E%92%E8%A1%8C%E6%A6%9C/" class="category-chain-item">排行榜</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Dart/">#Dart</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Dart 排行榜</div>
+      <div>https://ssy-studio.github.io/post/Dart排行榜.html</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ssy</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年1月27日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/Go%20%E6%8E%92%E8%A1%8C%E6%A6%9C.html" title="Dart 排行榜">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Dart 排行榜</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/Shell%20%E6%8E%92%E8%A1%8C%E6%A6%9C.html" title="Shell 排行榜">
+                        <span class="hidden-mobile">Shell 排行榜</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"DbetiSS0ydA1k5hUPPwMLuTr-gzGzoHsz","appKey":"TFjbAw9p1JrouNhD8TfjEH1u","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

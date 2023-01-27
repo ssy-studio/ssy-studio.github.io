@@ -1,0 +1,3567 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/logo.png">
+  <link rel="icon" href="/img/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ssy">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Java 排行榜资料   # Repository Description Stars Updated    1 CyC2018&#x2F;CS-Notes :books: 技术面试必备基础知识、Leetcode、计算机操作系统、计算机网络、系统设计 154999 2022-07-07   2 Snailclimb&#x2F;JavaGuide 「Java 学习+面试指南」一份涵盖大部分 Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java 排行榜">
+<meta property="og:url" content="https://ssy-studio.github.io/post/Java%E6%8E%92%E8%A1%8C%E6%A6%9C.html">
+<meta property="og:site_name" content="SSY Studio">
+<meta property="og:description" content="Java 排行榜资料   # Repository Description Stars Updated    1 CyC2018&#x2F;CS-Notes :books: 技术面试必备基础知识、Leetcode、计算机操作系统、计算机网络、系统设计 154999 2022-07-07   2 Snailclimb&#x2F;JavaGuide 「Java 学习+面试指南」一份涵盖大部分 Java">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-01-27T10:55:14.000Z">
+<meta property="article:modified_time" content="2023-01-27T10:31:57.328Z">
+<meta property="article:author" content="ssy">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>Java 排行榜 - SSY Studio</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"ssy-studio.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"#"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>SSY Studio</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/post_banner.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Java 排行榜"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        ssy
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-01-27 18:55" pubdate>
+          2023年1月27日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          46k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          383 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Java 排行榜</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Java-排行榜"><a href="#Java-排行榜" class="headerlink" title="Java 排行榜"></a>Java 排行榜</h1><h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><table>
+<thead>
+<tr>
+<th align="left">#</th>
+<th align="left">Repository</th>
+<th align="left">Description</th>
+<th align="left">Stars</th>
+<th align="left">Updated</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/CyC2018/CS-Notes">CyC2018&#x2F;CS-Notes</a></td>
+<td align="left">:books: 技术面试必备基础知识、Leetcode、计算机操作系统、计算机网络、系统设计</td>
+<td align="left">154999</td>
+<td align="left">2022-07-07</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Snailclimb/JavaGuide">Snailclimb&#x2F;JavaGuide</a></td>
+<td align="left">「Java 学习+面试指南」一份涵盖大部分 Java 程序员所需要掌握的核心知识。准备 Java 面试，首选 JavaGuide！</td>
+<td align="left">125786</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/MisterBooo/LeetCodeAnimation">MisterBooo&#x2F;LeetCodeAnimation</a></td>
+<td align="left">Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解 LeetCode 题目的思路）</td>
+<td align="left">71036</td>
+<td align="left">2022-03-06</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/doocs/advanced-java">doocs&#x2F;advanced-java</a></td>
+<td align="left">😮 Core Interview Questions &amp; Answers For Experienced Java(Backend) Developers 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识</td>
+<td align="left">64647</td>
+<td align="left">2022-08-01</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/geekxh/hello-algorithm">geekxh&#x2F;hello-algorithm</a></td>
+<td align="left">🌍 针对小白的算法训练 包括四部分：①.大厂面经 ②.力扣图解 ③.千本开源电子书 ④.百张技术思维导图）</td>
+<td align="left">31178</td>
+<td align="left">2022-08-01</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ityouknow/spring-boot-examples">ityouknow&#x2F;spring-boot-examples</a></td>
+<td align="left">about learning Spring Boot via examples. Spring Boot 教程、技术栈示例代码，快速简单上手教程。</td>
+<td align="left">27810</td>
+<td align="left">2022-06-12</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/crossoverJie/JCSprout">crossoverJie&#x2F;JCSprout</a></td>
+<td align="left">👨‍🎓 Java Core Sprout : basic, concurrent, algorithm</td>
+<td align="left">26754</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/qiurunze123/miaosha">qiurunze123&#x2F;miaosha</a></td>
+<td align="left">⭐⭐⭐⭐ 秒杀系统设计与实现.互联网工程师进阶与分析 🙋🐓</td>
+<td align="left">25034</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/wuyouzhuguli/SpringAll">wuyouzhuguli&#x2F;SpringAll</a></td>
+<td align="left">循序渐进，学习 Spring Boot、Spring Boot &amp; Shiro、Spring Batch、Spring Cloud、Spring Cloud Alibaba、Spring Security &amp; Spring Security OAuth2，博客 Spring 系列源码：<a target="_blank" rel="noopener" href="https://mrbird.cc/">https://mrbird.cc</a></td>
+<td align="left">23953</td>
+<td align="left">2022-02-09</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/hollischuang/toBeTopJavaer">hollischuang&#x2F;toBeTopJavaer</a></td>
+<td align="left">To Be Top Javaer - Java 工程师成神之路</td>
+<td align="left">23533</td>
+<td align="left">2022-07-06</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/doocs/leetcode">doocs&#x2F;leetcode</a></td>
+<td align="left">😏 LeetCode solutions in any programming language 多种编程语言实现 LeetCode、《剑指 Offer（第 2 版）》、《程序员面试金典（第 6 版）》题解</td>
+<td align="left">15119</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/JeffLi1993/springboot-learning-example">JeffLi1993&#x2F;springboot-learning-example</a></td>
+<td align="left">spring boot 实践学习案例，是 spring boot 初学者及核心技术巩固的最佳实践。</td>
+<td align="left">14974</td>
+<td align="left">2022-06-20</td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/YunaiV/SpringBoot-Labs">YunaiV&#x2F;SpringBoot-Labs</a></td>
+<td align="left">一个涵盖六个专栏：Spring Boot 2.X、Spring Cloud、Spring Cloud Alibaba、Dubbo、分布式消息队列、分布式事务的仓库。</td>
+<td align="left">14740</td>
+<td align="left">2022-06-13</td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dyc87112/SpringBoot-Learning">dyc87112&#x2F;SpringBoot-Learning</a></td>
+<td align="left">《Spring Boot 基础教程》，2.x 版本持续连载中！点击下方链接直达教程目录！</td>
+<td align="left">14579</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zhisheng17/flink-learning">zhisheng17&#x2F;flink-learning</a></td>
+<td align="left">flink learning blog. <a target="_blank" rel="noopener" href="http://www.54tianzhisheng.cn/">http://www.54tianzhisheng.cn/</a> 含 Flink 入门、概念、原理、实战、性能调优、源码解析等内容。涉及 Flink Connector、Metrics、Library、DataStream API、Table API &amp; SQL 等内容的学习案例，还有 Flink 落地应用的大型项目案例（PVUV、日志存储、百亿数据实时去重、 …</td>
+<td align="left">12513</td>
+<td align="left">2022-07-18</td>
+</tr>
+<tr>
+<td align="left">16</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/heibaiying/BigData-Notes">heibaiying&#x2F;BigData-Notes</a></td>
+<td align="left">大数据入门指南 :star:</td>
+<td align="left">12161</td>
+<td align="left">2022-07-01</td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/seaswalker/spring-analysis">seaswalker&#x2F;spring-analysis</a></td>
+<td align="left">Spring 源码阅读</td>
+<td align="left">11817</td>
+<td align="left">2022-06-20</td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/macrozheng/mall-learning">macrozheng&#x2F;mall-learning</a></td>
+<td align="left">mall 学习教程，架构、业务、技术要点全方位解析。mall 项目（50k+star）是一套电商系统，使用现阶段主流技术实现。涵盖了 SpringBoot 2.3.0、MyBatis 3.4.6、Elasticsearch 7.6.2、RabbitMQ 3.7.15、Redis 5.0、MongoDB 4.2.5、Mysql5.7 等技术，采用 Docker 容器化部署。</td>
+<td align="left">11191</td>
+<td align="left">2022-07-19</td>
+</tr>
+<tr>
+<td align="left">19</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/doocs/source-code-hunter">doocs&#x2F;source-code-hunter</a></td>
+<td align="left">😱 从源码层面，剖析挖掘互联网行业主流技术的底层实现原理，为广大开发者 “提升技术深度” 提供便利。目前开放 Spring 全家桶，Mybatis、Netty、Dubbo 框架，及 Redis、Tomcat 中间件等</td>
+<td align="left">10711</td>
+<td align="left">2022-06-15</td>
+</tr>
+<tr>
+<td align="left">20</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/frank-lam/fullstack-tutorial">frank-lam&#x2F;fullstack-tutorial</a></td>
+<td align="left">🚀 fullstack tutorial 2022，后台技术栈&#x2F;架构师之路&#x2F;全栈开发社区，春招&#x2F;秋招&#x2F;校招&#x2F;面试</td>
+<td align="left">10673</td>
+<td align="left">2022-03-22</td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/chefyuan/algorithm-base">chefyuan&#x2F;algorithm-base</a></td>
+<td align="left">一位酷爱做饭的程序员，立志用动画将算法说的通俗易懂。我的面试网站 <a target="_blank" rel="noopener" href="http://www.chengxuchu.com/">www.chengxuchu.com</a></td>
+<td align="left">10059</td>
+<td align="left">2022-05-19</td>
+</tr>
+<tr>
+<td align="left">22</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dyc87112/SpringCloud-Learning">dyc87112&#x2F;SpringCloud-Learning</a></td>
+<td align="left">Spring Cloud 基础教程，持续连载更新中</td>
+<td align="left">6972</td>
+<td align="left">2022-06-20</td>
+</tr>
+<tr>
+<td align="left">23</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/yuanguangxin/LeetCode">yuanguangxin&#x2F;LeetCode</a></td>
+<td align="left">LeetCode 刷题记录与面试整理</td>
+<td align="left">6838</td>
+<td align="left">2022-02-15</td>
+</tr>
+<tr>
+<td align="left">24</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/liyifeng1994/ssm">liyifeng1994&#x2F;ssm</a></td>
+<td align="left">手把手教你整合最优雅 SSM 框架：SpringMVC + Spring + MyBatis</td>
+<td align="left">5654</td>
+<td align="left">2022-07-15</td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/macrozheng/springcloud-learning">macrozheng&#x2F;springcloud-learning</a></td>
+<td align="left">一套涵盖大部分核心组件使用的 Spring Cloud 教程，包括 Spring Cloud Alibaba 及分布式事务 Seata，基于 Spring Cloud Greenwich 及 SpringBoot 2.1.7。篇篇精华，涵盖大部分应用场景。</td>
+<td align="left">5201</td>
+<td align="left">2022-08-01</td>
+</tr>
+<tr>
+<td align="left">26</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fuzhengwei/itstack-demo-design">fuzhengwei&#x2F;itstack-demo-design</a></td>
+<td align="left">:art: 《重学 Java 设计模式》是一本互联网真实案例实践书籍。以落地解决方案为核心，从实际业务中抽离出，交易、营销、秒杀、中间件、源码等 22 个真实场景，来学习设计模式的运用。欢迎关注小傅哥，微信(fustack)，公众号：bugstack 虫洞栈，博客：<a target="_blank" rel="noopener" href="https://bugstack.cn/">https://bugstack.cn</a></td>
+<td align="left">5012</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">27</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/hustcc/JS-Sorting-Algorithm">hustcc&#x2F;JS-Sorting-Algorithm</a></td>
+<td align="left">一本关于排序算法的 GitBook 在线书籍 《十大经典排序算法》，多语言实现。</td>
+<td align="left">4734</td>
+<td align="left">2022-02-01</td>
+</tr>
+<tr>
+<td align="left">28</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zuihou/lamp-cloud">zuihou&#x2F;lamp-cloud</a></td>
+<td align="left">lamp-cloud 基于 Jdk11 + SpringCloud + SpringBoot 的微服务快速开发平台，其中的可配置的 SaaS 功能尤其闪耀， 具备 RBAC 功能、网关统一鉴权、Xss 防跨站攻击、自动代码生成、多种存储系统、分布式事务、分布式定时任务等多个模块，支持多业务系统并行开发， 支持多服务并行开发，可以作为后端服务的开发脚手架。代码简洁，注释齐全，架构清晰，非常适合学习和企业作为基础框 …</td>
+<td align="left">4414</td>
+<td align="left">2022-07-25</td>
+</tr>
+<tr>
+<td align="left">29</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/hansonwang99/Spring-Boot-In-Action">hansonwang99&#x2F;Spring-Boot-In-Action</a></td>
+<td align="left">Spring Boot 系列实战合集</td>
+<td align="left">4366</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">30</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ZHENFENG13/spring-boot-projects">ZHENFENG13&#x2F;spring-boot-projects</a></td>
+<td align="left">:fire: 该仓库中主要是 Spring Boot 的入门学习教程以及一些常用的 Spring Boot 实战项目教程，包括 Spring Boot 使用的各种示例代码，同时也包括一些实战项目的项目源码和效果展示，实战项目包括基本的 web 开发以及目前大家普遍使用的线上博客项目&#x2F;企业大型商城系统&#x2F;前后端分离实践项目等，摆脱各种 hello world 入门案例的束缚，真正的掌握 Spring …</td>
+<td align="left">4302</td>
+<td align="left">2022-07-06</td>
+</tr>
+<tr>
+<td align="left">31</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/awangdev/LintCode">awangdev&#x2F;LintCode</a></td>
+<td align="left">Java Solutions to problems on LintCode&#x2F;LeetCode</td>
+<td align="left">4265</td>
+<td align="left">2022-04-04</td>
+</tr>
+<tr>
+<td align="left">32</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/tuguangquan/mybatis">tuguangquan&#x2F;mybatis</a></td>
+<td align="left">mybatis 源码中文注释</td>
+<td align="left">4041</td>
+<td align="left">2022-06-29</td>
+</tr>
+<tr>
+<td align="left">33</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/bjmashibing/InternetArchitect">bjmashibing&#x2F;InternetArchitect</a></td>
+<td align="left">年薪百万互联网架构师课程文档及源码(公开部分)</td>
+<td align="left">4031</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">34</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/RedSpider1/concurrent">RedSpider1&#x2F;concurrent</a></td>
+<td align="left">这是 RedSpider 社区成员原创与维护的 Java 多线程系列文章。</td>
+<td align="left">3743</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">35</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/mercyblitz/tech-weekly">mercyblitz&#x2F;tech-weekly</a></td>
+<td align="left">「小马哥技术周报」</td>
+<td align="left">3629</td>
+<td align="left">2022-06-10</td>
+</tr>
+<tr>
+<td align="left">36</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/NotFound9/interviewGuide">NotFound9&#x2F;interviewGuide</a></td>
+<td align="left">推荐刷题网站: <a target="_blank" rel="noopener" href="https://www.lintcode.com/?utm_source=tf-github-NotFound2022">https://www.lintcode.com/?utm_source=tf-github-NotFound2022</a> 《大厂面试指北》——包括 Java 基础、JVM、数据库、mysql、redis、计算机网络、算法、数据结构、操作系统、设计模式、系统设计、框架原理。</td>
+<td align="left">3616</td>
+<td align="left">2022-07-28</td>
+</tr>
+<tr>
+<td align="left">37</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fuzhengwei/small-spring">fuzhengwei&#x2F;small-spring</a></td>
+<td align="left">🌱《 Spring 手撸专栏》，本专栏以 Spring 源码学习为目的，通过手写简化版 Spring 框架，了解 Spring 核心原理。在手写的过程中会简化 Spring 源码，摘取整体框架中的核心逻辑，简化代码实现过程，保留核心功能，例如：IOC、AOP、Bean 生命周期、上下文、作用域、资源处理等内容实现。</td>
+<td align="left">3135</td>
+<td align="left">2022-03-17</td>
+</tr>
+<tr>
+<td align="left">38</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/itwanger/toBeBetterJavaer">itwanger&#x2F;toBeBetterJavaer</a></td>
+<td align="left">一份通俗易懂、风趣幽默的 Java 学习指南，内容涵盖 Java 基础、Java 并发编程、Java 虚拟机、Java 企业级开发、Java 面试等核心知识点。学 Java，就认准 Java 程序员进阶之路 😄</td>
+<td align="left">3130</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">39</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lenve/JavaEETest">lenve&#x2F;JavaEETest</a></td>
+<td align="left">Spring、SpringMVC、MyBatis、Spring Boot 案例</td>
+<td align="left">3125</td>
+<td align="left">2022-07-07</td>
+</tr>
+<tr>
+<td align="left">40</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/IoT-Technology/IoT-Technical-Guide">IoT-Technology&#x2F;IoT-Technical-Guide</a></td>
+<td align="left">:honeybee: IoT Technical Guide — 从零搭建高性能物联网平台及物联网解决方案和 Thingsboard 源码分析 :sparkles: :sparkles: :sparkles: (IoT Platform, SaaS, MQTT, CoAP, HTTP, Modbus, OPC, WebSocket, 物模型，Protobuf, PostgreSQL, MongoD …</td>
+<td align="left">2838</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">41</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zq2599/blog_demos">zq2599&#x2F;blog_demos</a></td>
+<td align="left">CSDN 博客专家程序员欣宸的 github，这里有六百多篇原创文章的详细分类和汇总，以及对应的源码，内容涉及 Java、Docker、Kubernetes、DevOPS 等方面</td>
+<td align="left">2757</td>
+<td align="left">2022-07-31</td>
+</tr>
+<tr>
+<td align="left">42</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/shuzijun/leetcode-editor">shuzijun&#x2F;leetcode-editor</a></td>
+<td align="left">Do Leetcode exercises in IDE, support leetcode.com and leetcode-cn.com, to meet the basic needs of doing exercises.Support theoretically: IntelliJ IDEA PhpStorm WebStorm PyCharm RubyMine AppCode CLion …</td>
+<td align="left">2688</td>
+<td align="left">2022-07-31</td>
+</tr>
+<tr>
+<td align="left">43</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dunwu/db-tutorial">dunwu&#x2F;db-tutorial</a></td>
+<td align="left">📚 db-tutorial 是一个数据库教程。</td>
+<td align="left">2623</td>
+<td align="left">2022-07-16</td>
+</tr>
+<tr>
+<td align="left">44</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/OCNYang/Android-Animation-Set">OCNYang&#x2F;Android-Animation-Set</a></td>
+<td align="left">:books: Android 所有动画系列详尽教程。 Explain all animations in Android.</td>
+<td align="left">2583</td>
+<td align="left">2022-07-27</td>
+</tr>
+<tr>
+<td align="left">45</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dunwu/javacore">dunwu&#x2F;javacore</a></td>
+<td align="left">:coffee: JavaCore 是对 Java 核心技术的经验总结。</td>
+<td align="left">2385</td>
+<td align="left">2022-07-08</td>
+</tr>
+<tr>
+<td align="left">46</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/yizhiwazi/springboot-socks">yizhiwazi&#x2F;springboot-socks</a></td>
+<td align="left">SpringBoot 基础教程 从入门到上瘾 基于 2.0.0.M5 制作</td>
+<td align="left">2368</td>
+<td align="left">2022-06-20</td>
+</tr>
+<tr>
+<td align="left">47</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/sanshengshui/netty-learning-example">sanshengshui&#x2F;netty-learning-example</a></td>
+<td align="left">:egg: Netty 实践学习案例，见微知著！带着你的心，跟着教程。我相信你行欧。</td>
+<td align="left">2346</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">48</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/forezp/SpringBootLearning">forezp&#x2F;SpringBootLearning</a></td>
+<td align="left">《Spring Boot 教程》源码</td>
+<td align="left">2142</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">49</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/rbmonster/learning-note">rbmonster&#x2F;learning-note</a></td>
+<td align="left">Java 开发及面试（个人面试、工作总结、资料收集站）</td>
+<td align="left">2033</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">50</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/vector4wang/spring-boot-quick">vector4wang&#x2F;spring-boot-quick</a></td>
+<td align="left">:herb: 基于 springboot 的快速学习示例,整合自己遇到的开源框架,如：rabbitmq(延迟队列)、Kafka、jpa、redies、oauth2、swagger、jsp、docker、k3s、k3d、k8s、mybatis 加解密插件、异常处理、日志输出、多模块开发、多环境打包、缓存 cache、爬虫、jwt、GraphQL、dubbo、zookeeper 和 Async 等等:pushpin …</td>
+<td align="left">1989</td>
+<td align="left">2022-07-25</td>
+</tr>
+<tr>
+<td align="left">51</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dairongpeng/algorithm-note">dairongpeng&#x2F;algorithm-note</a></td>
+<td align="left">该笔记，包含数组、链表、树、图、递归、DP、有序表等相关数据结构与算法的讲解及代码实现。</td>
+<td align="left">1873</td>
+<td align="left">2022-04-19</td>
+</tr>
+<tr>
+<td align="left">52</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/SpringCloud/spring-cloud-code">SpringCloud&#x2F;spring-cloud-code</a></td>
+<td align="left">🔥《重新定义 Spring Cloud 实战》实体书对应源码，欢迎大家 Star 点赞收藏</td>
+<td align="left">1872</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">53</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/kanwangzjm/funiture">kanwangzjm&#x2F;funiture</a></td>
+<td align="left">慕课网课程推荐 Java 并发编程与高并发解决方案：<a target="_blank" rel="noopener" href="http://coding.imooc.com/class/195.html">http://coding.imooc.com/class/195.html</a> Java 开发企业级权限管理系统：<a target="_blank" rel="noopener" href="http://coding.imooc.com/class/149.html">http://coding.imooc.com/class/149.html</a> github: <a target="_blank" rel="noopener" href="https://github.com/kanwangzjm/funiture">https://github.com/kanwangzjm/funiture</a>, spring 项目，权限管理、系统监控、定时任务动态调整、qps 限制 …</td>
+<td align="left">1803</td>
+<td align="left">2022-06-29</td>
+</tr>
+<tr>
+<td align="left">54</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/mercyblitz/thinking-in-spring-boot-samples">mercyblitz&#x2F;thinking-in-spring-boot-samples</a></td>
+<td align="left">小马哥书籍《Spring Boot 编程思想》示例工程</td>
+<td align="left">1797</td>
+<td align="left">2022-07-27</td>
+</tr>
+<tr>
+<td align="left">55</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lygttpod/AndroidCustomView">lygttpod&#x2F;AndroidCustomView</a></td>
+<td align="left">带你在实战中学习自定义 view，通过几个完整的例子带你走进自定义 View 的美妙世界</td>
+<td align="left">1750</td>
+<td align="left">2022-05-27</td>
+</tr>
+<tr>
+<td align="left">56</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/MoRan1607/BigDataGuide">MoRan1607&#x2F;BigDataGuide</a></td>
+<td align="left">大数据学习，从零开始学习大数据，包含大数据学习各阶段学习视频、面试资料</td>
+<td align="left">1619</td>
+<td align="left">2022-07-30</td>
+</tr>
+<tr>
+<td align="left">57</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/REBOOTERS/AndroidAnimationExercise">REBOOTERS&#x2F;AndroidAnimationExercise</a></td>
+<td align="left">Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享</td>
+<td align="left">1557</td>
+<td align="left">2022-07-09</td>
+</tr>
+<tr>
+<td align="left">58</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/waylau/netty-4-user-guide-demos">waylau&#x2F;netty-4-user-guide-demos</a></td>
+<td align="left">Netty demos. （Netty 案例大全）</td>
+<td align="left">1535</td>
+<td align="left">2022-03-24</td>
+</tr>
+<tr>
+<td align="left">59</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/DreamCats/java-notes">DreamCats&#x2F;java-notes</a></td>
+<td align="left">自己的学习笔记。包含：个人秋招经历、🐂 客面经问题按照频率总结、Java 一系列知识、数据库、分布式、微服务、前端、技术面试、每日文章等(持续更新)</td>
+<td align="left">1497</td>
+<td align="left">2022-06-09</td>
+</tr>
+<tr>
+<td align="left">60</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/864381832/xJavaFxTool">864381832&#x2F;xJavaFxTool</a></td>
+<td align="left">基于 JavaFx 搭建的实用小工具集合，方便开发过程中的代码编写与调试，想学习 javaFx 的同学可以参考参考。其中包括文件复制、Cron 表达式生成器、编码转换、加密解密、Time 转换、路径转换、二维码生成工具、身份证生成器、正则表达式生成工具、网址缩短、转义字符、字符串转换、Mq 调试工具、Http 调试工具、json 格式化编辑工具、图标生成工具、Redis 连接工具、网页源码下载工具、切换 Hosts 工具 …</td>
+<td align="left">1416</td>
+<td align="left">2022-04-18</td>
+</tr>
+<tr>
+<td align="left">61</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/bin392328206/six-finger">bin392328206&#x2F;six-finger</a></td>
+<td align="left">📓 从 Java 基础、JavaWeb 基础到常用的框架再到面试题、微服务、分布式、大数据都有完整的教程，几乎涵盖了 Java 必备的知识点</td>
+<td align="left">1400</td>
+<td align="left">2022-07-26</td>
+</tr>
+<tr>
+<td align="left">62</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/crazyqiang/AndroidStudy">crazyqiang&#x2F;AndroidStudy</a></td>
+<td align="left">🔥 Android 学习知识点总结 Jetpack、MVVM、Kotlin、ViewPager2、JUC 多线程等，欢迎 star！</td>
+<td align="left">1381</td>
+<td align="left">2022-07-27</td>
+</tr>
+<tr>
+<td align="left">63</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Jackson0714/PassJava-Platform">Jackson0714&#x2F;PassJava-Platform</a></td>
+<td align="left">一款面试刷题的 Spring Cloud 开源系统。零碎时间利用小程序查看常见面试题，夯实 Java 基础。 该项目可以教会你如何搭建 SpringBoot 项目，Spring Cloud 项目。 采用流行的技术，如 SpringBoot、MyBatis、Redis、 MySql、 MongoDB、 RabbitMQ、Elasticsearch，采用 Docker 容器化部署。</td>
+<td align="left">1370</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">64</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Jstarfish/JavaKeeper">Jstarfish&#x2F;JavaKeeper</a></td>
+<td align="left">✍️ Java 工程师必备架构体系知识总结：涵盖分布式、微服务、RPC 等互联网公司常用架构，以及数据存储、缓存、搜索等必备技能</td>
+<td align="left">1339</td>
+<td align="left">2022-06-26</td>
+</tr>
+<tr>
+<td align="left">65</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/kangjianwei/LearningJDK">kangjianwei&#x2F;LearningJDK</a></td>
+<td align="left">JDK 源码阅读笔记</td>
+<td align="left">1192</td>
+<td align="left">2022-03-28</td>
+</tr>
+<tr>
+<td align="left">66</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/mybatis-book/book">mybatis-book&#x2F;book</a></td>
+<td align="left">MyBatis 从入门到精通</td>
+<td align="left">1183</td>
+<td align="left">2022-04-09</td>
+</tr>
+<tr>
+<td align="left">67</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/timebusker/spring-boot">timebusker&#x2F;spring-boot</a></td>
+<td align="left">spring-boot 项目实践总结</td>
+<td align="left">1173</td>
+<td align="left">2022-07-06</td>
+</tr>
+<tr>
+<td align="left">68</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/suzeyu1992/repo">suzeyu1992&#x2F;repo</a></td>
+<td align="left">📒 记录一个自己的知识库</td>
+<td align="left">1114</td>
+<td align="left">2022-05-26</td>
+</tr>
+<tr>
+<td align="left">69</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Java-Edge/Java-Concurrency-Progamming-Tutorial">Java-Edge&#x2F;Java-Concurrency-Progamming-Tutorial</a></td>
+<td align="left">BAT 华为大厂一线工程师四年磨一剑精心编排 Java 高并发编程案例代码 &amp; 教程 &amp; 面试题集锦。详细文档讲解请阅读本人的知识库仓：<a target="_blank" rel="noopener" href="https://github.com/Wasabi1234/Java-Interview-Tutorial">https://github.com/Wasabi1234/Java-Interview-Tutorial</a></td>
+<td align="left">1113</td>
+<td align="left">2022-05-28</td>
+</tr>
+<tr>
+<td align="left">70</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/henryyan/activiti-in-action-codes">henryyan&#x2F;activiti-in-action-codes</a></td>
+<td align="left">Activiti 官方唯一推荐中文书籍——《Activiti 实战》示例源码</td>
+<td align="left">1095</td>
+<td align="left">2022-07-08</td>
+</tr>
+<tr>
+<td align="left">71</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lenve/javaboy-code-samples">lenve&#x2F;javaboy-code-samples</a></td>
+<td align="left">公众号【江南一点雨】文章案例汇总，技术文章请戳这里—–&gt;</td>
+<td align="left">1093</td>
+<td align="left">2022-06-29</td>
+</tr>
+<tr>
+<td align="left">72</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/superhj1987/pragmatic-java-engineer">superhj1987&#x2F;pragmatic-java-engineer</a></td>
+<td align="left">Java 工程师修炼之道 - 梳理 Java 知识体系，沓实架构基础</td>
+<td align="left">1079</td>
+<td align="left">2022-04-22</td>
+</tr>
+<tr>
+<td align="left">73</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/firesunCN/WechatEnhancement">firesunCN&#x2F;WechatEnhancement</a></td>
+<td align="left">仅供学习交流，禁止用于其他用途，请及时删除，禁止任何公司或个人发布与传播，不接受任何捐赠</td>
+<td align="left">1063</td>
+<td align="left">2022-06-14</td>
+</tr>
+<tr>
+<td align="left">74</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/phith0n/JavaThings">phith0n&#x2F;JavaThings</a></td>
+<td align="left">Share Things Related to Java - Java 安全漫谈笔记相关内容</td>
+<td align="left">1002</td>
+<td align="left">2022-03-17</td>
+</tr>
+<tr>
+<td align="left">75</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fuzhengwei/interview">fuzhengwei&#x2F;interview</a></td>
+<td align="left">Java 面经手册，全书共计 5 章 29 节，417 页 11.5 万字，耗时 4 个月完成。涵盖数据结构、算法逻辑、并发编程、JVM 以及简历和互联网大厂面试等内容。</td>
+<td align="left">976</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">76</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Mr-xn/RedTeam_BlueTeam_HW">Mr-xn&#x2F;RedTeam_BlueTeam_HW</a></td>
+<td align="left">红蓝对抗以及护网相关工具和资料，内存 shellcode（cs+msf）和内存马查杀工具</td>
+<td align="left">974</td>
+<td align="left">2022-07-18</td>
+</tr>
+<tr>
+<td align="left">77</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fenixsoft/jvm_book">fenixsoft&#x2F;jvm_book</a></td>
+<td align="left">《深入理解 Java 虚拟机（第 3 版）》样例代码&amp;勘误</td>
+<td align="left">966</td>
+<td align="left">2022-05-15</td>
+</tr>
+<tr>
+<td align="left">78</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/guang19/framework-learning">guang19&#x2F;framework-learning</a></td>
+<td align="left">计算机学习资料(Java , Jvm , Linux , Mysql , Netty , Redis , Netty , Spring , SpringBoot , Mybatis , Rabbitmq ,计算机网络 , 数据结构与算法 , 设计模式 )Github 网页阅读:<a target="_blank" rel="noopener" href="https://guang19.github.io/framework-learning">https://guang19.github.io/framework-learning</a> , Gitee 网页版阅读: h …</td>
+<td align="left">949</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">79</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xuwujing/java-study">xuwujing&#x2F;java-study</a></td>
+<td align="left">java-study 是本人学习 Java 过程中记录的一些代码！从 Java 基础的数据类型、jdk1.8 的 Lambda、Stream 和日期的使用、 IO 流、数据集合、多线程使用、并发编程、23 种设计模式示例代码、常用的工具类， 以及一些常用框架，netty、mina、springboot、kafka、storm、zookeeper、redis、elasticsearch、hbase、hive 等等。</td>
+<td align="left">937</td>
+<td align="left">2022-06-29</td>
+</tr>
+<tr>
+<td align="left">80</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Ellen2018/AndroidFaceInterview">Ellen2018&#x2F;AndroidFaceInterview</a></td>
+<td align="left">Android 面试题集 &amp; 答案，助你拿到心仪 Offer</td>
+<td align="left">925</td>
+<td align="left">2022-07-11</td>
+</tr>
+<tr>
+<td align="left">81</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/happylishang/AntiFakerAndroidChecker">happylishang&#x2F;AntiFakerAndroidChecker</a></td>
+<td align="left">获取真实的 IMEI AndroidId 序列号 MAC 地址等，Android 模拟器检测，检测 Android 模拟器 ，作为可信 DeviceID，应对防刷需求等 How to detect Android emulator</td>
+<td align="left">918</td>
+<td align="left">2022-05-16</td>
+</tr>
+<tr>
+<td align="left">82</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/PotoYang/spring-in-action-v5-translate">PotoYang&#x2F;spring-in-action-v5-translate</a></td>
+<td align="left">Spring 实战第五版中文翻译</td>
+<td align="left">916</td>
+<td align="left">2022-04-19</td>
+</tr>
+<tr>
+<td align="left">83</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Zephery/newblog">Zephery&#x2F;newblog</a></td>
+<td align="left">:octocat: 个人博客，个人网站，blog</td>
+<td align="left">911</td>
+<td align="left">2022-05-26</td>
+</tr>
+<tr>
+<td align="left">84</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/krahets/LeetCode-Book">krahets&#x2F;LeetCode-Book</a></td>
+<td align="left">《剑指 Offer》 Python, Java, C++ 解题代码，LeetBook《图解算法数据结构》配套代码仓。</td>
+<td align="left">905</td>
+<td align="left">2022-02-21</td>
+</tr>
+<tr>
+<td align="left">85</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/algorithmzuo/algorithmbasic2020">algorithmzuo&#x2F;algorithmbasic2020</a></td>
+<td align="left">算法和数据结构体系学习班</td>
+<td align="left">891</td>
+<td align="left">2022-07-26</td>
+</tr>
+<tr>
+<td align="left">86</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/apolloconfig/apollo-use-cases">apolloconfig&#x2F;apollo-use-cases</a></td>
+<td align="left">展示 Apollo 配置中心的各种使用场景和示例代码，欢迎大家把日常工作中的更多配置使用案例分享出来！</td>
+<td align="left">890</td>
+<td align="left">2022-06-11</td>
+</tr>
+<tr>
+<td align="left">87</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/gf-huanchupk/SpringBootLearning">gf-huanchupk&#x2F;SpringBootLearning</a></td>
+<td align="left">Spring Boot learning process</td>
+<td align="left">858</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">88</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/realguoshuai/hadoop_study">realguoshuai&#x2F;hadoop_study</a></td>
+<td align="left">定期更新 Hadoop 生态圈中常用大数据组件文档 重心依次为: Flink Solr Sparksql ES Scala Kafka Hbase&#x2F;phoenix Redis Kerberos (项目包含 hadoop 思维导图 印象笔记 Scala 版本简单 demo 常用工具类 去敏后的 train code 持续更新!!!)</td>
+<td align="left">822</td>
+<td align="left">2022-07-01</td>
+</tr>
+<tr>
+<td align="left">89</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/nibnait/algorithms">nibnait&#x2F;algorithms</a></td>
+<td align="left">《剑指 Offer》、LeetCode</td>
+<td align="left">810</td>
+<td align="left">2022-07-03</td>
+</tr>
+<tr>
+<td align="left">90</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ProgrammerAnthony/Haafiz">ProgrammerAnthony&#x2F;Haafiz</a></td>
+<td align="left">Haafiz is a gateway in Micro Service which is inspired by many open source gateway :Zuul 1.x , spring cloud gateway，currently Not Released Now， Only For Study ……Haafiz （在英文中是守护者的意思）参考了很多开源网关的思想，基 …</td>
+<td align="left">799</td>
+<td align="left">2022-03-14</td>
+</tr>
+<tr>
+<td align="left">91</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/mercyblitz/geekbang-lessons">mercyblitz&#x2F;geekbang-lessons</a></td>
+<td align="left">极客时间课程工程</td>
+<td align="left">773</td>
+<td align="left">2022-05-05</td>
+</tr>
+<tr>
+<td align="left">92</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ouchuangxin/leave-sample">ouchuangxin&#x2F;leave-sample</a></td>
+<td align="left">本代码来源于极客时间《DDD 实战》专栏。</td>
+<td align="left">770</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">93</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zhangyd-c/springboot-learning">zhangyd-c&#x2F;springboot-learning</a></td>
+<td align="left">:taxi: spring boot 学习案例，方便 spring boot 初学者快速掌握相关知识</td>
+<td align="left">746</td>
+<td align="left">2022-06-28</td>
+</tr>
+<tr>
+<td align="left">94</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lightningMan/flash-netty">lightningMan&#x2F;flash-netty</a></td>
+<td align="left">掘金小册及实体书源码</td>
+<td align="left">738</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">95</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/moshowgame/spring-cloud-study">moshowgame&#x2F;spring-cloud-study</a></td>
+<td align="left">SpringBootLearning，SpringCloudStudy，学习 SpringBoot2&#x2F;SpringCloud2 的项目，包含 Eureka&#x2F;Zuul&#x2F;JPA&#x2F;Mybatis Plus&#x2F;Feign&#x2F;WebSocket&#x2F;JMS&#x2F;POI-TL&#x2F;Redis Cache&#x2F;UDP&#x2F;SecurityJWT&#x2F;elasticSearch&#x2F;Drools</td>
+<td align="left">709</td>
+<td align="left">2022-07-02</td>
+</tr>
+<tr>
+<td align="left">96</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/bitterzzZZ/MemoryShellLearn">bitterzzZZ&#x2F;MemoryShellLearn</a></td>
+<td align="left">分享几个直接可用的内存马，记录一下学习过程中看过的文章</td>
+<td align="left">662</td>
+<td align="left">2022-03-23</td>
+</tr>
+<tr>
+<td align="left">97</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/leosanqing/Java-Notes">leosanqing&#x2F;Java-Notes</a></td>
+<td align="left">java 学习笔记，包括 JVM，看过的技术以及非技术书籍，SpringCloud 商城项目以及工具介绍，leetcode 剑指 offer 算法，spring，JDK 一些工具的源码，</td>
+<td align="left">638</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">98</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Byron4j/CookBook">Byron4j&#x2F;CookBook</a></td>
+<td align="left">🎉🎉🎉JAVA 高级架构师技术栈&#x3D;&#x3D;任何技能通过 “刻意练习” 都可以达到融会贯通的境界，就像烹饪一样，这里有一份 JAVA 开发技术手册，只需要增加自己练习的次数。🏃🏃🏃</td>
+<td align="left">625</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">99</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fantj2016/java-reader">fantj2016&#x2F;java-reader</a></td>
+<td align="left">📖Java 工程师学习历程与笔记，附含算法、Java 基础、框架实战、框架源码、框架实现、中间件、面试题等知识和学习蓝图。</td>
+<td align="left">586</td>
+<td align="left">2022-05-05</td>
+</tr>
+<tr>
+<td align="left">100</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dunwu/spring-tutorial">dunwu&#x2F;spring-tutorial</a></td>
+<td align="left">:book: Spring Framework 教程</td>
+<td align="left">572</td>
+<td align="left">2022-07-06</td>
+</tr>
+<tr>
+<td align="left">101</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/JavaCourse00/JavaCourseCodes">JavaCourse00&#x2F;JavaCourseCodes</a></td>
+<td align="left">JavaCourse</td>
+<td align="left">563</td>
+<td align="left">2022-04-03</td>
+</tr>
+<tr>
+<td align="left">102</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Fadezed/concurrency">Fadezed&#x2F;concurrency</a></td>
+<td align="left">Java 并发编程知识梳理以及常见处理模式 features and patterns</td>
+<td align="left">537</td>
+<td align="left">2022-07-28</td>
+</tr>
+<tr>
+<td align="left">103</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jiangmin168168/jim-framework">jiangmin168168&#x2F;jim-framework</a></td>
+<td align="left">一些公共组件及学习应用：RPC&#x2F;统一配置中心&#x2F;基于注解的分布式锁&#x2F;dubbo 请求级缓存&#x2F;调用链追踪&#x2F;RabbitMQ&#x2F;Elasticsearch&#x2F;zookeeper&#x2F;Sping boot</td>
+<td align="left">531</td>
+<td align="left">2022-03-21</td>
+</tr>
+<tr>
+<td align="left">104</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/javastacks/javastack">javastacks&#x2F;javastack</a></td>
+<td align="left">Java 技术栈，分享最主流的 Java 技术。</td>
+<td align="left">506</td>
+<td align="left">2022-03-10</td>
+</tr>
+<tr>
+<td align="left">105</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jrhu05/jerryWebSpider">jrhu05&#x2F;jerryWebSpider</a></td>
+<td align="left">web 爬虫合集</td>
+<td align="left">502</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">106</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/qiurunze123/zookeeperDesign">qiurunze123&#x2F;zookeeperDesign</a></td>
+<td align="left">⭐⭐⭐zk 的设计与使用（集群，dubbo，分布式锁，master 选举，负载均衡，watch，权限等）</td>
+<td align="left">488</td>
+<td align="left">2022-07-15</td>
+</tr>
+<tr>
+<td align="left">107</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/chenjiabing666/JavaFamily">chenjiabing666&#x2F;JavaFamily</a></td>
+<td align="left">【Java 面试+Java 学习指南】 一份涵盖大部分 Java 程序员所需要掌握的核心知识。</td>
+<td align="left">460</td>
+<td align="left">2022-06-27</td>
+</tr>
+<tr>
+<td align="left">108</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/my-dlq/blog-example">my-dlq&#x2F;blog-example</a></td>
+<td align="left">博客中的示例文件，包含 Kubernetes、Jenkins、Go、Java、SpringBoot、SpringCloud 知识示例等，将结合博客逐步讲解整体的知识内容体系。</td>
+<td align="left">449</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">109</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/moxi624/LearningNotes">moxi624&#x2F;LearningNotes</a></td>
+<td align="left">Java 学习笔记，主要来源于 B 站上视频的学习，同时会记录平时一些学习和项目中遇到的问题，同步更新在蘑菇博客，如果对我的博客网站感兴趣的话，欢迎关注我的 蘑菇博客项目 笔记主要涵盖：Java，Spring，SpringCloud，计算机网络，操作系统，数据结构，Vue 等 如果笔记对您有帮助的话，欢迎 star 支持，谢谢~</td>
+<td align="left">446</td>
+<td align="left">2022-06-23</td>
+</tr>
+<tr>
+<td align="left">110</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/liuyueyi/spring-boot-demo">liuyueyi&#x2F;spring-boot-demo</a></td>
+<td align="left">Spring Boot &amp; Spring Cloud &amp; Spring Security Demo Case（Spring 学习示例实战项目）</td>
+<td align="left">443</td>
+<td align="left">2022-07-05</td>
+</tr>
+<tr>
+<td align="left">111</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/youthlql/JavaYouth">youthlql&#x2F;JavaYouth</a></td>
+<td align="left">主要是 Java 技术栈的文章，涉及到了源码、原理，面试等知识。如 AQS，JVM，rpc，计网，os 等等，后续可能会写 mysql,redis,zk 这些</td>
+<td align="left">441</td>
+<td align="left">2022-03-27</td>
+</tr>
+<tr>
+<td align="left">112</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/2020GetGoodOffer/test">2020GetGoodOffer&#x2F;test</a></td>
+<td align="left">Java 复习合集</td>
+<td align="left">440</td>
+<td align="left">2022-07-21</td>
+</tr>
+<tr>
+<td align="left">113</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/gupaoedu-tom/spring5-samples">gupaoedu-tom&#x2F;spring5-samples</a></td>
+<td align="left">《Spring5 核心原理与 30 个类手写实战》随书代码示例工程</td>
+<td align="left">424</td>
+<td align="left">2022-05-25</td>
+</tr>
+<tr>
+<td align="left">114</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/memo012/ac-blog">memo012&#x2F;ac-blog</a></td>
+<td align="left">适合学生搭建的个人博客-从零开始(网站地址：<a target="_blank" rel="noopener" href="http://www.lqnb.xyz/">www.lqnb.xyz</a>)</td>
+<td align="left">422</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">115</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/TongOS/JavaBookClub">TongOS&#x2F;JavaBookClub</a></td>
+<td align="left">本藏馆主要珍藏 Java 体系核心技术书籍：涵盖 Java 核心基石（Java 核心技术，并发编程，JVM）Java 助辅要员（设计模式，linux 内核，TCP&#x2F;IP 协议，Netty，Tomcat，Mysql） 上古单体架构 分布式朝代 微服务纪元 云原生前沿 架构演进 自动化运维</td>
+<td align="left">420</td>
+<td align="left">2022-06-10</td>
+</tr>
+<tr>
+<td align="left">116</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/guobinhit/akka-guide">guobinhit&#x2F;akka-guide</a></td>
+<td align="left">🌴 A chinese guide of Akka, based on Java.</td>
+<td align="left">419</td>
+<td align="left">2022-06-30</td>
+</tr>
+<tr>
+<td align="left">117</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/aserbao/AserbaosAndroid">aserbao&#x2F;AserbaosAndroid</a></td>
+<td align="left">Android 开发学习总结</td>
+<td align="left">414</td>
+<td align="left">2022-04-29</td>
+</tr>
+<tr>
+<td align="left">118</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/codefollower/H2-Research">codefollower&#x2F;H2-Research</a></td>
+<td align="left">H2 数据库源代码学习研究(包括代码注释、文档、用于代码分析的测试用例)</td>
+<td align="left">414</td>
+<td align="left">2022-02-16</td>
+</tr>
+<tr>
+<td align="left">119</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/TALKDATA/JavaBigData">TALKDATA&#x2F;JavaBigData</a></td>
+<td align="left">【大数据必备】非科班转行 Java 大数据面经分享</td>
+<td align="left">413</td>
+<td align="left">2022-07-01</td>
+</tr>
+<tr>
+<td align="left">120</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xuwujing/Netty-study">xuwujing&#x2F;Netty-study</a></td>
+<td align="left">Netty 4 的一些技术栈示例代码并辅以博文讲解。主要包括入门的 demo，粘包和拆包解决办法，心跳测试，http 服务的实现，client 重连机制，TCP 滑动窗口、protobuf 协议传输等相关技术。</td>
+<td align="left">403</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">121</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/perkinls/flink-local-train">perkinls&#x2F;flink-local-train</a></td>
+<td align="left">flink 入门到项目实践</td>
+<td align="left">389</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">122</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/huanzi-qch/springBoot">huanzi-qch&#x2F;springBoot</a></td>
+<td align="left">SpringBoot 系列 Demo 代码，每个子项目都是 SpringBoot 的一个知识点或者说技能点且都有对应的博客介绍，代码开箱即用适合新手学习或老司机复习</td>
+<td align="left">376</td>
+<td align="left">2022-04-26</td>
+</tr>
+<tr>
+<td align="left">123</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/androidmalin/AndroidComponentPlugin">androidmalin&#x2F;AndroidComponentPlugin</a></td>
+<td align="left">Android 上简单实现四大组件的插件化，供学习使用</td>
+<td align="left">371</td>
+<td align="left">2022-07-06</td>
+</tr>
+<tr>
+<td align="left">124</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/GaoLeiQin/SwordOffer">GaoLeiQin&#x2F;SwordOffer</a></td>
+<td align="left">《剑指 offer》Java 版代码实现</td>
+<td align="left">364</td>
+<td align="left">2022-02-17</td>
+</tr>
+<tr>
+<td align="left">125</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/threeknowbigdata/flink_second_understand">threeknowbigdata&#x2F;flink_second_understand</a></td>
+<td align="left">该仓库专注于让读者秒懂 Flink 组件，包含 Flink 实战代码和文档、200 个 Flink 教程知识点，Flink Datastream、Flink Table、Flink Window、Flink State、Flink Checkpoint、Flink Metrics、Flink Memory、Flink on standalone &#x2F;yarn&#x2F;k8s、Flink SQL、Flink CEP、Fli …</td>
+<td align="left">350</td>
+<td align="left">2022-07-03</td>
+</tr>
+<tr>
+<td align="left">126</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Firebasky/Java">Firebasky&#x2F;Java</a></td>
+<td align="left">关于学习 java 安全的一些知识,正在学习中 ing,欢迎 fork and star</td>
+<td align="left">347</td>
+<td align="left">2022-07-03</td>
+</tr>
+<tr>
+<td align="left">127</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xiaomiwujiecao/KongFuOfArchitect">xiaomiwujiecao&#x2F;KongFuOfArchitect</a></td>
+<td align="left">(🆕 更新中！)《架构师的功夫》教程合集、文章合集包含 范式编程、微服务、必备算法、安全攻防、汇编、爬虫、逆向、渗透测试…</td>
+<td align="left">347</td>
+<td align="left">2022-07-28</td>
+</tr>
+<tr>
+<td align="left">128</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dunwu/javatech">dunwu&#x2F;javatech</a></td>
+<td align="left">本项目内容近期将会迁入到 <a target="_blank" rel="noopener" href="https://github.com/dunwu/java-tutorial">https://github.com/dunwu/java-tutorial</a> 项目中，以后不再维护</td>
+<td align="left">335</td>
+<td align="left">2022-03-08</td>
+</tr>
+<tr>
+<td align="left">129</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xuxueli/xxl-tool">xuxueli&#x2F;xxl-tool</a></td>
+<td align="left">a series of tools that make Java development more efficient.（Java 工具类库 XXL-TOOL）</td>
+<td align="left">330</td>
+<td align="left">2022-05-20</td>
+</tr>
+<tr>
+<td align="left">130</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lyb-geek/springboot-learning">lyb-geek&#x2F;springboot-learning</a></td>
+<td align="left">springboot-learning</td>
+<td align="left">323</td>
+<td align="left">2022-07-27</td>
+</tr>
+<tr>
+<td align="left">131</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dubboclub/dubbo-plus">dubboclub&#x2F;dubbo-plus</a></td>
+<td align="left">dubbo 的插件集合</td>
+<td align="left">319</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">132</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/LiHaodong888/SpringBootLearn">LiHaodong888&#x2F;SpringBootLearn</a></td>
+<td align="left">Spring Boot 教程</td>
+<td align="left">312</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">133</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xuyisu/fw-spring-cloud">xuyisu&#x2F;fw-spring-cloud</a></td>
+<td align="left">SpringCloud 构建实战、从入门到高级，包含 eureka、zuul、gateway、feign、ribbon、hystrix、mq、turbine、nacos、elk、consul、zookeeper、rocketmq、kafka、分布式事务(RocketMq、LCN、Seata)、分库分表(Sharding-JDBC)、分布式锁(Redis、Guava)、jwt、SkyWalking、Zi …</td>
+<td align="left">307</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">134</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/acloudyh/springCloud">acloudyh&#x2F;springCloud</a></td>
+<td align="left">springCloud 学习</td>
+<td align="left">301</td>
+<td align="left">2022-02-14</td>
+</tr>
+<tr>
+<td align="left">135</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/asiL-tcefreP/blog">asiL-tcefreP&#x2F;blog</a></td>
+<td align="left">Blog Back-End（个人博客后端服务器）（基于 Vue+Springboot+mybatisplus+SpringCloud+ELK 等框架实现） 创作不易，如果对你有帮助，可以帮忙 star 一下，谢谢！</td>
+<td align="left">298</td>
+<td align="left">2022-05-10</td>
+</tr>
+<tr>
+<td align="left">136</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/sunjincheng121/know_how_know_why">sunjincheng121&#x2F;know_how_know_why</a></td>
+<td align="left">For every learner</td>
+<td align="left">283</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">137</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jitwxs/blog-sample">jitwxs&#x2F;blog-sample</a></td>
+<td align="left">个人博客示例程序</td>
+<td align="left">276</td>
+<td align="left">2022-02-16</td>
+</tr>
+<tr>
+<td align="left">138</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/yeecode/MyBatisCN">yeecode&#x2F;MyBatisCN</a></td>
+<td align="left">MyBatis 中文详尽注释版。书籍《通用源码阅读指导书——MyBatis 源码详解》配套注释版源码。</td>
+<td align="left">275</td>
+<td align="left">2022-05-28</td>
+</tr>
+<tr>
+<td align="left">139</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Jiaru0314/cloud2020">Jiaru0314&#x2F;cloud2020</a></td>
+<td align="left">尚硅谷周阳老师 springcloud 学习、代码、笔记记录</td>
+<td align="left">260</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">140</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/cyhbyw/springBoot_atguigu">cyhbyw&#x2F;springBoot_atguigu</a></td>
+<td align="left">尚硅谷 SpringBoot 视频教学源码学习</td>
+<td align="left">257</td>
+<td align="left">2022-02-11</td>
+</tr>
+<tr>
+<td align="left">141</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/shuaishaui/springboot-technology">shuaishaui&#x2F;springboot-technology</a></td>
+<td align="left">springboo 整合自己到目前学习到的各种技术</td>
+<td align="left">255</td>
+<td align="left">2022-03-31</td>
+</tr>
+<tr>
+<td align="left">142</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/RingoTangs/LearningNote">RingoTangs&#x2F;LearningNote</a></td>
+<td align="left">学习笔记 持续更新……</td>
+<td align="left">254</td>
+<td align="left">2022-05-29</td>
+</tr>
+<tr>
+<td align="left">143</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fuzhengwei/itstack-demo-bytecode">fuzhengwei&#x2F;itstack-demo-bytecode</a></td>
+<td align="left">本专栏主要针对字节码编程系列知识栈进行编写文章学习。在字节码编程方便有三个比较常见的框架；ASM、Javassit、Byte-buddy，他们都可以使用自己的 API 方式进行字节码的插装，通过这样增强方法的方式就可以和 Javaagent 结合起来开发非入侵的全链路监控服务，以及做反射、中间件和混淆代码等</td>
+<td align="left">248</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">144</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xiongsihao/myblog">xiongsihao&#x2F;myblog</a></td>
+<td align="left">springBoot 博客项目</td>
+<td align="left">242</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">145</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/gupaoedu-tom/netty4-samples">gupaoedu-tom&#x2F;netty4-samples</a></td>
+<td align="left">《Netty4 核心原理与手写 RPC 框架实战》随书代码示例工程</td>
+<td align="left">241</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">146</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fishpro/spring-boot-study">fishpro&#x2F;spring-boot-study</a></td>
+<td align="left">about learning Spring Boot via examples. 基于 spring boot 2.x 的学习教程简洁易懂</td>
+<td align="left">237</td>
+<td align="left">2022-07-06</td>
+</tr>
+<tr>
+<td align="left">147</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xiaolongzuo/everyone-java-blog">xiaolongzuo&#x2F;everyone-java-blog</a></td>
+<td align="left">这是一个 Java 程序猿共同打造的 Java 博客网站。</td>
+<td align="left">236</td>
+<td align="left">2022-07-15</td>
+</tr>
+<tr>
+<td align="left">148</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/algorithmzuo/coding-for-great-offer">algorithmzuo&#x2F;coding-for-great-offer</a></td>
+<td align="left">大厂算法和数据结构刷题班</td>
+<td align="left">229</td>
+<td align="left">2022-07-22</td>
+</tr>
+<tr>
+<td align="left">149</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/SilenceHVK/blog">SilenceHVK&#x2F;blog</a></td>
+<td align="left">:books: :octocat: Github static blog post, experience the fun of using Issues.Welcome star（ 静态博客文章，体验一下使用 Issues 的乐趣，欢迎 star ）个人博客地址：blog.hvkcoder.me&#x2F;love</td>
+<td align="left">229</td>
+<td align="left">2022-07-22</td>
+</tr>
+<tr>
+<td align="left">150</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zhangjun0x01/bigdata-examples">zhangjun0x01&#x2F;bigdata-examples</a></td>
+<td align="left">分享一些在工作中的大数据实战案例，包括 flink、kafka、hadoop、presto 等等。欢迎大家关注我的公众号【大数据技术与应用实战】，一起成长。</td>
+<td align="left">227</td>
+<td align="left">2022-07-25</td>
+</tr>
+<tr>
+<td align="left">151</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/sunweiguo/mama-buy">sunweiguo&#x2F;mama-buy</a></td>
+<td align="left">:dog::dog:spring cloud 分布式电商实战代码，并且对以下内容进行了详细笔记记录：maven 聚合工程创建，消息总线，分库分表，全局异常处理，分布式 session 管理，ZK 分布式锁，分布式 ID 生成，SKU 概念和表设计，全文检索，缓存，下单扣减库存引起的超卖问题解决，幂等性问题，定时任务，redis 事件通知，分布式事务解决方案等。</td>
+<td align="left">226</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">152</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/FleyX/demo-project">FleyX&#x2F;demo-project</a></td>
+<td align="left">存放学习过程中的 demo 项目，顺便点下 ⭐ 哦</td>
+<td align="left">225</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">153</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/canliture/nju-software-analysis-homework">canliture&#x2F;nju-software-analysis-homework</a></td>
+<td align="left">南京大学《软件分析》课程课后作业(非 Bamboo) NJU’s software analysis homework; … Not official, just a reference</td>
+<td align="left">220</td>
+<td align="left">2022-05-14</td>
+</tr>
+<tr>
+<td align="left">154</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/h2pl/MyTech">h2pl&#x2F;MyTech</a></td>
+<td align="left">Java 的基础总结和学习笔记，包括 Java 核心技术点和常见知识点。同时提供了 Java 基础原理的代码实现，供大家实践时参考。已补充 JVM 和 JUC 的相关内容，欢迎交流。</td>
+<td align="left">217</td>
+<td align="left">2022-06-20</td>
+</tr>
+<tr>
+<td align="left">155</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/niumoo/JavaNotes">niumoo&#x2F;JavaNotes</a></td>
+<td align="left">🧱 「Java 学习」一份涵盖大部分 Java 程序员所需要掌握的核心知识。JDK 源码分析 &amp; Java 新特性 &amp; Java 并发编程 &amp; Java 虚拟机 &amp; SpringBoot 2.x 系列</td>
+<td align="left">214</td>
+<td align="left">2022-07-20</td>
+</tr>
+<tr>
+<td align="left">156</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/bage2014/study">bage2014&#x2F;study</a></td>
+<td align="left">全栈工程师学习笔记；Spring 登录、shiro 登录、CAS 单点登录和 Spring boot oauth2 单点登录；Spring data cache 缓存，支持 Redis 和 EHcahce; web 安全，常见 web 安全漏洞以及解决思路；常规组件，比如 redis、mq 等；quartz 定时任务，支持持久化数据库，动态维护启动暂停关闭；docker 基本用法，常用 image 镜像使用，Docker-MySQ …</td>
+<td align="left">214</td>
+<td align="left">2022-08-01</td>
+</tr>
+<tr>
+<td align="left">157</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/laolunsi/spring-boot-examples">laolunsi&#x2F;spring-boot-examples</a></td>
+<td align="left">:green_salad: Spring&#x2F;SpringBoot&#x2F;SpringCloud 实践学习案例，从入门到精通，持续更新中，欢迎交流学习:beer: ！</td>
+<td align="left">207</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">158</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/qqxx6661/springboot-websocket-demo">qqxx6661&#x2F;springboot-websocket-demo</a></td>
+<td align="left">使用 WebSocket+SpringBoot 搭建简易的多人聊天室 由浅入深，配合博客入门教程文章食用，风味独特。</td>
+<td align="left">207</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">159</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/roseduan/algo-learn">roseduan&#x2F;algo-learn</a></td>
+<td align="left">学习数据结构与算法的代码示例，目前提供 Java、Python、Go、C++ 多种语言支持。</td>
+<td align="left">204</td>
+<td align="left">2022-02-27</td>
+</tr>
+<tr>
+<td align="left">160</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fafeidou/fast-cloud-nacos">fafeidou&#x2F;fast-cloud-nacos</a></td>
+<td align="left">fast-cloud-nacos 项目致力于打造一个基于 nacos 为注册中心，结合企业开发习惯，总结的一些基本的实现方式</td>
+<td align="left">202</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">161</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/vipstone/java-interview">vipstone&#x2F;java-interview</a></td>
+<td align="left">509 道 Java 面试题汇总与解析</td>
+<td align="left">201</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">162</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/liuawen/Learning-Java">liuawen&#x2F;Learning-Java</a></td>
+<td align="left">Some learning Java tutorials, resources, documentation.</td>
+<td align="left">196</td>
+<td align="left">2022-03-31</td>
+</tr>
+<tr>
+<td align="left">163</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/617076674/LeetCode">617076674&#x2F;LeetCode</a></td>
+<td align="left">我的 LeetCode 代码仓，近乎所有题目都会提供多种解法 :)</td>
+<td align="left">194</td>
+<td align="left">2022-04-13</td>
+</tr>
+<tr>
+<td align="left">164</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Erik-ly/SprakProject">Erik-ly&#x2F;SprakProject</a></td>
+<td align="left">《Spark 大型电商项目实战》源码，博客地址：<a target="_blank" rel="noopener" href="http://blog.csdn.net/u012318074/article/category/6744423">http://blog.csdn.net/u012318074/article/category/6744423</a></td>
+<td align="left">194</td>
+<td align="left">2022-07-01</td>
+</tr>
+<tr>
+<td align="left">165</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dunwu/algorithm-tutorial">dunwu&#x2F;algorithm-tutorial</a></td>
+<td align="left">:books: 算法和数据结构教程</td>
+<td align="left">191</td>
+<td align="left">2022-04-22</td>
+</tr>
+<tr>
+<td align="left">166</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/coderbruis/AlgorithmsInJava">coderbruis&#x2F;AlgorithmsInJava</a></td>
+<td align="left">用 Java 实现基础数据结构，排序算法、经典算法以及 leetcode 刷题记录</td>
+<td align="left">185</td>
+<td align="left">2022-07-03</td>
+</tr>
+<tr>
+<td align="left">167</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/WinterChenS/springboot-learning-experience">WinterChenS&#x2F;springboot-learning-experience</a></td>
+<td align="left">spring boot 实践学习案例</td>
+<td align="left">181</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">168</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zhuoqianmingyue/spring-boot-examples">zhuoqianmingyue&#x2F;spring-boot-examples</a></td>
+<td align="left">个人学习 SpringBoot2.x 写的一些示例程序，目前正在持续更新中…..</td>
+<td align="left">180</td>
+<td align="left">2022-05-20</td>
+</tr>
+<tr>
+<td align="left">169</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dufyun/quartz-core-learning">dufyun&#x2F;quartz-core-learning</a></td>
+<td align="left">关于 Quartz 技术的学习积累的例子，开始 Quartz 学习之旅，精进 Quartz</td>
+<td align="left">179</td>
+<td align="left">2022-04-22</td>
+</tr>
+<tr>
+<td align="left">170</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jaycekon/SpringBoot">jaycekon&#x2F;SpringBoot</a></td>
+<td align="left">Spring boot learning</td>
+<td align="left">178</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">171</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/littlecurl/AppProjects">littlecurl&#x2F;AppProjects</a></td>
+<td align="left">存放一些 Java、JavaEE、Android 和 iOS 的源码；里面同时有 zip 压缩文件，可以直接下载，不需要 clone 整个仓库！！！都是一些小 Demo，注释详细一点，就不写教程文档了。</td>
+<td align="left">174</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">172</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/joyang1/JavaInterview">joyang1&#x2F;JavaInterview</a></td>
+<td align="left">最全的 Java 技术知识点，以及 Java 源码分析；学习 ing。</td>
+<td align="left">172</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">173</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/feuyeux/jax-rs2-guide-II">feuyeux&#x2F;jax-rs2-guide-II</a></td>
+<td align="left">《Java Restful Web Service 实战 第二版》源代码</td>
+<td align="left">172</td>
+<td align="left">2022-07-21</td>
+</tr>
+<tr>
+<td align="left">174</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/gupaoedu-tom/design-samples">gupaoedu-tom&#x2F;design-samples</a></td>
+<td align="left">《设计模式就该这样学，基于经典框架源码和真实业务场景》随书代码示例工程</td>
+<td align="left">166</td>
+<td align="left">2022-07-07</td>
+</tr>
+<tr>
+<td align="left">175</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/cicadasmile/spring-boot-base">cicadasmile&#x2F;spring-boot-base</a></td>
+<td align="left">spring boot 2.0 基础教程，日志配置，数据源配置，事务管理等。</td>
+<td align="left">164</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">176</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/MarkShen1992/Mashibing_High_Concurrency">MarkShen1992&#x2F;Mashibing_High_Concurrency</a></td>
+<td align="left">马士兵高并发，Java 基础视频学习源码</td>
+<td align="left">163</td>
+<td align="left">2022-07-31</td>
+</tr>
+<tr>
+<td align="left">177</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/suisui2019/springboot-study">suisui2019&#x2F;springboot-study</a></td>
+<td align="left">代码对应的文章 公众号和博客园都有。</td>
+<td align="left">160</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">178</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fancyerii/blog-codes">fancyerii&#x2F;blog-codes</a></td>
+<td align="left">个人博客 (<a target="_blank" rel="noopener" href="https://fancyerii.github.io/">https://fancyerii.github.io/</a>) 文章的代码</td>
+<td align="left">152</td>
+<td align="left">2022-02-26</td>
+</tr>
+<tr>
+<td align="left">179</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ciphermagic/java-learn">ciphermagic&#x2F;java-learn</a></td>
+<td align="left">学习 Java 过程中的一些记录，代码为主</td>
+<td align="left">152</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">180</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jiangrongbo/mybatis-book">jiangrongbo&#x2F;mybatis-book</a></td>
+<td align="left">📚《Mybatis3 源码深度解析》 随书源码</td>
+<td align="left">146</td>
+<td align="left">2022-06-29</td>
+</tr>
+<tr>
+<td align="left">181</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Zouxxyy/bigdata-learning">Zouxxyy&#x2F;bigdata-learning</a></td>
+<td align="left">大数据学习记录</td>
+<td align="left">143</td>
+<td align="left">2022-07-07</td>
+</tr>
+<tr>
+<td align="left">182</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zpsw/jt808-netty">zpsw&#x2F;jt808-netty</a></td>
+<td align="left">Netty 入门教学项目，解析 JT808 协议，整合 Spring boot，并提供了一些 Netty 中的最佳实践</td>
+<td align="left">138</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">183</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Cruii/learning-spring">Cruii&#x2F;learning-spring</a></td>
+<td align="left">Spring 学习笔记</td>
+<td align="left">137</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">184</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ProgrammerAnthony/SentinelC">ProgrammerAnthony&#x2F;SentinelC</a></td>
+<td align="left">官方代码 release 1.8 源码学习 Sentinel 添加注释，新增支持以 Nacos 作为 dashboard 数据源</td>
+<td align="left">134</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">185</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fenixsoft/microservice_arch_kubernetes">fenixsoft&#x2F;microservice_arch_kubernetes</a></td>
+<td align="left">基于 Kubernetes 实现的微服务架构示例工程。《软件架构探索》的配套组件。</td>
+<td align="left">133</td>
+<td align="left">2022-06-22</td>
+</tr>
+<tr>
+<td align="left">186</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/runzhenghengbin/SpringBoot">runzhenghengbin&#x2F;SpringBoot</a></td>
+<td align="left">📚 springboot 学习记录</td>
+<td align="left">130</td>
+<td align="left">2022-03-31</td>
+</tr>
+<tr>
+<td align="left">187</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/niumoo/springboot">niumoo&#x2F;springboot</a></td>
+<td align="left">🌿 springboot 分析与学习 &amp; 入门示例 &amp; 图文教程，本 Spring Boot 系列文章基于 Spring Boot 版本 v2.x 进行学习分析。 所有项目示例都有对应的文章介绍，可以直接点击 <a target="_blank" rel="noopener" href="https://www.wdbyte.com/">https://www.wdbyte.com</a> 阅读。</td>
+<td align="left">129</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">188</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/LLancelot/LeetCode">LLancelot&#x2F;LeetCode</a></td>
+<td align="left">✍️ My LeetCode solutions, ideas and templates sharing. (我的 LeetCode 题解，思路以及各专题的解题模板分享。分专题归纳，见 tag)</td>
+<td align="left">126</td>
+<td align="left">2022-04-17</td>
+</tr>
+<tr>
+<td align="left">189</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/RansongZ/Tingyu-Notes">RansongZ&#x2F;Tingyu-Notes</a></td>
+<td align="left">一套开发级 JAVA 设计语言学习笔记。所有笔记已更新于微信公众号&lt;汀雨笔记&gt;</td>
+<td align="left">126</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">190</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fuzhengwei/CodeDesignTutorials">fuzhengwei&#x2F;CodeDesignTutorials</a></td>
+<td align="left">:art: 《重学 Java 设计模式》是一本互联网真实案例实践书籍。以落地解决方案为核心，从实际业务中抽离出，交易、营销、秒杀、中间件、源码等 22 个真实场景，来学习设计模式的运用。欢迎关注小傅哥，微信(fustack)，公众号：bugstack 虫洞栈，博客：<a target="_blank" rel="noopener" href="https://bugstack.cn/">https://bugstack.cn</a></td>
+<td align="left">125</td>
+<td align="left">2022-06-08</td>
+</tr>
+<tr>
+<td align="left">191</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/doocs/data-structure-and-algorithm">doocs&#x2F;data-structure-and-algorithm</a></td>
+<td align="left">😍 学习数据结构与算法，夯实编程基础</td>
+<td align="left">122</td>
+<td align="left">2022-05-27</td>
+</tr>
+<tr>
+<td align="left">192</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/code4wt/mybatis-test">code4wt&#x2F;mybatis-test</a></td>
+<td align="left">《一本小小的 MyBatis 源码分析书》一书的附属代码</td>
+<td align="left">122</td>
+<td align="left">2022-06-20</td>
+</tr>
+<tr>
+<td align="left">193</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dunwu/spring-boot-tutorial">dunwu&#x2F;spring-boot-tutorial</a></td>
+<td align="left">:100: :leaves: 通过丰富实例来展现 Spring Boot 特性的教程</td>
+<td align="left">122</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">194</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/fengyuecanzhu/FYReader">fengyuecanzhu&#x2F;FYReader</a></td>
+<td align="left">风月读书，一款开源、免费的小说阅读软件，支持自定义书源，支持本地 txt 和 epub 导入阅读。</td>
+<td align="left">121</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">195</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/caojx-git/learn-java-codes">caojx-git&#x2F;learn-java-codes</a></td>
+<td align="left">该仓库主要用于存放 Java 学习相关代码，相关笔记存放于 <a target="_blank" rel="noopener" href="https://github.com/caojx-git/learn-java-notes">https://github.com/caojx-git/learn-java-notes</a> 仓库</td>
+<td align="left">121</td>
+<td align="left">2022-07-22</td>
+</tr>
+<tr>
+<td align="left">196</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/algorithmzuo/weekly-problems">algorithmzuo&#x2F;weekly-problems</a></td>
+<td align="left">每周有营养的大厂算法面试题（直播进行中，每周三晚上 8 点）</td>
+<td align="left">120</td>
+<td align="left">2022-07-29</td>
+</tr>
+<tr>
+<td align="left">197</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/JsonChao/Awesome-Algorithm-Study">JsonChao&#x2F;Awesome-Algorithm-Study</a></td>
+<td align="left">从零到一构建算法核心知识地图，打通你的任督二脉~</td>
+<td align="left">117</td>
+<td align="left">2022-07-09</td>
+</tr>
+<tr>
+<td align="left">198</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lichaojacobs/java_learning_practice">lichaojacobs&#x2F;java_learning_practice</a></td>
+<td align="left">java 进阶之路：面试高频算法、akka、多线程、NIO、Netty、SpringBoot、Spark&amp;&amp;Flink 等</td>
+<td align="left">117</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">199</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/LinkedBear/spring-framework-learning-code">LinkedBear&#x2F;spring-framework-learning-code</a></td>
+<td align="left">从 0 开始深入学习 Spring 小册源码</td>
+<td align="left">116</td>
+<td align="left">2022-06-21</td>
+</tr>
+<tr>
+<td align="left">200</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/yehongzhi/mall">yehongzhi&#x2F;mall</a></td>
+<td align="left">一个简单的项目。博客文章中的代码皆存于此。</td>
+<td align="left">113</td>
+<td align="left">2022-06-21</td>
+</tr>
+</tbody></table>
+<h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><table>
+<thead>
+<tr>
+<th align="left">#</th>
+<th align="left">Repository</th>
+<th align="left">Description</th>
+<th align="left">Stars</th>
+<th align="left">Updated</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/macrozheng/mall">macrozheng&#x2F;mall</a></td>
+<td align="left">mall 项目是一套电商系统，包括前台商城系统及后台管理系统，基于 SpringBoot+MyBatis 实现，采用 Docker 容器化部署。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。</td>
+<td align="left">61853</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/apache/dubbo">apache&#x2F;dubbo</a></td>
+<td align="left">Apache Dubbo is a high-performance, java based, open source RPC framework.</td>
+<td align="left">38033</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/bumptech/glide">bumptech&#x2F;glide</a></td>
+<td align="left">An image loading and caching library for Android focused on smooth scrolling</td>
+<td align="left">33073</td>
+<td align="left">2022-10-28</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Blankj/AndroidUtilCode">Blankj&#x2F;AndroidUtilCode</a></td>
+<td align="left">:fire: Android developers should collect the following utils(updating).</td>
+<td align="left">31504</td>
+<td align="left">2022-10-26</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jeecgboot/jeecg-boot">jeecgboot&#x2F;jeecg-boot</a></td>
+<td align="left">「企业级低代码平台」前后端分离架构 SpringBoot 2.x，SpringCloud，Ant Design&amp;Vue，Mybatis，Shiro，JWT。强大的代码生成器让前后端代码一键生成，无需写任何代码! 引领新的开发模式 OnlineCoding-&gt;代码生成-&gt;手工 MERGE，帮助 Java 项目解决 70%重复工作，让开发更关注业务，既能快速提高效率，帮助公司节省成本，同时又不失灵活性。</td>
+<td align="left">31329</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/arthas">alibaba&#x2F;arthas</a></td>
+<td align="left">Alibaba Java Diagnostic Tool Arthas&#x2F;Alibaba Java 诊断利器 Arthas</td>
+<td align="left">30863</td>
+<td align="left">2022-10-28</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xkcoding/spring-boot-demo">xkcoding&#x2F;spring-boot-demo</a></td>
+<td align="left">🚀 一个用来深入学习并实战 Spring Boot 的项目。</td>
+<td align="left">27758</td>
+<td align="left">2022-10-19</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/apolloconfig/apollo">apolloconfig&#x2F;apollo</a></td>
+<td align="left">Apollo is a reliable configuration management system suitable for microservice configuration management scenarios.</td>
+<td align="left">27421</td>
+<td align="left">2022-10-28</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/druid">alibaba&#x2F;druid</a></td>
+<td align="left">阿里云计算平台 DataWorks(<a target="_blank" rel="noopener" href="https://help.aliyun.com/document_detail/137663.html">https://help.aliyun.com/document_detail/137663.html</a>) 团队出品，为监控而生的数据库连接池</td>
+<td align="left">26170</td>
+<td align="left">2022-10-24</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/easyexcel">alibaba&#x2F;easyexcel</a></td>
+<td align="left">快速、简洁、解决大文件内存溢出的 java 处理 Excel 工具</td>
+<td align="left">25532</td>
+<td align="left">2022-10-10</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lenve/vhr">lenve&#x2F;vhr</a></td>
+<td align="left">微人事是一个前后端分离的人力资源管理系统，项目采用 SpringBoot+Vue 开发。</td>
+<td align="left">25082</td>
+<td align="left">2022-09-30</td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/fastjson">alibaba&#x2F;fastjson</a></td>
+<td align="left">FASTJSON 2.0.x has been released, faster and more secure, recommend you upgrade.</td>
+<td align="left">25060</td>
+<td align="left">2022-10-28</td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/nacos">alibaba&#x2F;nacos</a></td>
+<td align="left">an easy-to-use dynamic service discovery, configuration and service management platform for building cloud native applications.</td>
+<td align="left">24411</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/canal">alibaba&#x2F;canal</a></td>
+<td align="left">阿里巴巴 MySQL binlog 增量订阅&amp;消费组件</td>
+<td align="left">24342</td>
+<td align="left">2022-10-12</td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dromara/hutool">dromara&#x2F;hutool</a></td>
+<td align="left">🍬A set of tools that keep Java sweet.</td>
+<td align="left">24325</td>
+<td align="left">2022-10-28</td>
+</tr>
+<tr>
+<td align="left">16</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/halo-dev/halo">halo-dev&#x2F;halo</a></td>
+<td align="left">✍ 一款现代化的开源建站 &#x2F; CMS 系统。</td>
+<td align="left">24201</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/spring-cloud-alibaba">alibaba&#x2F;spring-cloud-alibaba</a></td>
+<td align="left">Spring Cloud Alibaba provides a one-stop solution for application development for the distributed solutions of Alibaba middleware.</td>
+<td align="left">23988</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/scwang90/SmartRefreshLayout">scwang90&#x2F;SmartRefreshLayout</a></td>
+<td align="left">🔥 下拉刷新、上拉加载、二级刷新、淘宝二楼、RefreshLayout、OverScroll，Android 智能下拉刷新框架，支持越界回弹、越界拖动，具有极强的扩展性，集成了几十种炫酷的 Header 和 Footer。</td>
+<td align="left">23892</td>
+<td align="left">2022-07-08</td>
+</tr>
+<tr>
+<td align="left">19</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">CymChad&#x2F;BaseRecyclerViewAdapterHelper</a></td>
+<td align="left">BRVAH:Powerful and flexible RecyclerAdapter</td>
+<td align="left">23183</td>
+<td align="left">2022-10-21</td>
+</tr>
+<tr>
+<td align="left">20</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/seata/seata">seata&#x2F;seata</a></td>
+<td align="left">:fire: Seata is an easy-to-use, high-performance, open source distributed transaction solution.</td>
+<td align="left">22957</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xuxueli/xxl-job">xuxueli&#x2F;xxl-job</a></td>
+<td align="left">A distributed task scheduling framework.（分布式任务调度平台 XXL-JOB）</td>
+<td align="left">22867</td>
+<td align="left">2022-10-25</td>
+</tr>
+<tr>
+<td align="left">22</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/Sentinel">alibaba&#x2F;Sentinel</a></td>
+<td align="left">A powerful flow control component enabling reliability, resilience and monitoring for microservices. (面向云原生微服务的高可用流控防护组件)</td>
+<td align="left">20077</td>
+<td align="left">2022-10-28</td>
+</tr>
+<tr>
+<td align="left">23</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/didi/DoKit">didi&#x2F;DoKit</a></td>
+<td align="left">一款面向泛前端产品研发全生命周期的效率平台。</td>
+<td align="left">19125</td>
+<td align="left">2022-10-25</td>
+</tr>
+<tr>
+<td align="left">24</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/elunez/eladmin">elunez&#x2F;eladmin</a></td>
+<td align="left">项目基于 Spring Boot 2.1.0 、 Jpa、 Spring Security、redis、Vue 的前后端分离的后台管理系统，项目采用分模块开发方式， 权限控制采用 RBAC，支持数据字典与数据权限管理，支持一键生成前后端代码，支持动态路由</td>
+<td align="left">18877</td>
+<td align="left">2022-10-25</td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/CarGuo/GSYVideoPlayer">CarGuo&#x2F;GSYVideoPlayer</a></td>
+<td align="left">视频播放器（IJKplayer、ExoPlayer、MediaPlayer），HTTPS，支持弹幕，外挂字幕，支持滤镜、水印、gif 截图，片头广告、中间广告，多个同时播放，支持基本的拖动，声音、亮度调节，支持边播边缓存，支持视频自带 rotation 的旋转（90,270 之类），重力旋转与手动旋转的同步支持，支持列表播放 ，列表全屏动画，视频加载速度，列表小窗口支持拖动，动画效果，调整比例，多分辨率切 …</td>
+<td align="left">17942</td>
+<td align="left">2022-10-18</td>
+</tr>
+<tr>
+<td align="left">26</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/linlinjava/litemall">linlinjava&#x2F;litemall</a></td>
+<td align="left">又一个小商城。litemall &#x3D; Spring Boot 后端 + Vue 管理员前端 + 微信小程序用户前端 + Vue 用户移动端</td>
+<td align="left">17472</td>
+<td align="left">2022-10-13</td>
+</tr>
+<tr>
+<td align="left">27</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dianping/cat">dianping&#x2F;cat</a></td>
+<td align="left">CAT 作为服务端项目基础组件，提供了 Java, C&#x2F;C++, Node.js, Python, Go 等多语言客户端，已经在美团点评的基础架构中间件框架（MVC 框架，RPC 框架，数据库框架，缓存框架等，消息队列，配置系统等）深度集成，为美团点评各业务线提供系统丰富的性能指标、健康状况、实时告警等。</td>
+<td align="left">17306</td>
+<td align="left">2022-10-12</td>
+</tr>
+<tr>
+<td align="left">28</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/facebook/fresco">facebook&#x2F;fresco</a></td>
+<td align="left">An Android library for managing images and the memory they use.</td>
+<td align="left">16875</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">29</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/shuzheng/zheng">shuzheng&#x2F;zheng</a></td>
+<td align="left">基于 Spring+SpringMVC+Mybatis 分布式敏捷开发系统架构，提供整套公共微服务服务模块：集中权限管理（单点登录）、内容管理、支付中心、用户管理（支持第三方登录）、微信平台、存储系统、配置中心、日志分析、任务和通知等，支持服务治理、监控和追踪，努力为中小型企业打造全方位 J2EE 企业级开发解决方案。</td>
+<td align="left">16373</td>
+<td align="left">2022-10-19</td>
+</tr>
+<tr>
+<td align="left">30</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/ARouter">alibaba&#x2F;ARouter</a></td>
+<td align="left">💪 A framework for assisting in the renovation of Android componentization (帮助 Android App 进行组件化改造的路由框架)</td>
+<td align="left">13988</td>
+<td align="left">2022-10-22</td>
+</tr>
+<tr>
+<td align="left">31</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Tencent/APIJSON">Tencent&#x2F;APIJSON</a></td>
+<td align="left">🚀 零代码、全功能、强安全 ORM 库，后端接口和文档零代码，前端(客户端) 定制返回 JSON 的数据和结构。 🚀 A JSON Transmission Protocol and an ORM Library for providing APIs and Docs without writing any code.</td>
+<td align="left">13917</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">32</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/justauth/JustAuth">justauth&#x2F;JustAuth</a></td>
+<td align="left">🏆Gitee 最有价值开源项目 🚀:100: 小而全而美的第三方登录开源组件。目前已支持 Github、Gitee、微博、钉钉、百度、Coding、腾讯云开发者平台、OSChina、支付宝、QQ、微信、淘宝、Google、Facebook、抖音、领英、小米、微软、今日头条、Teambition、StackOverflow、Pinterest、人人、华为、企业微信、酷家乐、Gitlab、美团、饿了么、 …</td>
+<td align="left">13915</td>
+<td align="left">2022-10-04</td>
+</tr>
+<tr>
+<td align="left">33</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Tencent/QMUI_Android">Tencent&#x2F;QMUI_Android</a></td>
+<td align="left">提高 Android UI 开发效率的 UI 库</td>
+<td align="left">13839</td>
+<td align="left">2022-09-20</td>
+</tr>
+<tr>
+<td align="left">34</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/android-hacker/VirtualXposed">android-hacker&#x2F;VirtualXposed</a></td>
+<td align="left">A simple app to use Xposed without root, unlock the bootloader or modify system image, etc.</td>
+<td align="left">13818</td>
+<td align="left">2022-09-09</td>
+</tr>
+<tr>
+<td align="left">35</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Bigkoo/Android-PickerView">Bigkoo&#x2F;Android-PickerView</a></td>
+<td align="left">This is a picker view for android , support linkage effect, timepicker and optionspicker.（时间选择器、省市区三级联动）</td>
+<td align="left">13203</td>
+<td align="left">2022-10-13</td>
+</tr>
+<tr>
+<td align="left">36</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lionsoul2014/ip2region">lionsoul2014&#x2F;ip2region</a></td>
+<td align="left">Ip2region (2.0 - xdb) is a offline IP address manager framework and locator, support billions of data segments, ten microsecond searching performance. xdb engine implementation for many programming la …</td>
+<td align="left">12323</td>
+<td align="left">2022-10-18</td>
+</tr>
+<tr>
+<td align="left">37</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/DataX">alibaba&#x2F;DataX</a></td>
+<td align="left">DataX 是阿里云 DataWorks 数据集成的开源版本。</td>
+<td align="left">12199</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">38</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/youth5201314/banner">youth5201314&#x2F;banner</a></td>
+<td align="left">🔥🔥🔥Banner 2.0 来了！Android 广告图片轮播控件，内部基于 ViewPager2 实现，Indicator 和 UI 都可以自定义。</td>
+<td align="left">12174</td>
+<td align="left">2022-09-29</td>
+</tr>
+<tr>
+<td align="left">39</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/hyb1996/Auto.js">hyb1996&#x2F;Auto.js</a></td>
+<td align="left">A UiAutomator on android, does not need root access(安卓平台上的 JavaScript 自动化工具)</td>
+<td align="left">12104</td>
+<td align="left">2022-09-13</td>
+</tr>
+<tr>
+<td align="left">40</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/LuckSiege/PictureSelector">LuckSiege&#x2F;PictureSelector</a></td>
+<td align="left">Picture Selector Library for Android or 图片选择器</td>
+<td align="left">11994</td>
+<td align="left">2022-10-23</td>
+</tr>
+<tr>
+<td align="left">41</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/pagehelper/Mybatis-PageHelper">pagehelper&#x2F;Mybatis-PageHelper</a></td>
+<td align="left">Mybatis 通用分页插件</td>
+<td align="left">11407</td>
+<td align="left">2022-10-21</td>
+</tr>
+<tr>
+<td align="left">42</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dromara/Sa-Token">dromara&#x2F;Sa-Token</a></td>
+<td align="left">这可能是史上功能最全的 Java 权限认证框架！目前已集成——登录认证、权限认证、分布式 Session 会话、微服务网关鉴权、单点登录、OAuth2.0、踢人下线、Redis 集成、前后台分离、记住我模式、模拟他人账号、临时身份切换、账号封禁、多账号认证体系、注解式鉴权、路由拦截式鉴权、花式 token 生成、自动续签、同端互斥登录、会话治理、密码加密、jwt 集成、Spring 集成、WebFlux 集成…</td>
+<td align="left">10611</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">43</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/code4craft/webmagic">code4craft&#x2F;webmagic</a></td>
+<td align="left">A scalable web crawler framework for Java.</td>
+<td align="left">10574</td>
+<td align="left">2022-10-23</td>
+</tr>
+<tr>
+<td align="left">44</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jeasonlzy/okhttp-OkGo">jeasonlzy&#x2F;okhttp-OkGo</a></td>
+<td align="left">OkGo - 3.0 震撼来袭，该库是基于 Http 协议，封装了 OkHttp 的网络请求框架，比 Retrofit 更简单易用，支持 RxJava，RxJava2，支持自定义缓存，支持批量断点下载管理和批量上传管理功能</td>
+<td align="left">10461</td>
+<td align="left">2022-09-06</td>
+</tr>
+<tr>
+<td align="left">45</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/DuGuQiuBai/Java">DuGuQiuBai&#x2F;Java</a></td>
+<td align="left">27 天成为 Java 大神</td>
+<td align="left">10449</td>
+<td align="left">2022-10-08</td>
+</tr>
+<tr>
+<td align="left">46</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/daniulive/SmarterStreaming">daniulive&#x2F;SmarterStreaming</a></td>
+<td align="left">业内为数不多致力于极致体验的超强全自研跨平台(windows&#x2F;linux&#x2F;android&#x2F;iOS)流媒体内核，通过模块化自由组合，支持实时 RTMP 推流、RTSP 推流、RTMP 播放器、RTSP 播放器、录像、多路流媒体转发、音视频导播、动态视频合成、音频混音、直播互动、内置轻量级 RTSP 服务等，比快更快，业界真正靠谱的超低延迟直播 SDK(1 秒内，低延迟模式下 200~400ms)。</td>
+<td align="left">10252</td>
+<td align="left">2022-09-27</td>
+</tr>
+<tr>
+<td align="left">47</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/macrozheng/mall-swarm">macrozheng&#x2F;mall-swarm</a></td>
+<td align="left">mall-swarm 是一套微服务商城系统，采用了 Spring Cloud 2021 &amp; Alibaba、Spring Boot 2.7、Oauth2、MyBatis、Docker、Elasticsearch、Kubernetes 等核心技术，同时提供了基于 Vue 的管理后台方便快速搭建系统。mall-swarm 在电商业务的基础集成了注册中心、配置中心、监控中心、网关等系统功能。文档齐全，附带全套 Sp …</td>
+<td align="left">9496</td>
+<td align="left">2022-10-21</td>
+</tr>
+<tr>
+<td align="left">48</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/paascloud/paascloud-master">paascloud&#x2F;paascloud-master</a></td>
+<td align="left">spring cloud + vue + oAuth2.0 全家桶实战，前后端分离模拟商城，完整的购物流程、后端运营平台，可以实现快速搭建企业级微服务项目。支持微信登录等三方登录。</td>
+<td align="left">9467</td>
+<td align="left">2022-10-21</td>
+</tr>
+<tr>
+<td align="left">49</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/newbee-ltd/newbee-mall">newbee-ltd&#x2F;newbee-mall</a></td>
+<td align="left">🔥 🎉newbee-mall 是一套电商系统，包括基础版本(Spring Boot+Thymeleaf)、前后端分离版本(Spring Boot+Vue 3+Element-Plus+Vue-Router 4+Vuex 4+Vant 3) 、秒杀版本、Go 语言版本、微服务版本(Spring Cloud Alibaba+Nacos+Sentinel+Seata+Spring Cloud Gateway …</td>
+<td align="left">9386</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">50</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/MyCATApache/Mycat-Server">MyCATApache&#x2F;Mycat-Server</a></td>
+<td align="left">-</td>
+<td align="left">9341</td>
+<td align="left">2022-10-25</td>
+</tr>
+<tr>
+<td align="left">51</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/hackware1993/MagicIndicator">hackware1993&#x2F;MagicIndicator</a></td>
+<td align="left">A powerful, customizable and extensible ViewPager indicator framework. As the best alternative of ViewPagerIndicator, TabLayout and PagerSlidingTabStrip —— 强大、可定制、易扩展的 ViewPager 指示器框架。是 ViewPagerIn …</td>
+<td align="left">9276</td>
+<td align="left">2022-09-24</td>
+</tr>
+<tr>
+<td align="left">52</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lihengming/spring-boot-api-project-seed">lihengming&#x2F;spring-boot-api-project-seed</a></td>
+<td align="left">:seedling::rocket:一个基于 Spring Boot &amp; MyBatis 的种子项目，用于快速构建中小型 API、RESTful API 项目~</td>
+<td align="left">9184</td>
+<td align="left">2022-10-19</td>
+</tr>
+<tr>
+<td align="left">53</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/laobie/StatusBarUtil">laobie&#x2F;StatusBarUtil</a></td>
+<td align="left">A util for setting status bar style on Android App.</td>
+<td align="left">8787</td>
+<td align="left">2022-06-24</td>
+</tr>
+<tr>
+<td align="left">54</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Justson/AgentWeb">Justson&#x2F;AgentWeb</a></td>
+<td align="left">AgentWeb is a powerful library based on Android WebView.</td>
+<td align="left">8681</td>
+<td align="left">2022-09-03</td>
+</tr>
+<tr>
+<td align="left">55</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/crossoverJie/cim">crossoverJie&#x2F;cim</a></td>
+<td align="left">📲cim(cross IM) 适用于开发者的分布式即时通讯系统</td>
+<td align="left">8588</td>
+<td align="left">2022-10-04</td>
+</tr>
+<tr>
+<td align="left">56</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/COLA">alibaba&#x2F;COLA</a></td>
+<td align="left">🥤 COLA: Clean Object-oriented &amp; Layered Architecture</td>
+<td align="left">8579</td>
+<td align="left">2022-10-23</td>
+</tr>
+<tr>
+<td align="left">57</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/metersphere/metersphere">metersphere&#x2F;metersphere</a></td>
+<td align="left">MeterSphere 是一站式开源持续测试平台，覆盖测试管理、接口测试、UI 测试和性能测试等。搞测试，就选 MeterSphere！</td>
+<td align="left">8424</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">58</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/shwenzhang/AndResGuard">shwenzhang&#x2F;AndResGuard</a></td>
+<td align="left">proguard resource for Android by wechat team</td>
+<td align="left">8111</td>
+<td align="left">2022-10-03</td>
+</tr>
+<tr>
+<td align="left">59</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/KunMinX/Jetpack-MVVM-Best-Practice">KunMinX&#x2F;Jetpack-MVVM-Best-Practice</a></td>
+<td align="left">难得一见 Jetpack MVVM 最佳实践！在 “以简驭繁” 代码中，对 “视图控制器” 乃至 “标准化开发模式” 形成正确、深入理解！</td>
+<td align="left">7951</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">60</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/barry-ran/QtScrcpy">barry-ran&#x2F;QtScrcpy</a></td>
+<td align="left">Android real-time display control software</td>
+<td align="left">7933</td>
+<td align="left">2022-10-21</td>
+</tr>
+<tr>
+<td align="left">61</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/hs-web/hsweb-framework">hs-web&#x2F;hsweb-framework</a></td>
+<td align="left">hsweb (haʊs wɛb) 是一个基于 spring-boot 2.x 开发 ,首个使用全响应式编程的企业级后台管理系统基础项目。</td>
+<td align="left">7922</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">62</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/guolindev/LitePal">guolindev&#x2F;LitePal</a></td>
+<td align="left">An Android library that makes developers use SQLite database extremely easy.</td>
+<td align="left">7902</td>
+<td align="left">2022-08-19</td>
+</tr>
+<tr>
+<td align="left">63</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dataease/dataease">dataease&#x2F;dataease</a></td>
+<td align="left">人人可用的开源数据可视化分析工具。</td>
+<td align="left">7825</td>
+<td align="left">2022-10-28</td>
+</tr>
+<tr>
+<td align="left">64</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zhoutaoo/SpringCloud">zhoutaoo&#x2F;SpringCloud</a></td>
+<td align="left">基于 SpringCloud2.1 的微服务开发脚手架，整合了 spring-security-oauth2、nacos、feign、sentinel、springcloud-gateway 等。服务治理方面引入 elasticsearch、skywalking、springboot-admin、zipkin 等，让项目开发快速进入业务开发，而不需过多时间花费在架构搭建上。持续更新中</td>
+<td align="left">7756</td>
+<td align="left">2022-10-19</td>
+</tr>
+<tr>
+<td align="left">65</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/debezium/debezium">debezium&#x2F;debezium</a></td>
+<td align="left">Change data capture for a variety of databases. Please log issues at <a target="_blank" rel="noopener" href="https://issues.redhat.com/browse/DBZ">https://issues.redhat.com/browse/DBZ</a>.</td>
+<td align="left">7692</td>
+<td align="left">2022-10-28</td>
+</tr>
+<tr>
+<td align="left">66</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/kekingcn/kkFileView">kekingcn&#x2F;kkFileView</a></td>
+<td align="left">基于 Spring Boot 的文件在线预览项目</td>
+<td align="left">7623</td>
+<td align="left">2022-10-23</td>
+</tr>
+<tr>
+<td align="left">67</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/YunaiV/ruoyi-vue-pro">YunaiV&#x2F;ruoyi-vue-pro</a></td>
+<td align="left">🔥 官方推荐 🔥 RuoYi-Vue 全新 Pro 版本，优化重构所有功能。基于 Spring Boot + MyBatis Plus + Vue &amp; Element 实现的后台管理系统 + 微信小程序，支持 RBAC 动态权限、数据权限、SaaS 多租户、Flowable 工作流、三方登录、支付、短信、商城等功能。你的 ⭐️ Star ⭐️，是作者生发的动力！</td>
+<td align="left">7423</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">68</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/otter">alibaba&#x2F;otter</a></td>
+<td align="left">阿里巴巴分布式数据库同步系统(解决中美异地机房)</td>
+<td align="left">7409</td>
+<td align="left">2022-10-19</td>
+</tr>
+<tr>
+<td align="left">69</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ssssssss-team/spider-flow">ssssssss-team&#x2F;spider-flow</a></td>
+<td align="left">新一代爬虫平台，以图形化方式定义爬虫流程，不写代码即可完成爬虫。</td>
+<td align="left">7362</td>
+<td align="left">2022-10-25</td>
+</tr>
+<tr>
+<td align="left">70</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/apache/shenyu">apache&#x2F;shenyu</a></td>
+<td align="left">Apache ShenYu is a Java native API Gateway for service proxy, protocol conversion and API governance.</td>
+<td align="left">7358</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">71</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/vipshop/vjtools">vipshop&#x2F;vjtools</a></td>
+<td align="left">The vip.com’s java coding standard, libraries and tools</td>
+<td align="left">7345</td>
+<td align="left">2022-10-18</td>
+</tr>
+<tr>
+<td align="left">72</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/sohutv/cachecloud">sohutv&#x2F;cachecloud</a></td>
+<td align="left">搜狐视频(sohu tv)Redis 私有云平台 ：支持 Redis 多种架构(Standalone、Sentinel、Cluster)高效管理、有效降低大规模 redis 运维成本，提升资源管控能力和利用率。平台提供快速搭建&#x2F;迁移，运维管理，弹性伸缩，统计监控，客户端整合接入等功能。(CacheCloud is a Redis cloud management platform. It supports …</td>
+<td align="left">7192</td>
+<td align="left">2022-08-15</td>
+</tr>
+<tr>
+<td align="left">73</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/goldze/MVVMHabit">goldze&#x2F;MVVMHabit</a></td>
+<td align="left">👕 基于谷歌最新 AAC 架构，MVVM 设计模式的一套快速开发库，整合 Okhttp+RxJava+Retrofit+Glide 等主流模块，满足日常开发需求。使用该框架可以快速开发一个高质量、易维护的 Android 应用。</td>
+<td align="left">7124</td>
+<td align="left">2022-08-11</td>
+</tr>
+<tr>
+<td align="left">74</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Qihoo360/RePlugin">Qihoo360&#x2F;RePlugin</a></td>
+<td align="left">RePlugin - A flexible, stable, easy-to-use Android Plug-in Framework</td>
+<td align="left">7042</td>
+<td align="left">2022-10-26</td>
+</tr>
+<tr>
+<td align="left">75</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/abel533/Mapper">abel533&#x2F;Mapper</a></td>
+<td align="left">Mybatis Common Mapper - Easy to use</td>
+<td align="left">6976</td>
+<td align="left">2022-10-16</td>
+</tr>
+<tr>
+<td align="left">76</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/wildfirechat/im-server">wildfirechat&#x2F;im-server</a></td>
+<td align="left">即时通讯(IM)系统</td>
+<td align="left">6864</td>
+<td align="left">2022-10-28</td>
+</tr>
+<tr>
+<td align="left">77</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Exrick/xmall">Exrick&#x2F;xmall</a></td>
+<td align="left">基于 SOA 架构的分布式电商购物商城 前后端分离 前台商城:Vue 全家桶 后台管理系统:Dubbo&#x2F;SSM&#x2F;Elasticsearch&#x2F;Redis&#x2F;MySQL&#x2F;ActiveMQ&#x2F;Shiro&#x2F;Zookeeper 等</td>
+<td align="left">6772</td>
+<td align="left">2022-10-19</td>
+</tr>
+<tr>
+<td align="left">78</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/li-xiaojun/XPopup">li-xiaojun&#x2F;XPopup</a></td>
+<td align="left">🔥XPopup2.0 版本重磅来袭，2 倍以上性能提升，带来可观的动画性能优化和交互细节的提升！！！功能强大，交互优雅，动画丝滑的通用弹窗！可以替代 Dialog，PopupWindow，PopupMenu，BottomSheet，DrawerLayout，Spinner 等组件，自带十几种效果良好的动画， 支持完全的 UI 和动画自定义！(Powerful and Beautiful Popup for A …</td>
+<td align="left">6728</td>
+<td align="left">2022-10-25</td>
+</tr>
+<tr>
+<td align="left">79</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lenve/VBlog">lenve&#x2F;VBlog</a></td>
+<td align="left">V 部落，Vue+SpringBoot 实现的多用户博客管理平台!</td>
+<td align="left">6728</td>
+<td align="left">2022-10-24</td>
+</tr>
+<tr>
+<td align="left">80</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/YunaiV/yudao-cloud">YunaiV&#x2F;yudao-cloud</a></td>
+<td align="left">ruoyi-vue-pro 全新 Cloud 版本，优化重构所有功能。基于 Spring Cloud Alibaba + MyBatis Plus + Vue &amp; Element 实现的后台管理系统 + 用户小程序，支持 RBAC 动态权限、多租户、数据权限、工作流、三方登录、支付、短信、商城等功能。你的 ⭐️ Star ⭐️，是作者生发的动力！</td>
+<td align="left">6719</td>
+<td align="left">2022-10-08</td>
+</tr>
+<tr>
+<td align="left">81</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Tencent/Shadow">Tencent&#x2F;Shadow</a></td>
+<td align="left">零反射全动态 Android 插件框架</td>
+<td align="left">6648</td>
+<td align="left">2022-08-31</td>
+</tr>
+<tr>
+<td align="left">82</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/pppscn/SmsForwarder">pppscn&#x2F;SmsForwarder</a></td>
+<td align="left">短信转发器——监控 Android 手机短信、来电、APP 通知，并根据指定规则转发到其他手机：钉钉群自定义机器人、钉钉企业内机器人、企业微信群机器人、飞书机器人、企业微信应用消息、邮箱、bark、webhook、Telegram 机器人、Server 酱、PushPlus、手机短信等。包括主动控制服务端与客户端，让你轻松远程发短信、查短信、查通话、查话簿、查电量等。（V3.0 新增）PS.这个 APK 主要是 …</td>
+<td align="left">6428</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">83</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zfile-dev/zfile">zfile-dev&#x2F;zfile</a></td>
+<td align="left">在线云盘、网盘、OneDrive、云存储、私有云、对象存储、h5ai、上传、下载</td>
+<td align="left">6403</td>
+<td align="left">2022-10-18</td>
+</tr>
+<tr>
+<td align="left">84</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zouzg/mybatis-generator-gui">zouzg&#x2F;mybatis-generator-gui</a></td>
+<td align="left">mybatis-generator 界面工具，让你生成代码更简单更快捷</td>
+<td align="left">6343</td>
+<td align="left">2022-10-24</td>
+</tr>
+<tr>
+<td align="left">85</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/wxiaoqi/Spring-Cloud-Platform">wxiaoqi&#x2F;Spring-Cloud-Platform</a></td>
+<td align="left">🔥🔥🔥 国内首个 Spring Cloud 微服务化 RBAC 的管理平台，核心采用 Spring Boot 2.4、Spring Cloud 2020.0.0 &amp; Alibaba，前端采用 d2-admin 中台框架。 🔝 🔝 记得上边点个 star 关注更新</td>
+<td align="left">5902</td>
+<td align="left">2022-06-22</td>
+</tr>
+<tr>
+<td align="left">86</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/transmittable-thread-local">alibaba&#x2F;transmittable-thread-local</a></td>
+<td align="left">📌 TransmittableThreadLocal (TTL), the missing Java™ std lib(simple &amp; 0-dependency) for framework&#x2F;middleware, provide an enhanced InheritableThreadLocal that transmits values between threads even using …</td>
+<td align="left">5813</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">87</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/weibocom/motan">weibocom&#x2F;motan</a></td>
+<td align="left">A cross-language remote procedure call(RPC) framework for rapid development of high performance distributed services.</td>
+<td align="left">5812</td>
+<td align="left">2022-10-19</td>
+</tr>
+<tr>
+<td align="left">88</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/febsteam/FEBS-Shiro">febsteam&#x2F;FEBS-Shiro</a></td>
+<td align="left">Spring Boot 2.4.2，Shiro1.6.0 &amp; Layui 2.5.6 权限管理系统。</td>
+<td align="left">5777</td>
+<td align="left">2022-10-20</td>
+</tr>
+<tr>
+<td align="left">89</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/527515025/springBoot">527515025&#x2F;springBoot</a></td>
+<td align="left">springboot 框架与其它组件结合如 jpa、mybatis、websocket、security、shiro、cache 等</td>
+<td align="left">5764</td>
+<td align="left">2022-10-21</td>
+</tr>
+<tr>
+<td align="left">90</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/gzu-liyujiang/AndroidPicker">gzu-liyujiang&#x2F;AndroidPicker</a></td>
+<td align="left">安卓选择器类库，包括日期及时间选择器（可用于出生日期、营业时间等）、单项选择器（可用于性别、民族、职业、学历、星座等）、二三级联动选择器（可用于车牌号、基金定投日期等）、城市地址选择器（分省级、地市级及区县级）、数字选择器（可用于年龄、身高、体重、温度等）、日历选日期择器（可用于酒店及机票预定日期）、颜色选择器、文件及目录选择器、图片选择器等……WheelPicker&#x2F;DatePicker&#x2F;Tim …</td>
+<td align="left">5718</td>
+<td align="left">2022-09-04</td>
+</tr>
+<tr>
+<td align="left">91</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lets-blade/blade">lets-blade&#x2F;blade</a></td>
+<td align="left">:rocket: Lightning fast and elegant mvc framework for Java8</td>
+<td align="left">5698</td>
+<td align="left">2022-10-18</td>
+</tr>
+<tr>
+<td align="left">92</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Meituan-Dianping/Leaf">Meituan-Dianping&#x2F;Leaf</a></td>
+<td align="left">Distributed ID Generate Service</td>
+<td align="left">5636</td>
+<td align="left">2022-10-21</td>
+</tr>
+<tr>
+<td align="left">93</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jpush/aurora-imui">jpush&#x2F;aurora-imui</a></td>
+<td align="left">General IM UI components. Android&#x2F;iOS&#x2F;RectNative ready. 通用 IM 聊天 UI 组件，已经同时支持 Android&#x2F;iOS&#x2F;RN。</td>
+<td align="left">5582</td>
+<td align="left">2022-10-11</td>
+</tr>
+<tr>
+<td align="left">94</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/knightliao/disconf">knightliao&#x2F;disconf</a></td>
+<td align="left">Distributed Configuration Management Platform(分布式配置管理平台)</td>
+<td align="left">5531</td>
+<td align="left">2022-10-04</td>
+</tr>
+<tr>
+<td align="left">95</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/changmingxie/tcc-transaction">changmingxie&#x2F;tcc-transaction</a></td>
+<td align="left">tcc-transaction 是 TCC 型事务 java 实现</td>
+<td align="left">5511</td>
+<td align="left">2022-10-21</td>
+</tr>
+<tr>
+<td align="left">96</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/yanzhenjie/SwipeRecyclerView">yanzhenjie&#x2F;SwipeRecyclerView</a></td>
+<td align="left">:melon: RecyclerView 侧滑菜单，Item 拖拽，滑动删除 Item，自动加载更多，HeaderView，FooterView，Item 分组黏贴。</td>
+<td align="left">5376</td>
+<td align="left">2022-10-21</td>
+</tr>
+<tr>
+<td align="left">97</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/didi/KnowStreaming">didi&#x2F;KnowStreaming</a></td>
+<td align="left">一站式云原生实时流数据平台，通过 0 侵入、插件化构建企业级 Kafka 服务，极大降低操作、存储和管理实时流数据门槛</td>
+<td align="left">5365</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">98</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/raphw/byte-buddy">raphw&#x2F;byte-buddy</a></td>
+<td align="left">Runtime code generation for the Java virtual machine.</td>
+<td align="left">5239</td>
+<td align="left">2022-10-25</td>
+</tr>
+<tr>
+<td align="left">99</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/getActivity/AndroidProject">getActivity&#x2F;AndroidProject</a></td>
+<td align="left">Android 技术中台，但愿人长久，搬砖不再有</td>
+<td align="left">5231</td>
+<td align="left">2022-09-10</td>
+</tr>
+<tr>
+<td align="left">100</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/TommyLemon/Android-ZBLibrary">TommyLemon&#x2F;Android-ZBLibrary</a></td>
+<td align="left">🔥Android MVP 快速开发框架，做国内 「示例最全面」「注释最详细」「使用最简单」「代码最严谨」的 Android 开源 UI 框架。 🔥An Android MVP Framework with many demos, detailed documents, simple usages and strict codes.</td>
+<td align="left">5149</td>
+<td align="left">2022-08-02</td>
+</tr>
+<tr>
+<td align="left">101</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/jvm-sandbox">alibaba&#x2F;jvm-sandbox</a></td>
+<td align="left">Real - time non-invasive AOP framework container based on JVM</td>
+<td align="left">5128</td>
+<td align="left">2022-10-23</td>
+</tr>
+<tr>
+<td align="left">102</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ffay/lanproxy">ffay&#x2F;lanproxy</a></td>
+<td align="left">lanproxy 是一个将局域网个人电脑、服务器代理到公网的内网穿透工具，支持 tcp 流量转发，可支持任何 tcp 上层协议（访问内网网站、本地支付接口调试、ssh 访问、远程桌面、http 代理、https 代理、socks5 代理…）。技术交流 QQ 群 736294209</td>
+<td align="left">5108</td>
+<td align="left">2022-10-25</td>
+</tr>
+<tr>
+<td align="left">103</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/AriaLyy/Aria">AriaLyy&#x2F;Aria</a></td>
+<td align="left">下载可以很简单</td>
+<td align="left">5056</td>
+<td align="left">2022-09-21</td>
+</tr>
+<tr>
+<td align="left">104</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Nepxion/Discovery">Nepxion&#x2F;Discovery</a></td>
+<td align="left">☀️ Nepxion Discovery is a solution for Spring Cloud with blue green, gray, route, limitation, circuit breaker, degrade, isolation, tracing, dye, failover, active 蓝绿、灰度、路由、限流、熔断、降级、隔离、追踪、流量染色、故障转移、多活</td>
+<td align="left">5025</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">105</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alipay/SoloPi">alipay&#x2F;SoloPi</a></td>
+<td align="left">SoloPi 自动化测试工具</td>
+<td align="left">4966</td>
+<td align="left">2022-08-05</td>
+</tr>
+<tr>
+<td align="left">106</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/baidu/uid-generator">baidu&#x2F;uid-generator</a></td>
+<td align="left">UniqueID generator</td>
+<td align="left">4845</td>
+<td align="left">2022-10-24</td>
+</tr>
+<tr>
+<td align="left">107</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/razerdp/BasePopup">razerdp&#x2F;BasePopup</a></td>
+<td align="left">Android 下打造通用便捷的 PopupWindow 弹窗库</td>
+<td align="left">4844</td>
+<td align="left">2022-09-21</td>
+</tr>
+<tr>
+<td align="left">108</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/mcxiaoke/packer-ng-plugin">mcxiaoke&#x2F;packer-ng-plugin</a></td>
+<td align="left">下一代 Android 打包工具（对 Gradle 7.x 的支持，欢迎提 PR）</td>
+<td align="left">4810</td>
+<td align="left">2022-06-27</td>
+</tr>
+<tr>
+<td align="left">109</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Jasonchenlijian/FastBle">Jasonchenlijian&#x2F;FastBle</a></td>
+<td align="left">Android Bluetooth Low Energy (BLE) Fast Development Framework. It uses simple ways to filter, scan, connect, read ,write, notify, readRssi, setMTU, and multiConnection.</td>
+<td align="left">4767</td>
+<td align="left">2022-07-27</td>
+</tr>
+<tr>
+<td align="left">110</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lingochamp/okdownload">lingochamp&#x2F;okdownload</a></td>
+<td align="left">A Reliable, Flexible, Fast and Powerful download engine.</td>
+<td align="left">4751</td>
+<td align="left">2022-07-07</td>
+</tr>
+<tr>
+<td align="left">111</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/youlookwhat/CloudReader">youlookwhat&#x2F;CloudReader</a></td>
+<td align="left">🗡️ 云阅：一款基于网易云音乐 UI，使用玩 Android Api，Retrofit2 + RxJava2 + Room + MVVM-databinding 架构开发的 Android 客户端</td>
+<td align="left">4730</td>
+<td align="left">2022-08-29</td>
+</tr>
+<tr>
+<td align="left">112</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/sofastack/sofa-boot">sofastack&#x2F;sofa-boot</a></td>
+<td align="left">SOFABoot is a framework that enhances Spring Boot and fully compatible with it, provides readiness check, class isolation, etc.</td>
+<td align="left">4621</td>
+<td align="left">2022-10-28</td>
+</tr>
+<tr>
+<td align="left">113</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/techGay/v9porn">techGay&#x2F;v9porn</a></td>
+<td align="left">9*Porn Android 客户端，突破游客每天观看 10 次视频的限制，还可以下载视频</td>
+<td align="left">4609</td>
+<td align="left">2022-06-11</td>
+</tr>
+<tr>
+<td align="left">114</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/pili-engineering/PLDroidPlayer">pili-engineering&#x2F;PLDroidPlayer</a></td>
+<td align="left">PLDroidPlayer 是七牛推出的一款免费的适用于 Android 平台的播放器 SDK，采用全自研的跨平台播放内核，拥有丰富的功能和优异的性能，可高度定制化和二次开发。</td>
+<td align="left">4565</td>
+<td align="left">2022-09-02</td>
+</tr>
+<tr>
+<td align="left">115</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/2227324689/gpmall">2227324689&#x2F;gpmall</a></td>
+<td align="left">【咕泡学院实战项目】-基于 SpringBoot+Dubbo 构建的电商平台-微服务架构、商城、电商、微服务、高并发、kafka、Elasticsearch</td>
+<td align="left">4499</td>
+<td align="left">2022-10-06</td>
+</tr>
+<tr>
+<td align="left">116</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/huanghongxun/HMCL">huanghongxun&#x2F;HMCL</a></td>
+<td align="left">A Minecraft Launcher which is multi-functional, cross-platform and popular</td>
+<td align="left">4427</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">117</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/roncoo/roncoo-pay">roncoo&#x2F;roncoo-pay</a></td>
+<td align="left">龙果支付系统（roncoo-pay）是国内首款开源的互联网支付系统，拥有独立的账户体系、用户体系、支付接入体系、支付交易体系、对账清结算体系。目标是打造一款集成主流支付方式且轻量易用的支付收款系统，满足互联网业务系统打通支付通道实现支付收款和业务资金管理等功能。</td>
+<td align="left">4385</td>
+<td align="left">2022-10-12</td>
+</tr>
+<tr>
+<td align="left">118</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/apache/rocketmq-externals">apache&#x2F;rocketmq-externals</a></td>
+<td align="left">Mirror of Apache RocketMQ (Incubating)</td>
+<td align="left">4303</td>
+<td align="left">2022-10-14</td>
+</tr>
+<tr>
+<td align="left">119</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Exrick/xpay">Exrick&#x2F;xpay</a></td>
+<td align="left">XPay 个人免签收款支付系统 完全免费 资金直接到达本人账号 支持 支付宝 微信 QQ 云闪付 无需备案 无需签约 无需挂机监控 APP 无需插件 无需第三方支付 SDK 无需营业执照身份证 只需收款码 搞定支付流程 现已支持移动端支付</td>
+<td align="left">4256</td>
+<td align="left">2022-10-21</td>
+</tr>
+<tr>
+<td align="left">120</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/WeiYe-Jing/datax-web">WeiYe-Jing&#x2F;datax-web</a></td>
+<td align="left">DataX 集成可视化页面，选择数据源即可一键生成数据同步任务，支持 RDBMS、Hive、HBase、ClickHouse、MongoDB 等数据源，批量创建 RDBMS 数据同步任务，集成开源调度系统，支持分布式、增量同步数据、实时查看运行日志、监控执行器资源、KILL 运行进程、数据源信息加密等。</td>
+<td align="left">4254</td>
+<td align="left">2022-10-23</td>
+</tr>
+<tr>
+<td align="left">121</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Doikki/DKVideoPlayer">Doikki&#x2F;DKVideoPlayer</a></td>
+<td align="left">Android Video Player. 安卓视频播放器，封装 MediaPlayer、ExoPlayer、IjkPlayer。模仿抖音并实现预加载，列表播放，悬浮播放，广告播放，弹幕，视频水印，视频滤镜</td>
+<td align="left">4235</td>
+<td align="left">2022-10-17</td>
+</tr>
+<tr>
+<td align="left">122</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Heeexy/SpringBoot-Shiro-Vue">Heeexy&#x2F;SpringBoot-Shiro-Vue</a></td>
+<td align="left">提供一套基于 Spring Boot-Shiro-Vue 的权限管理思路.前后端都加以控制,做到按钮&#x2F;接口级别的权限。（当前新版本已移除 shiro 依赖，简化了配置）</td>
+<td align="left">4175</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">123</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ThirtyDegreesRay/OpenHub">ThirtyDegreesRay&#x2F;OpenHub</a></td>
+<td align="left">An open source GitHub Android client app, faster and concise.</td>
+<td align="left">4088</td>
+<td align="left">2022-09-27</td>
+</tr>
+<tr>
+<td align="left">124</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Javen205/IJPay">Javen205&#x2F;IJPay</a></td>
+<td align="left">IJPay 让支付触手可及，封装了微信支付、QQ 支付、支付宝支付、京东支付、银联支付、PayPal 支付等常用的支付方式以及各种常用的接口。不依赖任何第三方 mvc 框架，仅仅作为工具使用简单快速完成支付模块的开发，可轻松嵌入到任何系统里。右上角点下小星星 ✨</td>
+<td align="left">4082</td>
+<td align="left">2022-10-05</td>
+</tr>
+<tr>
+<td align="left">125</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/pig-mesh/pig">pig-mesh&#x2F;pig</a></td>
+<td align="left">↥ ↥ ↥ 点击关注更新，基于 Spring Cloud 2021 、Spring Boot 2.7、 OAuth2 的 RBAC 权限管理系统</td>
+<td align="left">4059</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">126</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xuexiangjys/XUI">xuexiangjys&#x2F;XUI</a></td>
+<td align="left">💍A simple and elegant Android native UI framework, free your hands! (一个简洁而优雅的 Android 原生 UI 框架，解放你的双手！)</td>
+<td align="left">4027</td>
+<td align="left">2022-10-26</td>
+</tr>
+<tr>
+<td align="left">127</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/apache/incubator-seatunnel">apache&#x2F;incubator-seatunnel</a></td>
+<td align="left">SeaTunnel is a distributed, high-performance data integration platform for the synchronization and transformation of massive data (offline &amp; real-time).</td>
+<td align="left">3975</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">128</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/remkop/picocli">remkop&#x2F;picocli</a></td>
+<td align="left">Picocli is a modern framework for building powerful, user-friendly, GraalVM-enabled command line apps with ease. It supports colors, autocompletion, subcommands, and more. In 1 source file so apps ca …</td>
+<td align="left">3906</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">129</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/oldmanpushcart/greys-anatomy">oldmanpushcart&#x2F;greys-anatomy</a></td>
+<td align="left">Java 诊断工具</td>
+<td align="left">3892</td>
+<td align="left">2022-10-25</td>
+</tr>
+<tr>
+<td align="left">130</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/saysky/ForestBlog">saysky&#x2F;ForestBlog</a></td>
+<td align="left">一个简单漂亮的 SSM(Spring+SpringMVC+Mybatis)博客系统</td>
+<td align="left">3825</td>
+<td align="left">2022-10-18</td>
+</tr>
+<tr>
+<td align="left">131</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zlt2000/microservices-platform">zlt2000&#x2F;microservices-platform</a></td>
+<td align="left">基于 SpringBoot2.x、SpringCloud 和 SpringCloudAlibaba 并采用前后端分离的企业级微服务多租户系统架构。并引入组件化的思想实现高内聚低耦合，项目代码简洁注释丰富上手容易，适合学习和企业中使用。真正实现了基于 RBAC、jwt 和 oauth2 的无状态统一权限认证的解决方案，面向互联网设计同时适合 B 端和 C 端用户，支持 CI&#x2F;CD 多环境部署，并提供应用管理方便第三方系统接入； …</td>
+<td align="left">3797</td>
+<td align="left">2022-10-25</td>
+</tr>
+<tr>
+<td align="left">132</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/getActivity/XXPermissions">getActivity&#x2F;XXPermissions</a></td>
+<td align="left">Android 权限请求框架，已适配 Android 13</td>
+<td align="left">3791</td>
+<td align="left">2022-09-10</td>
+</tr>
+<tr>
+<td align="left">133</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/PowerJob/PowerJob">PowerJob&#x2F;PowerJob</a></td>
+<td align="left">Enterprise job scheduling middleware with distributed computing ability.</td>
+<td align="left">3781</td>
+<td align="left">2022-10-23</td>
+</tr>
+<tr>
+<td align="left">134</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/dragonwell8">alibaba&#x2F;dragonwell8</a></td>
+<td align="left">Alibaba Dragonwell8 JDK</td>
+<td align="left">3730</td>
+<td align="left">2022-10-28</td>
+</tr>
+<tr>
+<td align="left">135</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/QLExpress">alibaba&#x2F;QLExpress</a></td>
+<td align="left">QLExpress is a powerful, lightweight, dynamic language for the Java platform aimed at improving developers’ productivity in different business scenes.</td>
+<td align="left">3727</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">136</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/baomidou/dynamic-datasource-spring-boot-starter">baomidou&#x2F;dynamic-datasource-spring-boot-starter</a></td>
+<td align="left">dynamic datasource for springboot 多数据源 动态数据源 主从分离 读写分离 分布式事务</td>
+<td align="left">3710</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">137</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/981011512/--">981011512&#x2F;–</a></td>
+<td align="left">停车场系统源码，新能源充电桩系统，停车场小程序，智能停车，Parking system，【功能介绍】：① 兼容市面上主流的多家相机，理论上兼容所有硬件，可灵活扩展，② 相机识别后数据自动上传到云端并记录，校验相机唯一 id 和硬件序列号，防止非法数据录入，③ 用户手机查询停车记录详情可自主缴费(支持微信，支付宝，银行接口支付，支持每个停车场指定不同的商户进行收款)，支付后出场在免费时间内会自动抬杆。④ 支持 a …</td>
+<td align="left">3707</td>
+<td align="left">2022-09-27</td>
+</tr>
+<tr>
+<td align="left">138</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jeecgboot/JimuReport">jeecgboot&#x2F;JimuReport</a></td>
+<td align="left">⭐️「低代码可视化报表」类似 excel 操作风格，在线拖拽完成设计！功能涵盖: 报表设计、图形报表、打印设计、大屏设计等，完全免费！秉承“简单、易用、专业”的产品理念，极大的降低报表开发难度、缩短开发周期、解决各类报表难题。</td>
+<td align="left">3688</td>
+<td align="left">2022-10-24</td>
+</tr>
+<tr>
+<td align="left">139</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xiaojieonly/Ehviewer_CN_SXJ">xiaojieonly&#x2F;Ehviewer_CN_SXJ</a></td>
+<td align="left">ehviewer，用爱发电，快乐前行</td>
+<td align="left">3676</td>
+<td align="left">2022-10-19</td>
+</tr>
+<tr>
+<td align="left">140</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/apache/dubbo-admin">apache&#x2F;dubbo-admin</a></td>
+<td align="left">The ops and reference implementation for Apache Dubbo</td>
+<td align="left">3671</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">141</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/will-che/flink-recommandSystem-demo">will-che&#x2F;flink-recommandSystem-demo</a></td>
+<td align="left">:helicopter::rocket:基于 Flink 实现的商品实时推荐系统。flink 统计商品热度，放入 redis 缓存，分析日志信息，将画像标签和实时记录放入 Hbase。在用户发起推荐请求后，根据用户画像重排序热度榜，并结合协同过滤和标签两个推荐模块为新生成的榜单的每一个产品添加关联产品，最后返回新的用户列表。</td>
+<td align="left">3605</td>
+<td align="left">2022-10-04</td>
+</tr>
+<tr>
+<td align="left">142</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Exrick/xboot">Exrick&#x2F;xboot</a></td>
+<td align="left">基于 Spring Boot 2.x 的一站式前后端分离快速开发平台 XBoot 微信小程序+Uniapp 前端：Vue+iView Admin 后端：Spring Boot 2.x&#x2F;Spring Security&#x2F;JWT&#x2F;JPA+Mybatis-Plus&#x2F;Redis&#x2F;Elasticsearch&#x2F;Activiti 分布式限流&#x2F;同步锁&#x2F;验证码&#x2F;SnowFlake 雪花算法 ID 动态权限 数据权限 工作流 代 …</td>
+<td align="left">3586</td>
+<td align="left">2022-10-25</td>
+</tr>
+<tr>
+<td align="left">143</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/mpusher/mpush">mpusher&#x2F;mpush</a></td>
+<td align="left">MPush 开源实时消息推送系统</td>
+<td align="left">3568</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">144</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/qunarcorp/bistoury">qunarcorp&#x2F;bistoury</a></td>
+<td align="left">Bistoury 是去哪儿网的 java 应用生产问题诊断工具，提供了一站式的问题诊断方案</td>
+<td align="left">3540</td>
+<td align="left">2022-10-19</td>
+</tr>
+<tr>
+<td align="left">145</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/stylefeng/Guns">stylefeng&#x2F;Guns</a></td>
+<td align="left">Guns 基于 SpringBoot 2，致力于做更简洁的后台管理系统，完美整合 springmvc + shiro + mybatis-plus + beetl!Guns 项目代码简洁，注释丰富，上手容易，同时 Guns 包含许多基础模块(用户管理，角色管理，部门管理，字典管理等 10 个模块)，可以直接作为一个后台管理系统的脚手架!</td>
+<td align="left">3518</td>
+<td align="left">2022-10-12</td>
+</tr>
+<tr>
+<td align="left">146</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/JavaNoober/BackgroundLibrary">JavaNoober&#x2F;BackgroundLibrary</a></td>
+<td align="left">A framework for directly generating shape through Tags, no need to write shape.xml again（通过标签直接生成 shape，无需再写 shape.xml）</td>
+<td align="left">3471</td>
+<td align="left">2022-10-11</td>
+</tr>
+<tr>
+<td align="left">147</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/youlookwhat/DesignPattern">youlookwhat&#x2F;DesignPattern</a></td>
+<td align="left">📚 Java 23 种设计模式全归纳</td>
+<td align="left">3429</td>
+<td align="left">2022-08-06</td>
+</tr>
+<tr>
+<td align="left">148</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/apache/kylin">apache&#x2F;kylin</a></td>
+<td align="left">Apache Kylin</td>
+<td align="left">3393</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">149</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/201206030/novel">201206030&#x2F;novel</a></td>
+<td align="left">novel 是一套基于时下最新 Java 技术栈 Spring Boot 3 + Vue 3 开发的前后端分离学习型小说项目，配备保姆级教程手把手教你从零开始开发上线一套生产级别的 Java 系统，由小说门户系统、作家后台管理系统、平台后台管理系统等多个子系统构成。包括小说推荐、作品检索、小说排行榜、小说阅读、小说评论、会员中心、作家专区、充值订阅、新闻发布等功能。</td>
+<td align="left">3381</td>
+<td align="left">2022-09-29</td>
+</tr>
+<tr>
+<td align="left">150</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/killme2008/aviatorscript">killme2008&#x2F;aviatorscript</a></td>
+<td align="left">A high performance scripting language hosted on the JVM.</td>
+<td align="left">3362</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">151</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ittianyu/BottomNavigationViewEx">ittianyu&#x2F;BottomNavigationViewEx</a></td>
+<td align="left">An android lib for enhancing BottomNavigationView. 一个增强 BottomNavigationView 的安卓库。</td>
+<td align="left">3340</td>
+<td align="left">2022-08-30</td>
+</tr>
+<tr>
+<td align="left">152</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/KunMinX/Linkage-RecyclerView">KunMinX&#x2F;Linkage-RecyclerView</a></td>
+<td align="left">即使不用饿了么订餐，也请务必收藏好该库！🔥 一行代码即可接入，二级联动订餐列表。</td>
+<td align="left">3332</td>
+<td align="left">2022-08-18</td>
+</tr>
+<tr>
+<td align="left">153</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/DTStack/chunjun">DTStack&#x2F;chunjun</a></td>
+<td align="left">A data integration framework</td>
+<td align="left">3309</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">154</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/huburt-Hu/NewbieGuide">huburt-Hu&#x2F;NewbieGuide</a></td>
+<td align="left">Android 快速实现新手引导层的库，通过简洁链式调用，一行代码实现引导层的显示</td>
+<td align="left">3270</td>
+<td align="left">2022-08-15</td>
+</tr>
+<tr>
+<td align="left">155</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/java-aodeng/hope-boot">java-aodeng&#x2F;hope-boot</a></td>
+<td align="left">🌱 一款现代化的脚手架项目</td>
+<td align="left">3238</td>
+<td align="left">2022-06-17</td>
+</tr>
+<tr>
+<td align="left">156</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/alibaba/Alink">alibaba&#x2F;Alink</a></td>
+<td align="left">Alink is the Machine Learning algorithm platform based on Flink, developed by the PAI team of Alibaba computing platform.</td>
+<td align="left">3233</td>
+<td align="left">2022-10-18</td>
+</tr>
+<tr>
+<td align="left">157</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/tianshiyeben/wgcloud">tianshiyeben&#x2F;wgcloud</a></td>
+<td align="left">Linux 运维监控工具，支持系统硬件信息，内存，cpu，温度，磁盘空间及 IO，硬盘 smart，系统负载，网络流量等监控，服务接口，大屏展示，拓扑图，进程监控，端口监控，docker 监控，文件防篡改，日志监控，数据可视化，web ssh，堡垒机，指令下发批量执行，Linux 面板(探针)，SNMP，故障告警</td>
+<td align="left">3225</td>
+<td align="left">2022-10-16</td>
+</tr>
+<tr>
+<td align="left">158</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jetlinks/jetlinks-community">jetlinks&#x2F;jetlinks-community</a></td>
+<td align="left">JetLinks 基于 Java8,Spring Boot 2.x ,WebFlux,Netty,Vert.x,Reactor 等开发, 是一个全响应式的企业级物联网平台。支持统一物模型管理,多种设备,多种厂家,统一管理。统一设备连接管理,多协议适配(TCP,MQTT,UDP,CoAP,HTTP 等),屏蔽网络编程复杂性,灵活接入不同厂家不同协议等设备。实时数据处理,设备告警,消息通知,数据转发。地理 …</td>
+<td align="left">3224</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">159</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/eleme/UETool">eleme&#x2F;UETool</a></td>
+<td align="left">Show&#x2F;edit any view’s attributions on the screen.</td>
+<td align="left">3202</td>
+<td align="left">2022-10-17</td>
+</tr>
+<tr>
+<td align="left">160</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jfinal/jfinal">jfinal&#x2F;jfinal</a></td>
+<td align="left">JAVA WEB + ORM Framework</td>
+<td align="left">3176</td>
+<td align="left">2022-09-18</td>
+</tr>
+<tr>
+<td align="left">161</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/dingjikerbo/Android-BluetoothKit">dingjikerbo&#x2F;Android-BluetoothKit</a></td>
+<td align="left">Android BLE 蓝牙通信库</td>
+<td align="left">3170</td>
+<td align="left">2022-09-06</td>
+</tr>
+<tr>
+<td align="left">162</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/opengoofy/hippo4j">opengoofy&#x2F;hippo4j</a></td>
+<td align="left">📌 强大的动态线程池框架，附带监控报警功能。支持 JDK、Tomcat、Jetty、Undertow 线程池；Dubbo、Alibaba Dubbo、RabbitMQ、RocketMQ、Polaris 、Hystrix 消费线程池（更多框架线程池还在适配中）。内置两种使用模式：轻量级依赖配置中心以及无中间件依赖版本。</td>
+<td align="left">3166</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">163</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ververica/flink-cdc-connectors">ververica&#x2F;flink-cdc-connectors</a></td>
+<td align="left">CDC Connectors for Apache Flink®</td>
+<td align="left">3166</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">164</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/woxingxiao/BubbleSeekBar">woxingxiao&#x2F;BubbleSeekBar</a></td>
+<td align="left">A beautiful Android custom seekbar, which has a bubble view with progress appearing upon when seeking. 自定义 SeekBar，进度变化更以可视化气泡样式呈现</td>
+<td align="left">3159</td>
+<td align="left">2022-06-29</td>
+</tr>
+<tr>
+<td align="left">165</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/NekoX-Dev/NekoX">NekoX-Dev&#x2F;NekoX</a></td>
+<td align="left">A third-party Telegram android app.</td>
+<td align="left">3063</td>
+<td align="left">2022-10-23</td>
+</tr>
+<tr>
+<td align="left">166</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/gz-yami/mall4j">gz-yami&#x2F;mall4j</a></td>
+<td align="left">⭐️⭐️⭐️ 电商商城 java 电商商城系统 uniapp 商城 多用户商城</td>
+<td align="left">3060</td>
+<td align="left">2022-10-17</td>
+</tr>
+<tr>
+<td align="left">167</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/sofastack/sofa-jraft">sofastack&#x2F;sofa-jraft</a></td>
+<td align="left">A production-grade java implementation of RAFT consensus algorithm.</td>
+<td align="left">3015</td>
+<td align="left">2022-10-25</td>
+</tr>
+<tr>
+<td align="left">168</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xManager-v2/xManager-Spotify">xManager-v2&#x2F;xManager-Spotify</a></td>
+<td align="left">An android application where you can manage and install all versions of the spotify app.</td>
+<td align="left">2969</td>
+<td align="left">2022-10-18</td>
+</tr>
+<tr>
+<td align="left">169</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/zhpanvip/BannerViewPager">zhpanvip&#x2F;BannerViewPager</a></td>
+<td align="left">🚀 An awesome banner view for Android，Based on ViewPager2. 这可能是全网最好用的 ViewPager 轮播图。简单、高效，一行代码实现循环轮播，一屏三页任意变，指示器样式任你挑。</td>
+<td align="left">2963</td>
+<td align="left">2022-09-25</td>
+</tr>
+<tr>
+<td align="left">170</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ltsopensource/light-task-scheduler">ltsopensource&#x2F;light-task-scheduler</a></td>
+<td align="left">Distributed Scheduled Job Framework</td>
+<td align="left">2963</td>
+<td align="left">2022-10-20</td>
+</tr>
+<tr>
+<td align="left">171</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ByteLegend/ByteLegend">ByteLegend&#x2F;ByteLegend</a></td>
+<td align="left">Enjoy programming while playing a game.</td>
+<td align="left">2936</td>
+<td align="left">2022-10-09</td>
+</tr>
+<tr>
+<td align="left">172</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Sayi/poi-tl">Sayi&#x2F;poi-tl</a></td>
+<td align="left">Generate awesome word(docx) with template</td>
+<td align="left">2924</td>
+<td align="left">2022-10-13</td>
+</tr>
+<tr>
+<td align="left">173</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ferredoxin/QNotified">ferredoxin&#x2F;QNotified</a></td>
+<td align="left">一个旨在使 QQ 变得更好用的开源 Xposed 模块</td>
+<td align="left">2914</td>
+<td align="left">2022-06-18</td>
+</tr>
+<tr>
+<td align="left">174</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/rememberber/WePush">rememberber&#x2F;WePush</a></td>
+<td align="left">专注批量推送的小而美的工具，目前支持：模板消息-公众号、模板消息-小程序、微信客服消息、微信企业号&#x2F;企业微信消息、阿里云短信、阿里大于模板短信 、腾讯云短信、云片网短信、E-Mail、HTTP 请求、钉钉、华为云短信、百度云短信、又拍云短信、七牛云短信</td>
+<td align="left">2896</td>
+<td align="left">2022-10-14</td>
+</tr>
+<tr>
+<td align="left">175</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ZHENFENG13/My-Blog">ZHENFENG13&#x2F;My-Blog</a></td>
+<td align="left">:palm_tree::octocat:A simple &amp; beautiful blogging system implemented with spring-boot &amp; thymeleaf &amp; mybatis My Blog 是由 SpringBoot + Mybatis + Thymeleaf 等技术实现的 Java 博客系统，页面美观、功能齐全、部署简单及完善的代码，一定会给使用者无与伦 …</td>
+<td align="left">2858</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">176</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/pingfangushi/screw">pingfangushi&#x2F;screw</a></td>
+<td align="left">简洁好用的数据库表结构文档生成器</td>
+<td align="left">2802</td>
+<td align="left">2022-09-08</td>
+</tr>
+<tr>
+<td align="left">177</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ngbdf/redis-manager">ngbdf&#x2F;redis-manager</a></td>
+<td align="left">Redis 一站式管理平台，支持集群的监控、安装、管理、告警以及基本的数据操作</td>
+<td align="left">2796</td>
+<td align="left">2022-10-23</td>
+</tr>
+<tr>
+<td align="left">178</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lihangleo2/ShadowLayout">lihangleo2&#x2F;ShadowLayout</a></td>
+<td align="left">可定制化阴影的万能阴影布局 ShadowLayout 3.0 震撼上线。效果赶超 CardView。阴影支持 x,y 轴偏移，支持阴影扩散程度，支持阴影圆角，支持单边或多边不显示阴影；控件支持动态设置 shape 和 selector（项目里再也不用画 shape 了）；支持随意更改颜色值，支持随意更改颜色值，支持随意更改颜色值。重要的事情说三遍</td>
+<td align="left">2756</td>
+<td align="left">2022-10-24</td>
+</tr>
+<tr>
+<td align="left">179</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Pay-Group/best-pay-sdk">Pay-Group&#x2F;best-pay-sdk</a></td>
+<td align="left">可能是最好的支付 SDK</td>
+<td align="left">2752</td>
+<td align="left">2022-10-18</td>
+</tr>
+<tr>
+<td align="left">180</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/wenmingvs/AndroidProcess">wenmingvs&#x2F;AndroidProcess</a></td>
+<td align="left">判断 App 位于前台或者后台的 6 种方法</td>
+<td align="left">2744</td>
+<td align="left">2022-09-09</td>
+</tr>
+<tr>
+<td align="left">181</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Snailclimb/guide-rpc-framework">Snailclimb&#x2F;guide-rpc-framework</a></td>
+<td align="left">A custom RPC framework implemented by Netty+Kyro+Zookeeper.（一款基于 Netty+Kyro+Zookeeper 实现的自定义 RPC 框架-附详细实现过程和相关教程。）</td>
+<td align="left">2743</td>
+<td align="left">2022-10-26</td>
+</tr>
+<tr>
+<td align="left">182</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Hitomis/transferee">Hitomis&#x2F;transferee</a></td>
+<td align="left">[暂停维护]一个帮助您完成从缩略视图到原视图无缝过渡转变的神奇框架</td>
+<td align="left">2738</td>
+<td align="left">2022-10-19</td>
+</tr>
+<tr>
+<td align="left">183</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/WinterChenS/my-site">WinterChenS&#x2F;my-site</a></td>
+<td align="left">springboot2.0 开发的个人网站，集成了：个人首页，个人博客，个人作品</td>
+<td align="left">2731</td>
+<td align="left">2022-10-12</td>
+</tr>
+<tr>
+<td align="left">184</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/201206030/novel-plus">201206030&#x2F;novel-plus</a></td>
+<td align="left">novel-plus 是一个多端（PC、WAP）阅读 、功能完善的小说 CMS 系统。包括小说推荐、小说检索、小说排行、小说阅读、小说书架、小说评论、小说爬虫、会员中心、作家专区、充值订阅、新闻发布等功能。</td>
+<td align="left">2730</td>
+<td align="left">2022-10-14</td>
+</tr>
+<tr>
+<td align="left">185</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/apache/incubator-linkis">apache&#x2F;incubator-linkis</a></td>
+<td align="left">Linkis helps easily connect to various back-end computation&#x2F;storage engines(Spark, Python, TiDB…), exposes various interfaces(REST, JDBC, Java …), with multi-tenancy, high performance, and resourc …</td>
+<td align="left">2722</td>
+<td align="left">2022-10-29</td>
+</tr>
+<tr>
+<td align="left">186</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/elvishew/xLog">elvishew&#x2F;xLog</a></td>
+<td align="left">Android logger, pretty, powerful and flexible, log to everywhere, save to file, all you want is here.</td>
+<td align="left">2710</td>
+<td align="left">2022-09-16</td>
+</tr>
+<tr>
+<td align="left">187</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/jeequan/jeepay">jeequan&#x2F;jeepay</a></td>
+<td align="left">Jeepay 是一套适合互联网企业使用的开源支付系统，支持多渠道服务商和普通商户模式。已对接微信支付，支付宝，云闪付官方接口，支持聚合码支付。</td>
+<td align="left">2695</td>
+<td align="left">2022-10-14</td>
+</tr>
+<tr>
+<td align="left">188</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/ZhongFuCheng3y/austin">ZhongFuCheng3y&#x2F;austin</a></td>
+<td align="left">消息推送平台:pencil: 推送下发【邮件】【短信】【微信服务号】【微信小程序】【企业微信】【钉钉】等消息类型。所使用的技术栈包括：SpringBoot、SpringDataJPA、MySQL、Docker、docker-compose、Kafka、Redis、Apollo、prometheus、Grafana、GrayLog、Flink、Xxl-job、Echarts 等等</td>
+<td align="left">2686</td>
+<td align="left">2022-09-26</td>
+</tr>
+<tr>
+<td align="left">189</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/HuanTanSheng/EasyPhotos">HuanTanSheng&#x2F;EasyPhotos</a></td>
+<td align="left">兼容 android11、android 10，相机拍照，相册选择(单选&#x2F;多选)，文件夹图片选择(单选&#x2F;多选)，视频选择，视频图片多类型复杂选择，各界面根据状态栏颜色智能适配状态栏字体颜色变色为深色或浅色，根据使用场景智能适配沉浸式状态栏，内部处理运行时权限，支持 Glide&#x2F;Picasso&#x2F;Imageloader 等所有图片加载框架库的带默认勾选选中图片的能填充自定义广告的自定义 Ui 相机相册图片浏览选 …</td>
+<td align="left">2682</td>
+<td align="left">2022-10-25</td>
+</tr>
+<tr>
+<td align="left">190</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/bytedance/ByteX">bytedance&#x2F;ByteX</a></td>
+<td align="left">ByteX is a bytecode plugin platform based on Android Gradle Transform API and ASM. 字节码插件开发平台</td>
+<td align="left">2681</td>
+<td align="left">2022-07-19</td>
+</tr>
+<tr>
+<td align="left">191</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/yangchong211/YCAppTool">yangchong211&#x2F;YCAppTool</a></td>
+<td align="left">组件化综合案例，组件分层为：基础公共组件，功能组件，业务组件，主工程。每一层组件的建设，很详细的工程案例，很全面的一个组件化实践案例。一个超级综合案例！</td>
+<td align="left">2673</td>
+<td align="left">2022-10-14</td>
+</tr>
+<tr>
+<td align="left">192</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/hneemann/Digital">hneemann&#x2F;Digital</a></td>
+<td align="left">A digital logic designer and circuit simulator.</td>
+<td align="left">2666</td>
+<td align="left">2022-10-13</td>
+</tr>
+<tr>
+<td align="left">193</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/yidongnan/grpc-spring-boot-starter">yidongnan&#x2F;grpc-spring-boot-starter</a></td>
+<td align="left">Spring Boot starter module for gRPC framework.</td>
+<td align="left">2651</td>
+<td align="left">2022-10-27</td>
+</tr>
+<tr>
+<td align="left">194</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/Tencent/VasDolly">Tencent&#x2F;VasDolly</a></td>
+<td align="left">Android V1 and V2 Signature Channel Package Plugin</td>
+<td align="left">2647</td>
+<td align="left">2022-10-10</td>
+</tr>
+<tr>
+<td align="left">195</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/JsonChao/Awesome-WanAndroid">JsonChao&#x2F;Awesome-WanAndroid</a></td>
+<td align="left">:zap:致力于打造一款极致体验的 <a target="_blank" rel="noopener" href="http://www.wanandroid.com/">http://www.wanandroid.com/</a> 客户端，知识和美是可以并存的哦 QAQn(<em>≧▽≦</em>)n</td>
+<td align="left">2633</td>
+<td align="left">2022-07-09</td>
+</tr>
+<tr>
+<td align="left">196</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/xiaojinzi123/Component">xiaojinzi123&#x2F;Component</a></td>
+<td align="left">🔥🔥🔥A powerful componentized framework.一个强大、100% 兼容、支持 AndroidX、支持 Kotlin 并且灵活的组件化框架</td>
+<td align="left">2602</td>
+<td align="left">2022-09-06</td>
+</tr>
+<tr>
+<td align="left">197</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/lilishop/lilishop">lilishop&#x2F;lilishop</a></td>
+<td align="left">电商商城 多语言商城 跨境商城 多用户商城 小程序商城 微服务商城 新零售 社区商城</td>
+<td align="left">2597</td>
+<td align="left">2022-10-24</td>
+</tr>
+<tr>
+<td align="left">198</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/qunarcorp/qmq">qunarcorp&#x2F;qmq</a></td>
+<td align="left">QMQ 是去哪儿网内部广泛使用的消息中间件，自 2012 年诞生以来在去哪儿网所有业务场景中广泛的应用，包括跟交易息息相关的订单场景； 也包括报价搜索等高吞吐量场景。</td>
+<td align="left">2590</td>
+<td align="left">2022-10-18</td>
+</tr>
+<tr>
+<td align="left">199</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/apache/iotdb">apache&#x2F;iotdb</a></td>
+<td align="left">Apache IoTDB</td>
+<td align="left">2576</td>
+<td align="left">2022-10-26</td>
+</tr>
+<tr>
+<td align="left">200</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/JessYanCoding/ProgressManager">JessYanCoding&#x2F;ProgressManager</a></td>
+<td align="left">⏳ Listen the progress of downloading and uploading in Okhttp, compatible Retrofit and Glide (一行代码即可监听 App 中所有网络链接的上传以及下载进度, 包括 Glide 的图片加载进度).</td>
+<td align="left">2557</td>
+<td align="left">2022-07-26</td>
+</tr>
+</tbody></table>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8E%92%E8%A1%8C%E6%A6%9C/" class="category-chain-item">排行榜</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Java/">#Java</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Java 排行榜</div>
+      <div>https://ssy-studio.github.io/post/Java排行榜.html</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ssy</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年1月27日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/Vue%20%E6%8E%92%E8%A1%8C%E6%A6%9C.html" title="Vue 排行榜">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Vue 排行榜</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/JavaScript%20%E6%8E%92%E8%A1%8C%E6%A6%9C.html" title="JavaScript 排行榜">
+                        <span class="hidden-mobile">JavaScript 排行榜</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"DbetiSS0ydA1k5hUPPwMLuTr-gzGzoHsz","appKey":"TFjbAw9p1JrouNhD8TfjEH1u","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
